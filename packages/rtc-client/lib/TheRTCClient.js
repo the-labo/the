@@ -329,19 +329,32 @@ class TheRTCClient extends TheRTCClientBase {
       },
     )
     await this.setPeerRemoteDesc(pid, answer.desc)
-    await this.asPromise((resolve) => {
-      if (peer.iceConnectionState === 'connected') {
+    await this.asPromise((resolve, reject) => {
+      const skip =
+        peer.iceConnectionState === 'connected' ||
+        peer.iceConnectionState === 'closed'
+      if (skip) {
         resolve()
         return
       }
       const onIceConnectionStateChange = () => {
         const { iceConnectionState } = peer
-        if (iceConnectionState === 'connected') {
-          peer.removeEventListener(
-            'iceconnectionstatechange',
-            onIceConnectionStateChange,
-          )
-          resolve()
+        switch (iceConnectionState) {
+          case 'closed':
+          case 'connected': {
+            peer.removeEventListener(
+              'iceconnectionstatechange',
+              onIceConnectionStateChange,
+            )
+            resolve()
+            break
+          }
+          case 'failed': {
+            reject('Connection failed')
+            break
+          }
+          default:
+            break
         }
       }
       peer.addEventListener(
