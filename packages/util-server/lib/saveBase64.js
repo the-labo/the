@@ -1,15 +1,7 @@
 'use strict'
 
-/**
- * Save base64 string into file
- * @function saveBase64
- * @param {string} dirname - Directory name
- * @param {string} basename - Basename of saving file
- * @param {string} data
- * @returns {Promise}
- */
-const amkdirp = require('amkdirp')
 const fs = require('fs')
+const mkdirp = require('mkdirp')
 const path = require('path')
 const util = require('util')
 const isBase64 = require('./isBase64')
@@ -24,13 +16,20 @@ const Extensions = {
   quicktime: 'mov',
 }
 
-/** @lends saveBase64 */
+/**
+ * Save base64 string into file
+ * @function saveBase64
+ * @param {string} dirname - Directory name
+ * @param {string} basename - Basename of saving file
+ * @param {string} data
+ * @returns {Promise}
+ */
 async function saveBase64(dirname, basename, data) {
   if (!isBase64(data)) {
     throw new Error('[saveBase64] data must be base64')
   }
 
-  await amkdirp(dirname)
+  await mkdirp(dirname)
   const matched = data.match(TYPE_EXTRACT_PATTERN)
   if (!matched) {
     return null
@@ -41,7 +40,7 @@ async function saveBase64(dirname, basename, data) {
     dirname,
     [basename, Extensions[type] || type].join('.'),
   )
-  await amkdirp(path.dirname(filename))
+  await mkdirp(path.dirname(filename))
   await writeFileAsync(filename, payload, 'base64')
   return {
     filename,

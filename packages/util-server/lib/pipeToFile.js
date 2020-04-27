@@ -1,5 +1,9 @@
 'use strict'
 
+const fs = require('fs')
+const mkdirp = require('mkdirp')
+const path = require('path')
+
 /**
  * Pipe to file
  * @function pipeToFile
@@ -7,17 +11,12 @@
  * @param {string} dest - Destination file path
  * @returns {Promise}
  */
-const amkdirp = require('amkdirp')
-const fs = require('fs')
-const path = require('path')
-
-/** @lends pipeToFile */
 async function pipeToFile(src, dest) {
   if (typeof src === 'string') {
     src = fs.createReadStream(src)
   }
 
-  await amkdirp(path.dirname(dest))
+  await mkdirp(path.dirname(dest))
   await new Promise((resolve, reject) => {
     const w = fs.createWriteStream(dest)
     src.pipe(w)

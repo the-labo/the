@@ -199,7 +199,7 @@
     "longname": "pipeToFile",
     "meta": {
       "filename": "pipeToFile.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "pipeToFile",
@@ -242,7 +242,7 @@
     "longname": "saveBase64",
     "meta": {
       "filename": "saveBase64.js",
-      "lineno": 3,
+      "lineno": 19,
       "path": "lib"
     },
     "name": "saveBase64",

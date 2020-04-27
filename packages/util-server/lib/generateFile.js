@@ -1,7 +1,7 @@
 'use strict'
 
-const amkdirp = require('amkdirp')
 const fs = require('fs')
+const mkdirp = require('mkdirp')
 const path = require('path')
 
 /**
@@ -16,7 +16,7 @@ async function generateFile(filename, generator) {
     generator = generator()
   }
 
-  await amkdirp(path.dirname(filename))
+  await mkdirp(path.dirname(filename))
   await new Promise((resolve, reject) => {
     const stream = fs.createWriteStream(filename)
     stream.on('finish', () => resolve())

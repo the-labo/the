@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-server",
   "description": "Utility for server",
-  "version": "15.4.13",
+  "version": "15.4.15",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "amkdirp": "^2.0.0",
     "asleep": "^1.0.3",
     "mime": "^2.4.4",
-    "uuid": "^7.0.2"
+    "mkdirp": "^1.0.4",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {},
   "engines": {
