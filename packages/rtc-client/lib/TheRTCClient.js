@@ -338,6 +338,7 @@ class TheRTCClient extends TheRTCClientBase {
         resolve()
         return
       }
+
       const onIceConnectionStateChange = () => {
         const { iceConnectionState } = peer
         switch (iceConnectionState) {
@@ -493,6 +494,7 @@ class TheRTCClient extends TheRTCClientBase {
         // 取得失敗
         return false
       }
+
       const [screenTrack] = screenStream.getVideoTracks()
       await this.updateTrack('video', screenTrack)
       this._stopToggleScreenShare = async () => {
@@ -513,6 +515,7 @@ class TheRTCClient extends TheRTCClientBase {
       await (this._stopToggleScreenShare && this._stopToggleScreenShare())
       this.emitSocketEvent(IOEvents.SCREEN_SHARE_STOP)
     }
+
     return enabled
   }
 

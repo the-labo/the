@@ -94,15 +94,16 @@ exports.createPeer = function createPeer({
       if (remoteStream) {
         onStream && onStream(remoteStream, { peer, track })
         peer.extra.remoteStream = remoteStream
+
+        track.addEventListener('mute', (ev) => {
+          debug('mute', ev)
+          remoteStream.removeTrack(ev.target)
+        })
+        track.addEventListener('unmute', (ev) => {
+          debug('unmute', ev)
+          remoteStream.addTrack(ev.target)
+        })
       }
-      track.addEventListener('mute', (ev) => {
-        debug('mute', ev)
-        remoteStream.removeTrack(ev.target)
-      })
-      track.addEventListener('unmute', (ev) => {
-        debug('unmute', ev)
-        remoteStream.addTrack(ev.target)
-      })
     },
   }
   for (const [event, handler] of Object.entries(handlers)) {
