@@ -4,9 +4,11 @@
  */
 'use strict'
 
-const TheStyle = require('../shim/TheStyle').default
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const { ok } = require('assert').strict
+const { default: TheStyle } = require('../shim/TheStyle')
 
 describe('the-style', () => {
   before(() => {})

@@ -13,11 +13,13 @@ function colorAsDarkened(color, options = {}) {
   if (!color) {
     return null
   }
+
   for (let i = 0; i < tryMaxCount; i++) {
     const enough = isDark(color)
     if (enough) {
       return color
     }
+
     color = darken(color, tryAmount)
   }
   return color

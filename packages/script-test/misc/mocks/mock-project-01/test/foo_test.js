@@ -4,7 +4,7 @@ const {
   strict: { equal },
 } = require('assert')
 
-describe('build', function() {
+describe('build', function () {
   this.timeout(3000)
 
   before(() => {})

@@ -5,6 +5,7 @@ const { get } = require('@the-/window')
 const applyTrackConstraints = require('./helpers/applyTrackConstraints')
 const canZoomTrack = require('./helpers/canZoomTrack')
 const createMediaStream = require('./helpers/createMediaStream')
+
 /**
  * @memberof module:@the-/media
  * @class TheMedia

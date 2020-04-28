@@ -57,7 +57,6 @@ var/
 /packages/driver-sequelize/lib/converters/index.js
 /packages/driver-sequelize/lib/helpers/index.js
 /packages/driver-sequelize/lib/index.js
-/packages/driver-sequelize/lib/mixins/index.js
 /packages/driver-sequelize/lib/modeling/index.js
 /packages/driver-sequelize/lib/parsing/index.js
 /packages/entrypoint/lib/helpers/index.js
@@ -103,7 +102,6 @@ var/
 /packages/run/lib/index.js
 /packages/s3/lib/index.js
 /packages/scaffold/lib/index.js
-/packages/scene/lib/index.js
 /packages/scope/lib/index.js
 /packages/scope/lib/scopes/index.js
 /packages/script-build/lib/index.js
@@ -170,8 +168,6 @@ var/
 /packages/ui-demo/lib/index.jsx
 /packages/ui-dialog/doc/demo/bundle.js
 /packages/ui-dialog/lib/index.jsx
-/packages/ui-flick/doc/demo/bundle.js
-/packages/ui-flick/lib/index.jsx
 /packages/ui-footer/doc/demo/bundle.js
 /packages/ui-footer/lib/index.jsx
 /packages/ui-form/doc/demo/bundle.js
