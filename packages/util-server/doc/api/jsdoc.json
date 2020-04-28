@@ -13,7 +13,7 @@
     "name": "@the-/util-server",
     "order": 2,
     "typicalname": "utilServer",
-    "version": "15.4.13"
+    "version": "15.4.15"
   },
   {
     "description": "Change file extension",

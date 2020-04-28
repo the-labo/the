@@ -552,6 +552,7 @@ class TheRTCClient extends TheRTCClientBase {
           const newTrack = newTracks && newTracks.shift()
           if (newTrack) {
             await sender.replaceTrack(newTrack)
+            await asleep(10)
           } else {
             console.warn('[TheRTCClient] Track lost', oldTrack.kind)
           }
