@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-ui",
   "description": "Utility for the-components",
-  "version": "16.4.0",
+  "version": "16.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "@the-/const-ui": "^15.5.2",
     "bwindow": "^2.0.3",
     "keycode": "^2.2.0",
-    "uuid": "^7.0.3",
+    "uuid": "^8.0.0",
     "video-extensions": "^1.1.0"
   },
   "devDependencies": {},

@@ -82,11 +82,13 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
+- global
+  - [colorAsDarkened(color,options)](./doc/api/api.md#colorAsDarkened)
 - module:@the-/util-color
   - [.colorWithAlpha(color,alpha)](./doc/api/api.md#module_@the-/util-color.colorWithAlpha)
   - [.colorWithText(text,options)](./doc/api/api.md#module_@the-/util-color.colorWithText)
   - [.rotatedColorsFor(base,options)](./doc/api/api.md#module_@the-/util-color.rotatedColorsFor)
-  - [.textColorFor(backgroundColor)](./doc/api/api.md#module_@the-/util-color.textColorFor)
+  - [.textColorFor(backgroundColor,options)](./doc/api/api.md#module_@the-/util-color.textColorFor)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -54,4 +54,4 @@ Menu of the-components
 ## TheMenuStyle()
 Style for TheMenu
 
-**Kind**: global function  
+**Kind**: global function

@@ -66,7 +66,7 @@ const { appCache, cachingFetch } = require('@the-/util-sw')
 async function tryExample() {
   self.addEventListener('fetch', (event) => {
     event.respondWith(
-      (async function() {
+      (async function () {
         const cache = await appCache('my-site', 'v1.0.0')
         return cachingFetch(cache, event.request)
       })(),

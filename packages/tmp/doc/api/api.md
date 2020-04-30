@@ -22,7 +22,7 @@
 ## @the-/tmp
 Tmp file creator
 
-**Version**: 15.4.12  
+**Version**: 15.5.0  
 **License**: MIT  
 
 * [@the-/tmp](#module_@the-/tmp)

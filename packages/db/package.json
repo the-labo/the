@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "17.3.1",
+  "version": "17.3.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -35,14 +35,14 @@
     "debug": "^4.1.1",
     "execcli": "^5.0.6",
     "is-class": "0.0.9",
-    "mkdirp": "^1.0.3",
+    "mkdirp": "^1.0.4",
     "msgpack5": "^4.2.1",
     "mysql2": "^2.1.0",
-    "uuid": "^7.0.3"
+    "uuid": "^8.0.0"
   },
   "devDependencies": {
     "colorprint": "^6.1.1",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.2.0"
   },
   "engines": {
     "node": ">=10",

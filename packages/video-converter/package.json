@@ -1,7 +1,7 @@
 {
   "name": "@the-/video-converter",
   "description": "Video file converter",
-  "version": "15.4.14",
+  "version": "15.4.16",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "@ffprobe-installer/ffprobe": "^1.0.12",
     "@the-/assert": "^15.4.1",
-    "@the-/tmp": "^15.4.5",
+    "@the-/tmp": "^15.5.0",
     "asfs": "^2.3.0",
     "filecopy": "^4.1.0",
     "video-extensions": "^1.1.0"

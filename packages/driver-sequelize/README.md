@@ -86,7 +86,6 @@ tryExample().catch((err) => console.error(err))
   - [.converters](./doc/api/api.md#module_@the-/driver-sequelize.converters)
   - [.default()](./doc/api/api.md#module_@the-/driver-sequelize.default)
   - [.helpers](./doc/api/api.md#module_@the-/driver-sequelize.helpers)
-  - [.mixins](./doc/api/api.md#module_@the-/driver-sequelize.mixins)
   - [.modeling](./doc/api/api.md#module_@the-/driver-sequelize.modeling)
   - [.parsing](./doc/api/api.md#module_@the-/driver-sequelize.parsing)
 - module:@the-/driver-sequelize.constants
@@ -95,8 +94,6 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/driver-sequelize.converters
   - [.convertInbound(values,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertInbound)
   - [.convertOutbound(values,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertOutbound)
-- module:@the-/driver-sequelize.mixins
-  - [.sequelizeMix(Class)](./doc/api/api.md#module_@the-/driver-sequelize.mixins.sequelizeMix)
 - module:@the-/driver-sequelize.modeling
   - [.defineModel(sequelize,resourceName,schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
   - [.defineModelColumn(def,propertyName)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelColumn)
