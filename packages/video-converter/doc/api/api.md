@@ -5,7 +5,7 @@
 ## @the-/video-converter
 Video file converter
 
-**Version**: 15.4.14  
+**Version**: 15.4.16  
 **License**: MIT  
 
 * [@the-/video-converter](#module_@the-/video-converter)
