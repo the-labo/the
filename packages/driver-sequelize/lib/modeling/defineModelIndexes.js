@@ -14,9 +14,10 @@ const TypesToIndex = [ENTITY, ID, REF]
  * @returns {string[]}
  */
 function defineModelIndexes(schema) {
-  const refColumnNames = Object.keys(schema).filter((key) =>
-    TypesToIndex.includes(schema[key].type),
-  )
+  const refColumnNames = Object.keys(schema).filter((key) => {
+    const def = schema[key]
+    return !def.noIndex && TypesToIndex.includes(def.type)
+  })
   const indexColumnNames = Object.keys(schema)
     .filter((name) => schema[name].indexed)
     .sort((a, b) => {
