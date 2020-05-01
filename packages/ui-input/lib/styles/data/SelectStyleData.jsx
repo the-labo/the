@@ -1,5 +1,6 @@
 'use strict'
 
+import { textColorFor } from '@the-/util-color'
 import { asStyleData } from '@the-/util-ui'
 
 function SelectStyleData({
@@ -60,6 +61,7 @@ function SelectStyleData({
       },
       '&.the-input-select-option-selected': {
         backgroundColor: dominantColor,
+        color: textColorFor(dominantColor),
       },
       alignItems: 'center',
       backgroundColor,
