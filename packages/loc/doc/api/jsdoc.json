@@ -196,7 +196,7 @@
     "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 123,
+      "lineno": 120,
       "path": "lib"
     },
     "name": "toCompound",
@@ -222,7 +222,7 @@
     "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 135,
+      "lineno": 132,
       "path": "lib"
     },
     "name": "validate",

@@ -1,7 +1,7 @@
 {
   "name": "@the-/pack",
   "description": "Message pack wrapper for the-components",
-  "version": "16.2.11",
+  "version": "16.2.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
   "dependencies": {
     "@msgpack/msgpack": "^1.12.1",
     "asleep": "^1.0.3",
-    "uuid": "^7.0.3"
+    "uuid": "^8.0.0"
   },
   "devDependencies": {},
   "engines": {

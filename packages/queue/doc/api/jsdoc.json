@@ -98,7 +98,7 @@
     "memberof": "TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 64,
+      "lineno": 62,
       "path": "lib"
     },
     "name": "start",
@@ -114,7 +114,7 @@
     "memberof": "TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 72,
+      "lineno": 70,
       "path": "lib"
     },
     "name": "stop",
@@ -131,7 +131,7 @@
     "memberof": "TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 108,
+      "lineno": 106,
       "path": "lib"
     },
     "name": "wait",

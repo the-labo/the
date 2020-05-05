@@ -52,7 +52,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 220,
+      "lineno": 214,
       "path": "lib"
     },
     "name": "date",
@@ -67,7 +67,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 222,
+      "lineno": 216,
       "path": "lib"
     },
     "name": "events",
@@ -82,7 +82,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 224,
+      "lineno": 218,
       "path": "lib"
     },
     "name": "lang",
@@ -97,7 +97,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 226,
+      "lineno": 220,
       "path": "lib"
     },
     "name": "onNavigate",
@@ -112,7 +112,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 228,
+      "lineno": 222,
       "path": "lib"
     },
     "name": "onView",
@@ -127,7 +127,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 230,
+      "lineno": 224,
       "path": "lib"
     },
     "name": "view",

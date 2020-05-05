@@ -66,7 +66,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 50,
+      "lineno": 51,
       "path": "lib"
     },
     "name": "createAudioRecorder",
@@ -110,7 +110,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 77,
+      "lineno": 78,
       "path": "lib"
     },
     "name": "getStreamTracks",
@@ -144,7 +144,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 99,
+      "lineno": 100,
       "path": "lib"
     },
     "name": "toggleEnabled",
@@ -178,7 +178,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 116,
+      "lineno": 117,
       "path": "lib"
     },
     "name": "bindVideo",
@@ -224,7 +224,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 134,
+      "lineno": 135,
       "path": "lib"
     },
     "name": "setZoom",
@@ -260,7 +260,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 154,
+      "lineno": 155,
       "path": "lib"
     },
     "name": "start",
@@ -286,7 +286,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 188,
+      "lineno": 189,
       "path": "lib"
     },
     "name": "stop",
@@ -312,7 +312,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 214,
+      "lineno": 215,
       "path": "lib"
     },
     "name": "takePhoto",
@@ -351,7 +351,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 236,
+      "lineno": 237,
       "path": "lib"
     },
     "name": "updateConstrains",
@@ -406,7 +406,7 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 8,
+      "lineno": 9,
       "path": "lib"
     },
     "name": "TheMedia",
