@@ -23,8 +23,6 @@ async function setupForEnv(env) {
   } = toLowerKeys(env)
 
   switch (String(dialect).toLowerCase().trim()) {
-    case 'mongo':
-      return require('./setup/setupMongo')({})
     case 'sequelize/mysql':
     case 'mysql':
       return require('./setup/setupMysql')({

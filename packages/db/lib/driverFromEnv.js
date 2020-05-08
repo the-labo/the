@@ -31,15 +31,6 @@ function driverFromEnv(env) {
       return require('clay-driver-json')(storage)
     case 'memory':
       return require('clay-driver-memory')()
-    case 'mongo':
-      return require('@the-/driver-mongo').create({
-        database,
-        host,
-        password,
-        port,
-        ssl,
-        username,
-      })
     case 'mysql':
     case 'sqlite':
       throw new Error('No longer supported')

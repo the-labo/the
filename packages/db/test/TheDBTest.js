@@ -293,20 +293,6 @@ describe('the-db', function () {
     await db.close()
   })
 
-  // it('Try mongo', async () => {
-  //   const db = new TheDB({
-  //     env: {
-  //       database: 'the-db-test',
-  //       dialect: 'mongo',
-  //     },
-  //   })
-  //   const User = db.resource('User')
-  //   const user01 = await User.create({ name: 'user01' })
-  //   ok(user01)
-  //   await db.setup()
-  //   await db.close()
-  // })
-
   it('sequelize/Mysql', async () => {
     const DB_USER = 't01'
     const DB_PASSWORD = 't01'
