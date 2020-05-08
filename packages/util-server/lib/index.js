@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-server
  * @typicalname utilServer
- * @version 15.4.16
+ * @version 15.4.17
  */
 'use strict'
 

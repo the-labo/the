@@ -13,7 +13,7 @@
     "name": "@the-/run",
     "order": 2,
     "typicalname": "run",
-    "version": "15.6.0"
+    "version": "15.6.1"
   },
   {
     "description": "Script runner",

@@ -5,7 +5,7 @@
 ## @the-/run
 Script runner for the-framework
 
-**Version**: 15.6.0  
+**Version**: 15.6.1  
 **License**: MIT  
 
 * [@the-/run](#module_@the-/run)
