@@ -1,6 +1,5 @@
 'use strict'
 
-const { createCanvas, registerFont } = require('canvas')
 const applier = require('./helpers/applier')
 const drawer = require('./helpers/drawer')
 const writer = require('./helpers/writer')
@@ -11,6 +10,7 @@ const writer = require('./helpers/writer')
  */
 class TheIcon {
   constructor(config = {}) {
+    const { createCanvas } = require('canvas')
     const {
       color,
       font: fontFile,
@@ -44,6 +44,7 @@ class TheIcon {
   }
 
   registerFont(filename) {
+    const { registerFont } = require('canvas')
     if (!filename) {
       return
     }

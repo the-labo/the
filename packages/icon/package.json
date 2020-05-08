@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@the-/util-color": "^15.5.1",
-    "canvas": "^2.6.1",
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {
@@ -30,6 +29,9 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "optionalDependencies": {
+    "canvas": "^2.6.1"
+  },
   "publishConfig": {
     "access": "public"
   },
