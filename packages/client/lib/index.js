@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/client
  * @typicalname client
- * @version 17.2.11
+ * @version 17.2.13
  */
 'use strict'
 

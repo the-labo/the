@@ -15,7 +15,7 @@
     "@the-/check-env": "^15.6.0",
     "bwindow": "^2.0.3",
     "clay-resource-ref": "^2.0.9",
-    "qs": "^6.9.1"
+    "qs": "^6.9.4"
   },
   "devDependencies": {
     "@the-/seat": "^15.4.13"

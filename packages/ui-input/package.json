@@ -17,9 +17,9 @@
     "@the-/ui-icon": "^16.0.2",
     "@the-/ui-spin": "^16.0.1",
     "@the-/ui-style": "^16.0.2",
-    "@the-/util-array": "^15.4.3",
-    "@the-/util-color": "^15.4.12",
-    "@the-/util-ui": "^16.3.3",
+    "@the-/util-array": "^15.4.12",
+    "@the-/util-color": "^15.5.2",
+    "@the-/util-ui": "^16.4.1",
     "@the-/window": "^15.8.3",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
@@ -32,8 +32,8 @@
     "@the-/ui-demo": "^16.0.3",
     "@the-/ui-router": "^16.0.1",
     "coz": "^7.2.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
   },
   "engines": {

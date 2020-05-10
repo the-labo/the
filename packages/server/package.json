@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "17.6.3",
+  "version": "17.6.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -28,7 +28,7 @@
     "locale": "^0.1.0",
     "qs": "^6.9.4",
     "redis": "^3.0.2",
-    "rfunc": "^4.2.0",
+    "rfunc": "^4.3.1",
     "rimraf": "^3.0.2",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@msgpack/msgpack": "^1.12.1",
-    "@the-/client": "^17.2.9",
+    "@the-/client": "^17.2.13",
     "arequest": "^3.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
