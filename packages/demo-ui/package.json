@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@the-/ui-demo": "^16.0.3",
-    "eslint-plugin-jsdoc": "^24.0.2",
+    "eslint-plugin-jsdoc": "^24.0.6",
     "objnest": "^5.0.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

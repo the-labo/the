@@ -12,11 +12,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-file": "^15.7.1",
+    "@the-/util-file": "^15.7.3",
     "abind": "^1.0.3",
     "asfs": "^2.3.0",
     "json-pointer": "^0.6.0",
-    "mkdirp": "^1.0.3"
+    "mkdirp": "^1.0.4"
   },
   "devDependencies": {},
   "engines": {

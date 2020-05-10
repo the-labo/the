@@ -24,7 +24,7 @@
     "memberof": "TheIcon",
     "meta": {
       "filename": "TheIcon.js",
-      "lineno": 103,
+      "lineno": 105,
       "path": "lib"
     },
     "name": "saveAs",

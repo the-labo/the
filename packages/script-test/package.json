@@ -14,9 +14,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "amocha": "^7.0.1",
+    "amocha": "^7.0.2",
     "argx": "^4.0.4",
-    "commander": "^5.0.0"
+    "commander": "^5.1.0"
   },
   "devDependencies": {
     "injectmock": "^2.0.0"

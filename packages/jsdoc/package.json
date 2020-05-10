@@ -12,11 +12,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-array": "^15.4.3",
+    "@the-/util-array": "^15.4.12",
     "aglob": "^3.0.2",
     "fmtjson": "^5.0.1",
     "jsdoc-to-markdown": "^5.0.3",
-    "writeout": "^2.3.0"
+    "writeout": "^2.3.2"
   },
   "devDependencies": {},
   "engines": {

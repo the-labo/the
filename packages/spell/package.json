@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-file": "^15.7.1",
+    "@the-/util-file": "^15.7.3",
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
     "asobj": "^3.0.1",
@@ -28,7 +28,7 @@
     "pluralize": "^8.0.0",
     "reserved": "^0.1.2",
     "stringcase": "^4.3.1",
-    "text-extensions": "^2.0.0",
+    "text-extensions": "^2.1.0",
     "video-extensions": "^1.1.0"
   },
   "devDependencies": {},

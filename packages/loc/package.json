@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.6.0",
-    "@the-/util-array": "^15.4.3",
+    "@the-/util-array": "^15.4.12",
     "argx": "^4.0.4",
     "evaljson": "^6.0.4",
     "objnest": "^5.0.10",
