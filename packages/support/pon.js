@@ -1,5 +1,9 @@
 'use strict'
 
+const chalk = require('chalk')
+const path = require('path')
+const theSupport = require('./lib/create')
+
 /**
  * As pon task
  * @function theSupportTask
@@ -7,13 +11,9 @@
  * @param {Object} [options={}]
  * @returns {function()} Task function
  */
-const chalk = require('chalk')
-const path = require('path')
-const theSupport = require('./lib/create')
-
-/** @lends theSupportTask */
 function theSupportTask(pattern, options = {}) {
   const support = theSupport(pattern)
+  const { version = '2017' } = options
 
   return async function task(ctx) {
     const { logger } = ctx
@@ -21,7 +21,7 @@ function theSupportTask(pattern, options = {}) {
 
     let results
     try {
-      results = await support.es2015()
+      results = await support.validateESFor(version)
     } catch (e) {
       logger.error(e.message)
 
