@@ -79,7 +79,6 @@ export default function ExampleComponent() {
         })
       },
       onPinchStart: ({ scaleOrigin }) => {
-        console.log('scaleOrigin', scaleOrigin)
         setPinchData({
           ...pinchData,
           scaleOrigin,

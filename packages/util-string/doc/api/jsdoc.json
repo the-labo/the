@@ -13,7 +13,7 @@
     "name": "@the-/util-string",
     "order": 0,
     "typicalname": "utilString",
-    "version": "15.4.13"
+    "version": "15.4.14"
   },
   {
     "description": "Check if is email",
@@ -201,7 +201,7 @@
     "memberof": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ",
     "meta": {
       "filename": "normalizeString.js",
-      "lineno": 2,
+      "lineno": 184,
       "path": "lib"
     },
     "name": "formatString",
@@ -212,7 +212,8 @@
           "names": [
             "string"
           ]
-        }
+        },
+        "name": "src"
       }
     ],
     "returns": [
@@ -221,7 +222,8 @@
           "names": [
             "string"
           ]
-        }
+        },
+        "nullable": true
       }
     ],
     "scope": "static",

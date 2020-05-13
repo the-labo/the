@@ -1,13 +1,5 @@
 'use strict'
-/**
- * @memberof module:@the-/util-site
- * Convert into japanese strings.
- * 英数字記号は半角、カナは全角へ
- * @function formatString
- * @param {string}
- * @see https://gist.github.com/think49/964592/96c2d034ee07d6c2044e501d4e06b73a6a9e1c72
- * @returns {string}
- */
+
 const hankakuKana = [
   'ｧ',
   'ｨ',
@@ -189,7 +181,15 @@ const replacePairs = [
   ...hankakuKana.map((_, i) => [hankakuKana[i], zenkakuKana[i]]),
 ]
 
-/** @lends module:@the-/util-site.normalizeString */
+/**
+ * @memberof module:@the-/util-site
+ * Convert into japanese strings.
+ * 英数字記号は半角、カナは全角へ
+ * @function formatString
+ * @param {string} src
+ * @see https://gist.github.com/think49/964592/96c2d034ee07d6c2044e501d4e06b73a6a9e1c72
+ * @returns {?string}
+ */
 function normalizeString(src) {
   if (!src) {
     return src
