@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "17.3.3"
+    "version": "18.0.0"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -713,7 +713,7 @@
       "path": "lib/mixins"
     },
     "name": "requestToRefresh",
-    "order": 53,
+    "order": 52,
     "params": [
       {
         "type": {
@@ -740,7 +740,7 @@
       "path": "lib/mixins"
     },
     "name": "startRefreshLoop",
-    "order": 54,
+    "order": 53,
     "params": [
       {
         "type": {
@@ -767,7 +767,7 @@
       "path": "lib/mixins"
     },
     "name": "stopRefreshLoop",
-    "order": 55,
+    "order": 54,
     "scope": "instance"
   },
   {
@@ -785,7 +785,7 @@
       "path": "lib/mixins"
     },
     "name": "waitToRefresh",
-    "order": 56,
+    "order": 55,
     "params": [
       {
         "type": {
@@ -843,7 +843,7 @@
       "path": "lib/mixins"
     },
     "name": "assertResource",
-    "order": 57,
+    "order": 56,
     "params": [
       {
         "type": {
@@ -870,7 +870,7 @@
       "path": "lib/mixins"
     },
     "name": "getResource",
-    "order": 58,
+    "order": 57,
     "params": [
       {
         "type": {
@@ -908,7 +908,7 @@
       "path": "lib/mixins"
     },
     "name": "hasResource",
-    "order": 59,
+    "order": 58,
     "params": [
       {
         "type": {
@@ -1514,30 +1514,6 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/db.setup.setupMongo",
-    "kind": "function",
-    "longname": "module:@the-/db.setup.setupMongo",
-    "memberof": "module:@the-/db.setup",
-    "meta": {
-      "filename": "setupMongo.js",
-      "lineno": 3,
-      "path": "lib/setup"
-    },
-    "name": "setupMongo",
-    "order": 49,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "name": "config"
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "id": "module:@the-/db.setup.setupMysql",
     "kind": "function",
     "longname": "module:@the-/db.setup.setupMysql",
@@ -1548,7 +1524,7 @@
       "path": "lib/setup"
     },
     "name": "setupMysql",
-    "order": 50,
+    "order": 49,
     "params": [
       {
         "name": "env"
@@ -1571,7 +1547,7 @@
       "path": "lib/setup"
     },
     "name": "setupPostgres",
-    "order": 51,
+    "order": 50,
     "params": [
       {
         "name": "env"
@@ -1594,7 +1570,7 @@
       "path": "lib/setup"
     },
     "name": "setupSqlite",
-    "order": 52,
+    "order": 51,
     "params": [
       {
         "name": "env"
