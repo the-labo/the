@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "17.6.4"
+    "version": "17.7.0"
   },
   {
     "description": "HTTP server for the-framework",
@@ -227,7 +227,7 @@
     "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 31,
+      "lineno": 33,
       "path": "lib/stores"
     },
     "name": "cleanup",
@@ -253,7 +253,7 @@
     "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 54,
+      "lineno": 56,
       "path": "lib/stores"
     },
     "name": "del",
@@ -289,7 +289,7 @@
     "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 63,
+      "lineno": 65,
       "path": "lib/stores"
     },
     "name": "delAll",
@@ -315,7 +315,7 @@
     "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 77,
+      "lineno": 89,
       "path": "lib/stores"
     },
     "name": "get",
@@ -351,7 +351,7 @@
     "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 94,
+      "lineno": 106,
       "path": "lib/stores"
     },
     "name": "has",
@@ -387,7 +387,7 @@
     "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 102,
+      "lineno": 114,
       "path": "lib/stores"
     },
     "name": "ids",
@@ -413,7 +413,7 @@
     "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 113,
+      "lineno": 125,
       "path": "lib/stores"
     },
     "name": "set",
@@ -504,7 +504,7 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "Store.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib/stores"
     },
     "name": "Store",

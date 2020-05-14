@@ -185,7 +185,6 @@ tryExample().catch((err) => console.error(err))
   - [#getResource(resourceName)](./doc/api/api.md#module_@the-/db.resourceMix~ResourceMixed#getResource)
   - [#hasResource(resourceName)](./doc/api/api.md#module_@the-/db.resourceMix~ResourceMixed#hasResource)
 - module:@the-/db.setup
-  - [.setupMongo(config)](./doc/api/api.md#module_@the-/db.setup.setupMongo)
   - [.setupMysql(env,options&#x3D;)](./doc/api/api.md#module_@the-/db.setup.setupMysql)
   - [.setupPostgres(env,options&#x3D;)](./doc/api/api.md#module_@the-/db.setup.setupPostgres)
   - [.setupSqlite(env,options&#x3D;)](./doc/api/api.md#module_@the-/db.setup.setupSqlite)

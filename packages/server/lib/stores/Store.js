@@ -1,5 +1,7 @@
 'use strict'
 
+const { TheLock } = require('@the-/lock')
+
 /**
  * Client data store for the-server
  * @memberof module:@the-/server.stores
@@ -16,7 +18,7 @@ class Store {
     this.expireDuration = expireDuration
     this.cleaning = false
     this.storeKey = storeKey
-
+    this.lock = new TheLock()
     void this.cleanup()
 
     if (cleanupInterval) {
@@ -67,6 +69,16 @@ class Store {
       deleted.push(id)
     }
     return deleted.length
+  }
+
+  async delRequest(id) {
+    const { lock } = this
+    await lock.acquire(`/delRequest/${id}`, async () => {
+      const has = await this.has(id)
+      if (has) {
+        await this.del(id)
+      }
+    })
   }
 
   /**

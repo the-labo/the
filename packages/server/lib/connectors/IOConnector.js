@@ -182,6 +182,7 @@ function IOConnector(
         console.warn(
           `[TheServer] Gave up to send to "${cid}", whose seems already gone`,
         )
+        await connectionStore.delRequest(cid)
       }
     },
   }
