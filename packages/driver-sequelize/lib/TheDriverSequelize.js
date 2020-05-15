@@ -143,18 +143,17 @@ class TheDriverSequelize extends Driver {
     return this.one(resourceName, model.id, { transaction })
   }
 
-  async createBulk (resourceName, attributesArray, options = {}) {
+  async createBulk(resourceName, valuesArray, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
-    const models = await Model.bulkCreate(attributesArray, {
-      transaction
-    })
+    const models = await Model.bulkCreate(
+      valuesArray.map((values) => this.inbound(resourceName, values)),
+      { transaction },
+    )
     const created = []
     for (const model of models) {
-      created.push(
-        await this.one(resourceName, model.id, { transaction })
-      )
+      created.push(await this.one(resourceName, model.id, { transaction }))
     }
     return created
   }

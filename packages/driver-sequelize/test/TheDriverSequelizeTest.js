@@ -395,6 +395,7 @@ describe('the-driver-sequelize', function () {
     })
 
     equal(box01.group.$ref, `BoxGroup#${group01.id}`)
+    equal(box02.group.$ref, `BoxGroup#${group02.id}`)
 
     equal(
       (
@@ -431,6 +432,13 @@ describe('the-driver-sequelize', function () {
     const one2 = await driver.one('Box', box01.id)
     equal(one2.group, null)
     equal(one2.$$num, 3)
+
+    const [box03, box04] = await driver.createBulk('Box', [
+      { group: { $ref: `BoxGroup#${group02.id}` } },
+      { group: { $ref: `BoxGroup#${group02.id}` } },
+    ])
+    equal(box03.group.$ref, `BoxGroup#${group02.id}`)
+    equal(box04.group.$ref, `BoxGroup#${group02.id}`)
   })
 
   it('Name with dot', async () => {
