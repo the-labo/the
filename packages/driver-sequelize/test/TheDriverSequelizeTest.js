@@ -605,6 +605,14 @@ describe('the-driver-sequelize', function () {
     equal(a3.z, longZ.slice(0, 1024))
     const a4 = await driver.one('A', a3.id)
     equal(a4.z, longZ.slice(0, 1024))
+
+    {
+      const created = await driver.createBulk('A', [
+        ...new Array(100).fill(null).map((_, i) => ({ x: i })),
+      ])
+      equal(created.length, 100)
+    }
+
     await driver.drop('A')
     await driver.close()
   })
