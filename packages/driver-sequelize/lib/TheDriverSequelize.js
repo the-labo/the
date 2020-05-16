@@ -140,7 +140,7 @@ class TheDriverSequelize extends Driver {
     const model = await Model.create(this.inbound(resourceName, values), {
       transaction,
     })
-    return this.one(resourceName, model.id, { transaction })
+    return this.outbound(resourceName, model.dataValues)
   }
 
   async createBulk(resourceName, valuesArray, options = {}) {
@@ -153,7 +153,7 @@ class TheDriverSequelize extends Driver {
     )
     const created = []
     for (const model of models) {
-      created.push(await this.one(resourceName, model.id, { transaction }))
+      created.push(await this.outbound(resourceName, model.dataValues))
     }
     return created
   }
@@ -310,7 +310,7 @@ class TheDriverSequelize extends Driver {
       }),
       { transaction },
     )
-    return this.one(resourceName, id, { transaction })
+    return this.outbound(resourceName, model.dataValues)
   }
 }
 
