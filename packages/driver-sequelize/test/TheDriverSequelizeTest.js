@@ -443,10 +443,7 @@ describe('the-driver-sequelize', function () {
     const onBulk = await driver.oneBulk('Box', [box01.id, box03.id])
     equal(Object.keys(onBulk).length, 2)
     equal(onBulk[box01.id].id, box01.id)
-    equal(
-      onBulk[box03.id].group.$ref,
-      `BoxGroup#${group02.id}`
-    )
+    equal(onBulk[box03.id].group.$ref, `BoxGroup#${group02.id}`)
   })
 
   it('Name with dot', async () => {
@@ -543,6 +540,16 @@ describe('the-driver-sequelize', function () {
       (await driver.list('Box', { filter: { $and: [{ x: 1 }, { y: 2 }] } }))
         .entities.length,
     )
+
+    const listOnlyName = await driver.list(
+      'Box',
+      {},
+      {
+        attributes: ['name'],
+      },
+    )
+    equal(listOnlyName.entities[0].name, 'b01')
+    equal('x' in listOnlyName.entities[0], false)
   })
 
   it('Add column', async () => {

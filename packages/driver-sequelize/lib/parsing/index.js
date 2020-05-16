@@ -9,16 +9,19 @@
 'use strict'
 
 const parseAttributeName_ = require('./parseAttributeName')
+const parseAttributes_ = require('./parseAttributes')
 const parseFilter_ = require('./parseFilter')
 const parseSort_ = require('./parseSort')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.parseAttributeName = parseAttributeName_
+exports.parseAttributes = parseAttributes_
 exports.parseFilter = parseFilter_
 exports.parseSort = parseSort_
 
 module.exports = {
   parseAttributeName: parseAttributeName_,
+  parseAttributes: parseAttributes_,
   parseFilter: parseFilter_,
   parseSort: parseSort_,
 }

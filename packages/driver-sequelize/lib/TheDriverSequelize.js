@@ -1,20 +1,20 @@
 'use strict'
 
-const mkdirp = require('mkdirp')
 const clayCollection = require('clay-collection')
 const { Driver } = require('clay-driver-base')
 const { pageToOffsetLimit } = require('clay-list-pager')
 const clayResourceName = require('clay-resource-name')
+const mkdirp = require('mkdirp')
 const path = require('path')
+const { Op } = require('sequelize')
 const { isProduction, unlessProduction } = require('@the-/check-env')
 const MetaColumnNames = require('./constants/MetaColumnNames')
 const convertInbound = require('./converters/convertInbound')
-const { Op } = require("sequelize")
 const convertOutbound = require('./converters/convertOutbound')
 const createSequelize = require('./helpers/createSequelize')
 const defineModel = require('./modeling/defineModel')
 const prepareModel = require('./modeling/prepareModel')
-const { parseFilter, parseSort } = require('./parsing')
+const { parseAttributes, parseFilter, parseSort } = require('./parsing')
 
 /**
  * @memberof @the-/driver-sequelize
@@ -180,7 +180,7 @@ class TheDriverSequelize extends Driver {
   }
 
   async list(resourceName, condition = {}, options = {}) {
-    const { transaction } = options
+    const { attributes, transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
     const Schema = this.schemaFor(resourceName)
@@ -191,6 +191,7 @@ class TheDriverSequelize extends Driver {
     const order = parseSort(sort, { ModelAttributes, ModelName, Schema })
     const where = parseFilter(filter, { ModelAttributes, ModelName, Schema })
     const { count, rows } = await Model.findAndCountAll({
+      attributes: parseAttributes(attributes),
       limit,
       offset,
       order,
@@ -210,22 +211,6 @@ class TheDriverSequelize extends Driver {
         total: count,
       },
     })
-  }
-
-  async oneBulk (resourceName, ids, options={}) {
-    const { transaction } = options
-    await this.untilReady()
-    const Model = this.modelFor(resourceName)
-    const models = await Model.findAll({
-      where:{
-        id: {[Op.in]: [...ids]}
-      }
-    }, { transaction })
-    const found = {}
-    for (const model of models) {
-      found[String(model.id)] = await this.outbound(resourceName, model.dataValues)
-    }
-    return found
   }
 
   async one(resourceName, id, options = {}) {
@@ -248,6 +233,28 @@ class TheDriverSequelize extends Driver {
     }
 
     return this.outbound(resourceName, model.dataValues)
+  }
+
+  async oneBulk(resourceName, ids, options = {}) {
+    const { transaction } = options
+    await this.untilReady()
+    const Model = this.modelFor(resourceName)
+    const models = await Model.findAll(
+      {
+        where: {
+          id: { [Op.in]: [...ids] },
+        },
+      },
+      { transaction },
+    )
+    const found = {}
+    for (const model of models) {
+      found[String(model.id)] = await this.outbound(
+        resourceName,
+        model.dataValues,
+      )
+    }
+    return found
   }
 
   async prepare() {
