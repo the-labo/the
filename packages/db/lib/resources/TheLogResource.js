@@ -15,41 +15,13 @@ const fs = require('fs')
 const mkdirp = require('mkdirp')
 const { EOL } = require('os')
 const path = require('path')
-const {
-  DataTypes: { DATE, STRING },
-} = require('@the-/resource')
-
 /**
  * Resource of data history
  * @memberof module:@the-/db
  * @class TheLogResource
  */
 const TheLogResource = ({ define }) => {
-  const Log = define({
-    entityCreatedAt: {
-      description: 'Date entity created at',
-      type: DATE,
-    },
-    entityDestroyedAt: {
-      description: 'Date entity destroyed at',
-      type: DATE,
-    },
-    entityId: {
-      description: 'Id of entity',
-      required: true,
-      type: STRING,
-      uniqueFor: ['resourceName'],
-    },
-    entityUpdatedAt: {
-      description: 'Date entity updated at',
-      type: DATE,
-    },
-    resourceName: {
-      description: 'Name of resource',
-      required: true,
-      type: STRING,
-    },
-  })
+  const Log = define({})
   Log.data = {}
   Log.logListeners = {}
   Log.flushLoop = true
@@ -73,14 +45,14 @@ const TheLogResource = ({ define }) => {
   const { addRef, close, removeRef } = Log
 
   Object.assign(Log, {
-    addRef(resourceName, resource) {
+    addRef (resourceName, resource) {
       addRef.call(Log, resourceName, resource)
       const isMetaSchema = /^TheDB/.test(resourceName)
       if (!isMetaSchema) {
         Log.startListeningFor(resourceName)
       }
     },
-    pushLog(resourceName, entityId, attributes) {
+    pushLog (resourceName, entityId, attributes) {
       Log.data[resourceName] = Log.data[resourceName] || {}
       Log.data[resourceName][String(entityId)] = Object.assign(
         Log.data[resourceName][String(entityId)] || {},
@@ -97,35 +69,35 @@ const TheLogResource = ({ define }) => {
         }
       }
     },
-    removeRef(resourceName) {
+    removeRef (resourceName) {
       removeRef.call(Log, resourceName)
       Log.stopListeningFor(resourceName)
     },
-    startListeningFor(resourceName) {
+    startListeningFor (resourceName) {
       const resource = Log.getRef(resourceName)
 
       const logListeners = {
         [ENTITY_CREATE]: ({ created }) =>
           Log.pushLog(resourceName, created.id, {
-            entityCreatedAt: new Date(),
+            createdAt: new Date(),
           }),
         [ENTITY_CREATE_BULK]: ({ created }) =>
           created.map((created) =>
             Log.pushLog(resourceName, created.id, {
-              entityCreatedAt: new Date(),
+              createdAt: new Date(),
             }),
           ),
         [ENTITY_DESTROY]: ({ id }) =>
-          Log.pushLog(resourceName, id, { entityDestroyedAt: new Date() }),
+          Log.pushLog(resourceName, id, { destroyedAt: new Date() }),
         [ENTITY_DESTROY_BULK]: ({ ids }) =>
           ids.map((id) =>
-            Log.pushLog(resourceName, id, { entityDestroyedAt: new Date() }),
+            Log.pushLog(resourceName, id, { destroyedAt: new Date() }),
           ),
         [ENTITY_UPDATE]: ({ id }) =>
-          Log.pushLog(resourceName, id, { entityUpdatedAt: new Date() }),
+          Log.pushLog(resourceName, id, { updatedAt: new Date() }),
         [ENTITY_UPDATE_BULK]: ({ ids }) =>
           ids.map((id) =>
-            Log.pushLog(resourceName, id, { entityUpdatedAt: new Date() }),
+            Log.pushLog(resourceName, id, { updatedAt: new Date() }),
           ),
       }
       Log.logListeners[resourceName] = logListeners
@@ -134,7 +106,7 @@ const TheLogResource = ({ define }) => {
         resource.addListener(event, listener)
       }
     },
-    stopListeningFor(resourceName) {
+    stopListeningFor (resourceName) {
       const resource = Log.getRef(resourceName)
 
       const logListeners = Log.logListeners[resourceName]
@@ -143,7 +115,7 @@ const TheLogResource = ({ define }) => {
       }
       delete Log.logListeners[resourceName]
     },
-    async close() {
+    async close () {
       Log.flushLoop = false
       clearTimeout(Log.flushTimer)
       if (cluster.isMaster) {
@@ -156,7 +128,7 @@ const TheLogResource = ({ define }) => {
 
       close.call(Log, ...arguments)
     },
-    async flushData() {
+    async flushData () {
       const { theDBLogEnabled } = Log.db || {}
       if (!theDBLogEnabled) {
         return
@@ -182,7 +154,13 @@ const TheLogResource = ({ define }) => {
 
           const lines = entries
             .map(([entityId, attributes]) =>
-              JSON.stringify([resourceName, entityId, attributes]),
+              [
+                `${resourceName}#${entityId}`,
+                Object.entries(attributes).map(([k, v]) => [
+                  k,
+                  JSON.stringify(v)
+                ].join('=')).join(',')
+              ].join(' ')
             )
             .join(EOL)
 
