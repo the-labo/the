@@ -1,6 +1,6 @@
 'use strict'
 
-const amkdirp = require('amkdirp')
+const mkdirp = require('mkdirp')
 const clayCollection = require('clay-collection')
 const { Driver } = require('clay-driver-base')
 const { pageToOffsetLimit } = require('clay-list-pager')
@@ -9,6 +9,7 @@ const path = require('path')
 const { isProduction, unlessProduction } = require('@the-/check-env')
 const MetaColumnNames = require('./constants/MetaColumnNames')
 const convertInbound = require('./converters/convertInbound')
+const { Op } = require("sequelize")
 const convertOutbound = require('./converters/convertOutbound')
 const createSequelize = require('./helpers/createSequelize')
 const defineModel = require('./modeling/defineModel')
@@ -211,6 +212,22 @@ class TheDriverSequelize extends Driver {
     })
   }
 
+  async oneBulk (resourceName, ids, options={}) {
+    const { transaction } = options
+    await this.untilReady()
+    const Model = this.modelFor(resourceName)
+    const models = await Model.findAll({
+      where:{
+        id: {[Op.in]: [...ids]}
+      }
+    }, { transaction })
+    const found = {}
+    for (const model of models) {
+      found[String(model.id)] = await this.outbound(resourceName, model.dataValues)
+    }
+    return found
+  }
+
   async one(resourceName, id, options = {}) {
     const { transaction } = options
     await this.untilReady()
@@ -238,7 +255,7 @@ class TheDriverSequelize extends Driver {
     const { dialect, storage } = sequelize.options || {}
     switch (dialect) {
       case 'sqlite':
-        await amkdirp(path.dirname(storage))
+        await mkdirp(path.dirname(storage))
         break
       default:
         break

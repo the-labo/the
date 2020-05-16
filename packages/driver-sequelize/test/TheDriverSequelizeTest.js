@@ -439,6 +439,14 @@ describe('the-driver-sequelize', function () {
     ])
     equal(box03.group.$ref, `BoxGroup#${group02.id}`)
     equal(box04.group.$ref, `BoxGroup#${group02.id}`)
+
+    const onBulk = await driver.oneBulk('Box', [box01.id, box03.id])
+    equal(Object.keys(onBulk).length, 2)
+    equal(onBulk[box01.id].id, box01.id)
+    equal(
+      onBulk[box03.id].group.$ref,
+      `BoxGroup#${group02.id}`
+    )
   })
 
   it('Name with dot', async () => {
