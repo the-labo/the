@@ -214,7 +214,7 @@ class TheDriverSequelize extends Driver {
   }
 
   async one(resourceName, id, options = {}) {
-    const { transaction } = options
+    const { attributes, transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
     unlessProduction(() => {
@@ -227,7 +227,10 @@ class TheDriverSequelize extends Driver {
         )
       }
     })
-    const model = await Model.findByPk(id, { transaction })
+    const model = await Model.findByPk(id, {
+      attributes: parseAttributes(attributes),
+      transaction,
+    })
     if (!model) {
       return null
     }
@@ -236,7 +239,7 @@ class TheDriverSequelize extends Driver {
   }
 
   async oneBulk(resourceName, ids, options = {}) {
-    const { transaction } = options
+    const { attributes, transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
     const models = await Model.findAll(
@@ -245,7 +248,7 @@ class TheDriverSequelize extends Driver {
           id: { [Op.in]: [...ids] },
         },
       },
-      { transaction },
+      { attributes: parseAttributes(attributes), transaction },
     )
     const found = {}
     for (const model of models) {
