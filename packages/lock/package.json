@@ -1,7 +1,7 @@
 {
   "name": "@the-/lock",
   "description": "Async lock",
-  "version": "15.4.12",
+  "version": "15.4.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,9 +11,7 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {
-    "async-lock": "^1.2.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "asleep": "^1.0.3"
   },

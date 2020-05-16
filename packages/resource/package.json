@@ -1,7 +1,7 @@
 {
   "name": "@the-/resource",
   "description": "Base of the-resource",
-  "version": "15.4.13",
+  "version": "15.4.14",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +16,7 @@
     "@the-/hash": "^15.4.10",
     "asleep": "^1.0.3",
     "clay-constants": "^3.5.1",
-    "clay-resource": "^5.6.5",
+    "clay-resource": "^5.6.6",
     "clay-resource-name": "^4.0.5"
   },
   "devDependencies": {
