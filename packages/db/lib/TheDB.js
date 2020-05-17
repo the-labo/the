@@ -110,7 +110,7 @@ class TheDB extends TheDBBase {
       _resources: { TheDBLog },
     } = this
     TheDBLog.prepare({
-      filename: resourceLogFile
+      filename: resourceLogFile,
     })
     this.startRefreshLoop({ interval: refreshInterval })
     this.startCascadeLink()
