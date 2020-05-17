@@ -45,14 +45,14 @@ const TheLogResource = ({ define }) => {
   const { addRef, close, removeRef } = Log
 
   Object.assign(Log, {
-    addRef (resourceName, resource) {
+    addRef(resourceName, resource) {
       addRef.call(Log, resourceName, resource)
       const isMetaSchema = /^TheDB/.test(resourceName)
       if (!isMetaSchema) {
         Log.startListeningFor(resourceName)
       }
     },
-    pushLog (resourceName, entityId, attributes) {
+    pushLog(resourceName, entityId, attributes) {
       Log.data[resourceName] = Log.data[resourceName] || {}
       Log.data[resourceName][String(entityId)] = Object.assign(
         Log.data[resourceName][String(entityId)] || {},
@@ -69,11 +69,11 @@ const TheLogResource = ({ define }) => {
         }
       }
     },
-    removeRef (resourceName) {
+    removeRef(resourceName) {
       removeRef.call(Log, resourceName)
       Log.stopListeningFor(resourceName)
     },
-    startListeningFor (resourceName) {
+    startListeningFor(resourceName) {
       const resource = Log.getRef(resourceName)
 
       const logListeners = {
@@ -104,18 +104,20 @@ const TheLogResource = ({ define }) => {
 
       for (const [event, listener] of Object.entries(logListeners)) {
         resource.addListener(event, listener)
+        resource.setMaxListeners(resource.getMaxListeners() + 1)
       }
     },
-    stopListeningFor (resourceName) {
+    stopListeningFor(resourceName) {
       const resource = Log.getRef(resourceName)
 
       const logListeners = Log.logListeners[resourceName]
       for (const [event, listener] of Object.entries(logListeners)) {
         resource.removeListener(event, listener)
+        resource.setMaxListeners(resource.getMaxListeners() - 1)
       }
       delete Log.logListeners[resourceName]
     },
-    async close () {
+    async close() {
       Log.flushLoop = false
       clearTimeout(Log.flushTimer)
       if (cluster.isMaster) {
@@ -128,7 +130,7 @@ const TheLogResource = ({ define }) => {
 
       close.call(Log, ...arguments)
     },
-    async flushData () {
+    async flushData() {
       const { theDBLogEnabled } = Log.db || {}
       if (!theDBLogEnabled) {
         return
@@ -156,11 +158,10 @@ const TheLogResource = ({ define }) => {
             .map(([entityId, attributes]) =>
               [
                 `${resourceName}#${entityId}`,
-                Object.entries(attributes).map(([k, v]) => [
-                  k,
-                  JSON.stringify(v)
-                ].join('=')).join(',')
-              ].join(' ')
+                Object.entries(attributes)
+                  .map(([k, v]) => [k, JSON.stringify(v)].join('='))
+                  .join(','),
+              ].join(' '),
             )
             .join(EOL)
 

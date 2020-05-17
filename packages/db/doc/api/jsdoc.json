@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "18.2.3"
+    "version": "18.2.4"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -972,7 +972,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "TheLogResource.js",
-      "lineno": 22,
+      "lineno": 18,
       "path": "lib/resources"
     },
     "name": "TheLogResource",
