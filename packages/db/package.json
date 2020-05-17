@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "18.2.5",
+  "version": "18.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -37,6 +37,7 @@
     "mkdirp": "^1.0.4",
     "msgpack5": "^4.2.1",
     "mysql2": "^2.1.0",
+    "rotating-file-stream": "^2.1.1",
     "uuid": "^8.0.0"
   },
   "devDependencies": {

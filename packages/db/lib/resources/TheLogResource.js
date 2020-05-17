@@ -11,10 +11,33 @@ const {
   },
 } = require('clay-constants')
 const cluster = require('cluster')
-const fs = require('fs')
 const mkdirp = require('mkdirp')
 const { EOL } = require('os')
 const path = require('path')
+const rfs = require('rotating-file-stream')
+
+const logStreamFor = (filename) => {
+  const basename = path.basename(filename)
+  return rfs.createStream(
+    (time, index) => {
+      if (!time) {
+        return basename
+      }
+      const pad = v => String(v).padStart(2, '0')
+      const yearAndMonth = time.getFullYear() + '' + pad(time.getMonth() + 1)
+      const day = pad(time.getDate())
+      const hour = pad(time.getHours())
+      const minute = pad(time.getMinutes())
+      return `${yearAndMonth}/${yearAndMonth}${day}-${hour}${minute}-${basename}-${index}.gzip`
+    },
+    {
+      path: path.dirname(filename),
+      size: '1KB',
+      interval: '1d',
+      compress: 'gzip'
+    })
+}
+
 /**
  * Resource of data history
  * @memberof module:@the-/db
@@ -43,16 +66,15 @@ const TheLogResource = ({ define }) => {
   }
 
   const { addRef, close, removeRef } = Log
-
   Object.assign(Log, {
-    addRef(resourceName, resource) {
+    addRef (resourceName, resource) {
       addRef.call(Log, resourceName, resource)
       const isMetaSchema = /^TheDB/.test(resourceName)
       if (!isMetaSchema) {
         Log.startListeningFor(resourceName)
       }
     },
-    pushLog(resourceName, entityId, attributes) {
+    pushLog (resourceName, entityId, attributes) {
       Log.data[resourceName] = Log.data[resourceName] || {}
       Log.data[resourceName][String(entityId)] = Object.assign(
         Log.data[resourceName][String(entityId)] || {},
@@ -69,11 +91,11 @@ const TheLogResource = ({ define }) => {
         }
       }
     },
-    removeRef(resourceName) {
+    removeRef (resourceName) {
       removeRef.call(Log, resourceName)
       Log.stopListeningFor(resourceName)
     },
-    startListeningFor(resourceName) {
+    startListeningFor (resourceName) {
       const resource = Log.getRef(resourceName)
 
       const logListeners = {
@@ -107,7 +129,7 @@ const TheLogResource = ({ define }) => {
         resource.setMaxListeners(resource.getMaxListeners() + 1)
       }
     },
-    stopListeningFor(resourceName) {
+    stopListeningFor (resourceName) {
       const resource = Log.getRef(resourceName)
 
       const logListeners = Log.logListeners[resourceName]
@@ -117,7 +139,7 @@ const TheLogResource = ({ define }) => {
       }
       delete Log.logListeners[resourceName]
     },
-    async close() {
+    async close () {
       Log.flushLoop = false
       clearTimeout(Log.flushTimer)
       if (cluster.isMaster) {
@@ -130,7 +152,24 @@ const TheLogResource = ({ define }) => {
 
       close.call(Log, ...arguments)
     },
-    async flushData() {
+
+    prepare ({ filename }) {
+      Log.filename = filename
+      const stream = logStreamFor(filename)
+      stream.on('error', () => {
+        try {
+        } catch (e) {
+          console.warn(`[@the-/db]Failed to flush log for "${resourceName}"`)
+        }
+      })
+      Log.stream = stream
+      process.setMaxListeners(process.getMaxListeners() + 1)
+      process.on('beforeExit', () => {
+        stream.end()
+      })
+    },
+    async flushData () {
+      const { stream } = Log
       const { theDBLogEnabled } = Log.db || {}
       if (!theDBLogEnabled) {
         return
@@ -165,16 +204,7 @@ const TheLogResource = ({ define }) => {
             )
             .join(EOL)
 
-          try {
-            await new Promise((resolve, reject) =>
-              fs.appendFile(Log.filename, lines + EOL, (err) =>
-                err ? reject(err) : resolve(),
-              ),
-            )
-          } catch (e) {
-            console.warn(`[the-db]Failed to flush log for "${resourceName}"`)
-            return
-          }
+          stream.write(lines + EOL)
         }
         Log._flushTask = null
       })()
