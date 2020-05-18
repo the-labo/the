@@ -15,14 +15,13 @@ export function parsePanEvent(e) {
 export function parsePinchEvent(e) {
   const { center, scale, srcEvent } = e
   const rect = e.target.getBoundingClientRect()
-  const bodyRect = get('document').body.getBoundingClientRect()
+  const bodyRect = get('document.body').getBoundingClientRect()
+  const x = (srcEvent || e).pageX - (rect.left - bodyRect.left)
+  const y = (srcEvent || e).pageY - (rect.top - bodyRect.top)
   return {
     center,
     scale,
-    scaleOrigin: {
-      x: e.pageX - (rect.left - bodyRect.left),
-      y: e.pageY - (rect.top - bodyRect.top),
-    },
+    scaleOrigin: { x, y },
     srcEvent,
   }
 }
