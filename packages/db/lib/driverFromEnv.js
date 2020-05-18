@@ -19,7 +19,7 @@ function driverFromEnv(env) {
     host,
     password,
     pool_idle: poolIdle = isProduction() ? 10000 : 1000,
-    pool_max: poolMax = 5,
+    pool_max: poolMax = 20,
     pool_min: poolMin = 0,
     port,
     ssl = false,

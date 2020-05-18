@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "18.4.0",
+  "version": "18.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -26,7 +26,7 @@
     "clay-constants": "^3.5.1",
     "clay-driver-json": "^4.0.17",
     "clay-driver-memory": "^4.1.21",
-    "clay-lump": "^4.4.29",
+    "clay-lump": "^4.4.30",
     "clay-resource": "^5.7.2",
     "clay-resource-name": "^4.0.5",
     "clay-resource-ref": "^2.0.9",
