@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "18.3.1",
+  "version": "18.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,10 +14,10 @@
   "dependencies": {
     "@the-/assert": "^15.4.1",
     "@the-/check-env": "^15.6.0",
-    "@the-/driver-sequelize": "^16.3.7",
+    "@the-/driver-sequelize": "^16.3.9",
     "@the-/hash": "^15.4.10",
     "@the-/refresher": "^15.4.0",
-    "@the-/resource": "^15.4.14",
+    "@the-/resource": "^15.4.15",
     "@the-/util-db": "^15.4.13",
     "asfs": "^2.3.0",
     "asleep": "^1.0.3",
@@ -27,7 +27,7 @@
     "clay-driver-json": "^4.0.17",
     "clay-driver-memory": "^4.1.21",
     "clay-lump": "^4.4.29",
-    "clay-resource": "^5.6.7",
+    "clay-resource": "^5.7.2",
     "clay-resource-name": "^4.0.5",
     "clay-resource-ref": "^2.0.9",
     "clay-serial": "^2.1.4",
