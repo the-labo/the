@@ -13,7 +13,7 @@
     "name": "@the-/resource",
     "order": 3,
     "typicalname": "resource",
-    "version": "15.4.15"
+    "version": "15.4.16"
   },
   {
     "description": "Resource for the DB",
