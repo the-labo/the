@@ -16,7 +16,12 @@ async function prepareModel(Model, Schema) {
     sequelize: { queryInterface },
     tableName,
   } = Model
-  await Model.sync()
+  try {
+    await Model.sync()
+  } catch (e) {
+    // カラムとindexが同時に追加された時などに落ちることがある
+    console.warn(`[@the-/db][${tableName}] Failed to sync`, e)
+  }
   let descriptions = await queryInterface.describeTable(tableName)
   const specs = [
     ...Object.values(MetaColumnNames).map((attributeName) => [
