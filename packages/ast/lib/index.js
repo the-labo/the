@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/ast
  * @typicalname ast
- * @version 16.1.2
+ * @version 16.1.3
  */
 'use strict'
 

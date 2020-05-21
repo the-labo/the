@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.6.0",
-    "@the-/resource": "^15.4.16",
+    "@the-/resource": "^15.4.17",
     "asfs": "^2.3.0",
     "clay-collection": "^3.1.5",
     "clay-constants": "^3.5.1",
@@ -25,7 +25,7 @@
     "utf8": "^3.0.0"
   },
   "devDependencies": {
-    "clay-lump": "^4.4.30",
+    "clay-lump": "^4.4.31",
     "mysql2": "^2.1.0",
     "sqlite3": "^4.2.0"
   },
