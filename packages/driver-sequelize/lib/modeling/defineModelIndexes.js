@@ -14,12 +14,28 @@ const TypesToIndex = [ENTITY, ID, REF]
  * @returns {string[]}
  */
 function defineModelIndexes(schema) {
-  const refColumnNames = Object.keys(schema).filter((key) => {
-    const def = schema[key]
-    return !def.noIndex && TypesToIndex.includes(def.type)
-  })
+  const refColumnNames = Object.keys(schema)
+    .filter((key) => {
+      const def = schema[key]
+      return !def.noIndex && TypesToIndex.includes(def.type)
+    })
+    .filter(Boolean)
+    .map((name) => {
+      const { indexedWith } = schema[name] || {}
+      if (indexedWith) {
+        return [name].concat(indexedWith)
+      }
+      return name
+    })
   const indexColumnNames = Object.keys(schema)
-    .filter((name) => schema[name].indexed)
+    .filter((name) => {
+      const def = schema[name]
+      const skip = TypesToIndex.includes(def.type)
+      if (skip) {
+        return false
+      }
+      return def.indexed
+    })
     .sort((a, b) => {
       const pa = schema[a].indexPriority || 0
       const pb = schema[b].indexPriority || 0
@@ -27,7 +43,7 @@ function defineModelIndexes(schema) {
     })
   return [
     ...refColumnNames.map((name) => ({
-      fields: [name],
+      fields: [].concat(name),
     })),
     ...(indexColumnNames.length > 0
       ? [
