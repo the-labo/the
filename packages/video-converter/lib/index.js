@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/video-converter
  * @typicalname videoConverter
- * @version 15.4.16
+ * @version 15.5.0
  */
 'use strict'
 

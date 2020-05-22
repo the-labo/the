@@ -56,6 +56,21 @@ describe('the-video-converter', async function () {
       cleanup: true,
     })
   })
+
+  it('Convert to image', async () => {
+    await copyAsync(
+      `${__dirname}/../misc/mocks/mock-01.mp4`,
+      `${__dirname}/../tmp/testing-image/01.mp4`,
+    )
+    const converter = new TheVideoConverter()
+    await converter.convertToImage(
+      `${__dirname}/../tmp/testing-image/01.mp4`,
+      `${__dirname}/../tmp/testing-image/01.mp4.jpeg`,
+      {
+        at: 5,
+      },
+    )
+  })
 })
 
 /* global describe, before, after, it */

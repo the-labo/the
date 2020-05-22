@@ -64,6 +64,13 @@ class TheVideoConverter extends TheVideoConverterBase {
     })
   }
 
+  async convertToImage(src, dest, options = {}) {
+    const { at = 5 } = options
+    return this.convert(src, dest, {
+      params: ['-vframes', '1', '-an', '-ss', at],
+    })
+  }
+
   /**
    * Inspect file
    * @param {string} filename
