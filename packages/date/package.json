@@ -1,7 +1,7 @@
 {
   "name": "@the-/date",
   "description": "Date utility for the-framework",
-  "version": "15.5.1",
+  "version": "15.5.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,8 +16,8 @@
   "dependencies": {
     "@the-/util-array": "^15.4.12",
     "abind": "^1.0.5",
-    "moment": "^2.25.3",
-    "moment-timezone": "^0.5.28"
+    "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31"
   },
   "devDependencies": {},
   "engines": {

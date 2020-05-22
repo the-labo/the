@@ -14,7 +14,7 @@
   "dependencies": {
     "@msgpack/msgpack": "^1.12.2",
     "asleep": "^1.0.3",
-    "uuid": "^8.0.0"
+    "uuid": "^8.1.0"
   },
   "devDependencies": {},
   "engines": {

@@ -13,7 +13,7 @@
     "name": "@the-/resize",
     "order": 2,
     "typicalname": "resize",
-    "version": "15.5.3"
+    "version": "15.5.4"
   },
   {
     "id": "module:@the-/resize.TheResize()",
