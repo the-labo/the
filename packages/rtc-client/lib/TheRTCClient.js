@@ -528,11 +528,6 @@ class TheRTCClient extends TheRTCClientBase {
   async updateMediaConstrains(mediaConstrains) {
     const { lock, media: oldMedia, peers } = this
     await lock.acquire('updateMediaConstrains', async () => {
-      await oldMedia.stopIfNeeded().catch((e) => {
-        console.warn('[TheRTCClient] Failed to stop old media', e)
-      })
-      // iOSがたまに失敗するため
-      await asleep(10)
       const newMedia = new TheMedia(mediaConstrains)
       this.media = newMedia
       await newMedia.startIfNeeded()
@@ -563,6 +558,9 @@ class TheRTCClient extends TheRTCClientBase {
       }
     })
     await this.syncState()
+    await oldMedia.stopIfNeeded().catch((e) => {
+      console.warn('[TheRTCClient] Failed to stop old media', e)
+    })
   }
 
   async updateTrack(kind, track) {

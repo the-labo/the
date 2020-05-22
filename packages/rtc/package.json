@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc",
   "description": "RTC server for the-frameworks",
-  "version": "15.7.1",
+  "version": "15.7.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "socket.io": "^2.3.0",
-    "wrtc": "^0.4.4"
+    "wrtc": "^0.4.5"
   },
   "devDependencies": {
     "@the-/rtc-client": "file:../rtc-client",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
     "socket.io-client": "^2.3.0",
-    "webrtc-adapter": "^7.6.0"
+    "webrtc-adapter": "^7.6.1"
   },
   "engines": {
     "node": ">=10",
