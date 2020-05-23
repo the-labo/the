@@ -1,7 +1,7 @@
 {
   "name": "@the-/code",
   "description": "Code formatter of the-frameworks",
-  "version": "15.16.6",
+  "version": "15.16.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -26,7 +26,7 @@
     "comment-parser": "^0.7.4",
     "debug": "^4.1.1",
     "fmtjson": "^5.0.1",
-    "ignore": "^5.1.4",
+    "ignore": "^5.1.6",
     "minimatch": "^3.0.4",
     "postcss": "^7.0.30",
     "prettier": "^2.0.5",
