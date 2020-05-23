@@ -23,6 +23,7 @@ const logStreamFor = (filename) => {
       if (!time) {
         return basename
       }
+
       const pad = (v) => String(v).padStart(2, '0')
       const yearAndMonth = `${time.getFullYear()}${pad(time.getMonth() + 1)}`
       const day = pad(time.getDate())
@@ -78,11 +79,8 @@ const TheLogResource = ({ define }) => {
     prepare({ filename }) {
       Log.filename = filename
       const stream = logStreamFor(filename)
-      stream.on('error', () => {
-        try {
-        } catch (e) {
-          console.warn(`[@the-/db]Failed to flush log for "${resourceName}"`)
-        }
+      stream.on('error', (err) => {
+        console.warn(`[@the-/db]Failed to flush log for "${filename}"`, err)
       })
       Log.stream = stream
       process.setMaxListeners(process.getMaxListeners() + 1)

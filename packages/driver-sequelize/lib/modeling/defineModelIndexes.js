@@ -25,6 +25,7 @@ function defineModelIndexes(schema) {
       if (indexedWith) {
         return [name].concat(indexedWith)
       }
+
       return name
     })
   const indexColumnNames = Object.keys(schema)
@@ -34,6 +35,7 @@ function defineModelIndexes(schema) {
       if (skip) {
         return false
       }
+
       return def.indexed
     })
     .sort((a, b) => {

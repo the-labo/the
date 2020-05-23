@@ -1,7 +1,4 @@
 {
-  "name": "@the-/password",
-  "description": "Password util for the-framework",
-  "version": "15.4.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,6 +11,7 @@
   "dependencies": {
     "abind": "^1.0.5"
   },
+  "description": "Password util for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -26,6 +24,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/password",
   "publishConfig": {
     "access": "public"
   },
@@ -36,5 +35,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.13"
 }

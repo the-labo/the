@@ -1,7 +1,4 @@
 {
-  "name": "@the-/loc",
-  "description": "Locale resolver for the-framework",
-  "version": "15.4.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,6 +16,7 @@
     "prop-types": "^15.7.2",
     "sprintf-js": "^1.1.2"
   },
+  "description": "Locale resolver for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -31,6 +29,7 @@
   ],
   "license": "MIT",
   "main": "shim",
+  "name": "@the-/loc",
   "publishConfig": {
     "access": "public"
   },
@@ -41,5 +40,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.13"
 }
