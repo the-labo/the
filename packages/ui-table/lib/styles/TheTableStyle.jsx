@@ -46,7 +46,19 @@ TheTableStyle.data = (options) => {
       padding: '4px 8px',
     },
     '.the-table-checkbox': {
-      '.the-input-checkbox': {
+      '.the-input-checkbox-inner': {
+        width: '100%',
+      },
+      '.the-input-checkbox-label': {
+        alignItems: 'center',
+        display: 'inline-flex',
+        height: '100%',
+        justifyContent: 'center',
+        outline: 'none !important',
+        padding: '4px 0',
+        width: '100%',
+      },
+      '&.the-input-checkbox': {
         '.the-input-checkbox-item': {
           boxSizing: 'border-box',
           justifyContent: 'center',
@@ -58,14 +70,6 @@ TheTableStyle.data = (options) => {
         height: '24px',
         justifyContent: 'center',
         margin: '0 auto',
-        width: '100%',
-      },
-      '.the-input-checkbox-label': {
-        alignItems: 'center',
-        display: 'inline-flex',
-        height: '100%',
-        justifyContent: 'center',
-        padding: '4px 0',
         width: '100%',
       },
       margin: 0,
