@@ -13,7 +13,7 @@
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "16.3.16"
+    "version": "16.4.1"
   },
   {
     "description": "Define schema",
@@ -23,7 +23,7 @@
     "memberof": "TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 81,
+      "lineno": 82,
       "path": "lib"
     },
     "name": "define",
@@ -44,6 +44,16 @@
           ]
         },
         "name": "schema"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
       }
     ],
     "scope": "instance"
@@ -57,7 +67,7 @@
     "memberof": "TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 318,
+      "lineno": 322,
       "path": "lib"
     },
     "name": "untilReady",
@@ -375,6 +385,16 @@
           ]
         },
         "name": "schema"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
       }
     ],
     "returns": [

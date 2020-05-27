@@ -171,49 +171,6 @@ describe('the-db', function () {
     await db.close()
   })
 
-  it('Nested search', async () => {
-    const env = {
-      dialect: 'memory',
-    }
-    const db = new TheDB({ env })
-
-    const UserResource = ({ define }) =>
-      define({}, {
-        indices: ['profile.name', 'profile.email'],
-      })
-
-    const ProfileResource = ({ define }) => define({})
-
-    const User = db.load(UserResource, 'User')
-    const Profile = db.load(ProfileResource, 'Profile')
-
-    const user = await User.create({ name: 'user01' })
-    const profile = await Profile.create({
-      email: 'u01@example.com',
-      name: 'User 01',
-    })
-    await user.update({ profile })
-
-    ok(await User.first({ 'profile.email': 'u01@example.com' }))
-    ok(!(await User.first({ 'profile.email': 'u02@example.com' })))
-
-    await profile.update({ email: 'u02@example.com' })
-
-    ok(await User.first({ 'profile.email': 'u01@example.com' }))
-    ok(!(await User.first({ 'profile.email': 'u02@example.com' })))
-
-    await user.update({ profile })
-    await user.save()
-
-    ok(!(await User.first({ 'profile.email': 'u01@example.com' })))
-    ok(await User.first({ 'profile.email': 'u02@example.com' }))
-
-    await db.setup()
-
-    await db.drop()
-    await db.close()
-  })
-
   it('Invalidate mix', async () => {
     const env = {
       dialect: 'memory',
@@ -330,7 +287,7 @@ describe('the-db', function () {
         name: { type: STRING },
         user: { type: ENTITY },
       }, {
-        indices: ['user.id'],
+        indices: [['name', 'user']],
       })
 
     const User = db.load(UserResource, 'User')
@@ -353,9 +310,6 @@ describe('the-db', function () {
     await db.transaction(async (transaction) => {
       await User.create({ name: 'x01' }, { transaction })
     })
-
-    ok(await Profile.first({ 'user.id': user01.id }))
-    ok(!(await Profile.first({ 'user.id': '__invalid_id' })))
 
     await db.invalidate(user01)
 

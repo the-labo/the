@@ -95,7 +95,7 @@ tryExample().catch((err) => console.error(err))
   - [.convertInbound(values,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertInbound)
   - [.convertOutbound(values,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertOutbound)
 - module:@the-/driver-sequelize.modeling
-  - [.defineModel(sequelize,resourceName,schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
+  - [.defineModel(sequelize,resourceName,schema,options)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
   - [.defineModelColumn(def,propertyName)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelColumn)
   - [.defineModelIndexes(schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelIndexes)
   - [.prepareModel(Model,Schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.prepareModel)
@@ -104,7 +104,7 @@ tryExample().catch((err) => console.error(err))
   - [.parseFilter(filter,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseFilter)
   - [.parseSort(sort,options)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseSort)
 - TheDriverSequelize
-  - [#define(resourceName,schema)](./doc/api/api.md#TheDriverSequelize#define)
+  - [#define(resourceName,schema,options)](./doc/api/api.md#TheDriverSequelize#define)
   - [#untilReady()](./doc/api/api.md#TheDriverSequelize#untilReady)
 
 See [API Guide](./doc/api/api.md) for more detail

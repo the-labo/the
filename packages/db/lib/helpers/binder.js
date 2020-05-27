@@ -32,47 +32,10 @@ const asBound = (bound = noop) => async (resource, array, actionContext) =>
     }),
   )
 
-const indexBounds = (indices = []) => ({
-  indexInbound: asBound((attributes) => {
-    for (const name of indices) {
-      attributes[name] = get(attributes, name)
-    }
-    return attributes
-  }),
-  indexOutbound: asBound((entity, actionContext) => {
-    for (const name of indices) {
-      if (!(name in entity)) {
-        continue
-      }
-
-      const value = get(entity, name)
-      const rotten = actionContext.action !== 'one' && entity[name] !== value
-      if (rotten) {
-        unlessProduction(() => {
-          console.warn(
-            `[TheDB] Index had rotten on "${name}" for "${entity.$$as}#${entity.id}"`,
-            {
-              actual: value,
-              indexed: entity[name],
-            },
-          )
-        })
-      }
-
-      const needsDelete = /\./.test(name)
-      if (needsDelete) {
-        delete entity[name]
-      }
-    }
-    return entity
-  }),
-})
-
 /**
  * @memberof module:@the-/db.helpers
  * @namespace binder
  */
 module.exports = {
   asBound,
-  indexBounds,
 }

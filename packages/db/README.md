@@ -170,7 +170,6 @@ tryExample().catch((err) => console.error(err))
   - [.createTerminal(handler,options&#x3D;)](./doc/api/api.md#module_@the-/db.helpers.createTerminal)
   - [.execMysql(env,sqls)](./doc/api/api.md#module_@the-/db.helpers.execMysql)
   - [.execSqlite(env,sql,options&#x3D;)](./doc/api/api.md#module_@the-/db.helpers.execSqlite)
-  - [.parseSchema(options,Schema)](./doc/api/api.md#module_@the-/db.helpers.parseSchema)
 - module:@the-/db.refreshMix
   - [~RefreshMixed](./doc/api/api.md#module_@the-/db.refreshMix~RefreshMixed)
 - module:@the-/db.refreshMix~RefreshMixed

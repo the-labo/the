@@ -77,9 +77,13 @@ class TheDriverSequelize extends Driver {
    * Define schema
    * @param {string} resourceName
    * @param {Object} schema
+   * @param {Object} [options={}]
    */
-  define(resourceName, schema) {
-    const Model = defineModel(this.sequelize, resourceName, schema)
+  define(resourceName, schema, options = {}) {
+    const { indices } = options
+    const Model = defineModel(this.sequelize, resourceName, schema, {
+      indices,
+    })
     this.schemas[resourceName] = schema
     this.models[resourceName] = Model
     this._prepared = false

@@ -14,9 +14,11 @@ const parseAttributeName = require('../parsing/parseAttributeName')
  * @param {Object} sequelize
  * @param {string} resourceName
  * @param {Object} schema
+ * @param {Object} [options={}]
  * @returns {Object}
  */
-function defineModel(sequelize, resourceName, schema) {
+function defineModel(sequelize, resourceName, schema, options = {}) {
+  const { indices = [] } = options
   const attributes = {
     [MetaColumnNames.$$at]: {
       allowNull: false,
@@ -54,7 +56,18 @@ function defineModel(sequelize, resourceName, schema) {
   return sequelize.define(resourceName, attributes, {
     createdAt: false,
     freezeTableName: true,
-    indexes: [...defineModelIndexes(schema)],
+    indexes: [
+      ...(indices || []).map((index) => {
+        if (typeof index === 'string') {
+          return { fields: [index] }
+        }
+        if (Array.isArray(index)) {
+          return { fields: index }
+        }
+        return index
+      }),
+      ...defineModelIndexes(schema),
+    ].filter(Boolean),
     timestamps: false,
     updatedAt: false,
   })

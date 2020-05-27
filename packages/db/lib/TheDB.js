@@ -13,9 +13,8 @@ const { TheResource } = require('@the-/resource')
 const { toLowerKeys } = require('@the-/util-db')
 const driverFromEnv = require('./driverFromEnv')
 const execForEnv = require('./execForEnv')
-const { asBound, indexBounds } = require('./helpers/binder')
+const { asBound } = require('./helpers/binder')
 const parsePolicy = require('./helpers/parsePolicy')
-const parseSchema = require('./helpers/parseSchema')
 const m = require('./mixins')
 const { TheLogResource, TheSchemaResource } = require('./resources')
 const setupForEnv = require('./setupForEnv')
@@ -133,7 +132,11 @@ class TheDB extends TheDBBase {
       driver,
       env: { dialect },
     } = this
-
+    if (options.indexes) {
+      console.warn('[TheDB] use `options.indices` instead of `options.indexes`')
+      options.indices = options.indexes
+      delete options.indexes
+    }
     const {
       cascaded,
       collectionClass,
@@ -162,7 +165,7 @@ class TheDB extends TheDBBase {
     })
     resource.policy(parsePolicy(schema))
     if (driver.define) {
-      driver.define(resourceName, parseSchema(schema, { indices }))
+      driver.define(resourceName, schema, { indices })
     } else {
       const schemaLess = ['memory'].includes(dialect)
       const shouldWarn = !schemaLess && !/^The/.test(resourceName)
@@ -180,7 +183,6 @@ class TheDB extends TheDBBase {
     this.schemas[resourceName] = schema
     this.indices[resourceName] = indices
 
-    const { indexInbound, indexOutbound } = indexBounds(indices)
     // Wrap inbound
     {
       const { applyInbound } = resource
@@ -190,11 +192,6 @@ class TheDB extends TheDBBase {
         actionContext = {},
       ) {
         actionContext = wrapActionContext(actionContext)
-        attributesArray = await indexInbound(
-          resource,
-          attributesArray,
-          actionContext,
-        )
         attributesArray = await inboundHandler(
           resource,
           attributesArray,
@@ -219,7 +216,6 @@ class TheDB extends TheDBBase {
         actionContext = wrapActionContext(actionContext)
         entities = await applyOutbound.call(resource, entities, actionContext)
         entities = await outboundHandler(resource, entities, actionContext)
-        entities = await indexOutbound(resource, entities, actionContext)
         // TODO Remove
         for (const entity of entities) {
           entity.id = String(entity.id)

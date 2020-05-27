@@ -5,7 +5,7 @@
 ## @the-/db
 DB for the-framework
 
-**Version**: 18.4.12  
+**Version**: 19.0.2  
 **License**: MIT  
 
 * [@the-/db](#module_@the-/db)
@@ -29,7 +29,6 @@ DB for the-framework
             * [.createTerminal(handler, [options&#x3D;])](#module_@the-/db.helpers.createTerminal) ⇒ <code>Promise.&lt;\*&gt;</code>
             * [.execMysql(env, sqls)](#module_@the-/db.helpers.execMysql)
             * [.execSqlite(env, sql, [options&#x3D;])](#module_@the-/db.helpers.execSqlite) ⇒ <code>Promise.&lt;\*&gt;</code>
-            * [.parseSchema([options], Schema)](#module_@the-/db.helpers.parseSchema) ⇒ <code>\*</code>
         * [.mixins](#module_@the-/db.mixins) : <code>object</code>
         * [.resources](#module_@the-/db.resources) : <code>object</code>
         * [.create(...args)](#module_@the-/db.create) ⇒ [<code>TheDB</code>](#module_@the-/db.TheDB)
@@ -206,7 +205,6 @@ Helper functions
     * [.createTerminal(handler, [options&#x3D;])](#module_@the-/db.helpers.createTerminal) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.execMysql(env, sqls)](#module_@the-/db.helpers.execMysql)
     * [.execSqlite(env, sql, [options&#x3D;])](#module_@the-/db.helpers.execSqlite) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.parseSchema([options], Schema)](#module_@the-/db.helpers.parseSchema) ⇒ <code>\*</code>
 
 <a name="module_@the-/db.helpers.binder"></a>
 
@@ -242,18 +240,6 @@ Helper functions
 | env | 
 | sql | 
 | [options=] | 
-
-<a name="module_@the-/db.helpers.parseSchema"></a>
-
-#### helpers.parseSchema([options], Schema) ⇒ <code>\*</code>
-Parse schema
-
-**Kind**: static method of [<code>helpers</code>](#module_@the-/db.helpers)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | 
-| Schema | <code>Object</code> |  | 
 
 <a name="module_@the-/db.mixins"></a>
 
