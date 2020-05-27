@@ -13,7 +13,7 @@
     "name": "@the-/ast",
     "order": 3,
     "typicalname": "ast",
-    "version": "16.1.3"
+    "version": "16.2.0"
   },
   {
     "description": "Find nodes by types",
