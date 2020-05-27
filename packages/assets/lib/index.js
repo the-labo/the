@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/assets
  * @typicalname assets
- * @version 16.2.1
+ * @version 16.2.2
  */
 'use strict'
 
