@@ -5,7 +5,7 @@
 ## @the-/s3
 S3 upload helper
 
-**Version**: 15.5.13  
+**Version**: 15.5.14  
 **License**: MIT  
 
 * [@the-/s3](#module_@the-/s3)

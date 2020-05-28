@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.5.2",
-    "@the-/date": "^15.5.1",
-    "@the-/ui-button": "^16.0.4",
+    "@the-/date": "^15.5.2",
+    "@the-/ui-button": "^16.0.5",
     "@the-/ui-condition": "^16.0.0",
     "@the-/ui-style": "^16.0.2",
     "@the-/util-ui": "^16.4.1",
     "classnames": "^2.2.6",
-    "moment": "^2.25.3",
+    "moment": "^2.26.0",
     "objnest": "^5.0.10",
     "prop-types": "^15.7.2",
     "react-big-calendar": "^0.24.6"
@@ -28,7 +28,7 @@
     "coz": "^7.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.2.0"
   },
   "engines": {
     "node": ">=10",

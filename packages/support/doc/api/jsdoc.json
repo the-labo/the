@@ -13,7 +13,7 @@
     "name": "@the-/support",
     "order": 1,
     "typicalname": "support",
-    "version": "15.4.19"
+    "version": "15.4.21"
   },
   {
     "id": "module:@the-/support.TheSupport()",

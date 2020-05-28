@@ -13,7 +13,7 @@
     "name": "@the-/s3",
     "order": 2,
     "typicalname": "s3",
-    "version": "15.5.13"
+    "version": "15.5.14"
   },
   {
     "id": "module:@the-/s3.TheS3()",
