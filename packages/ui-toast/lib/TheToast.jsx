@@ -17,7 +17,15 @@ const ChildContainer = (props) => {
  */
 const TheToast = (props) => {
   const _clearTimers = useMemo(() => ({}), [])
-  const { children, className, clearAfter, level, messages, onUpdate } = props
+  const {
+    children,
+    className,
+    clearAfter,
+    level,
+    maxSize = 5,
+    messages,
+    onUpdate,
+  } = props
   const clearMessage = useCallback(
     (message) => {
       onUpdate &&
@@ -60,19 +68,22 @@ const TheToast = (props) => {
       })}
     >
       <div className='the-toast-inner'>
-        {messages.filter(Boolean).map((message) => (
-          <div
-            className='the-toast-item'
-            data-message={message}
-            key={message}
-            onClick={() => clearMessage(message)}
-          >
-            <span className='the-toast-text'>
-              {icon && <i className={c('the-toast-text', icon)} />}
-              {message}
-            </span>
-          </div>
-        ))}
+        {messages
+          .filter(Boolean)
+          .slice(0, maxSize)
+          .map((message, i) => (
+            <div
+              className='the-toast-item'
+              data-message={message}
+              key={`${message}-${i}`}
+              onClick={() => clearMessage(message)}
+            >
+              <span className='the-toast-text'>
+                {icon && <i className={c('the-toast-text', icon)} />}
+                {message}
+              </span>
+            </div>
+          ))}
         <ChildContainer>{children}</ChildContainer>
       </div>
     </div>
