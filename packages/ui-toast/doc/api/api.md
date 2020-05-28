@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheToast">TheToast</a></dt>
-<dd><p>Toast of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheToast">TheToast()</a></dt>
+<dd><p>Toast of the-components</p>
+</dd>
 <dt><a href="#TheToastGroup">TheToastGroup()</a></dt>
 <dd><p>ToastGroup</p>
 </dd>
@@ -32,13 +27,13 @@
 ## @the-/ui-toast
 Toast of the-components
 
-**Version**: 16.0.0  
+**Version**: 16.0.2  
 <a name="TheToast"></a>
 
-## TheToast
+## TheToast()
 Toast of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheToastGroup"></a>
 
 ## TheToastGroup()

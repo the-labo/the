@@ -2,14 +2,8 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useEffect, useMemo } from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-
-const normalizeMessages = (arr) =>
-  []
-    .concat(arr)
-    .filter(Boolean)
-    .filter((e, i, arr) => i === arr.indexOf(e))
 
 const ChildContainer = (props) => {
   props = Object.assign({}, props)
@@ -21,90 +15,68 @@ const ChildContainer = (props) => {
 /**
  * Toast of the-components
  */
-class TheToast extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this._clearTimers = {}
-  }
+const TheToast = (props) => {
+  const _clearTimers = useMemo(() => ({}), [])
+  const { children, className, clearAfter, level, messages, onUpdate } = props
+  const clearMessage = useCallback(
+    (message) => {
+      onUpdate &&
+        onUpdate({
+          [level]: messages.filter((filtering) => filtering !== message),
+        })
+    },
+    [onUpdate],
+  )
 
-  clearMessage(message) {
-    const {
-      props: { level, messages, onUpdate },
-    } = this
-
-    onUpdate &&
-      onUpdate({
-        [level]: messages.filter((filtering) => filtering !== message),
-      })
-  }
-
-  componentDidMount() {
-    this.reserveClearings()
-  }
-
-  componentDidUpdate() {
-    this.reserveClearings()
-  }
-
-  componentWillUnmount() {
-    for (const name of Object.keys(this._clearTimers)) {
-      clearTimeout(this._clearTimers[name])
-    }
-  }
-
-  render() {
-    const {
-      props,
-      props: { children, className, level },
-    } = this
-
-    let { messages } = props
-    messages = normalizeMessages(messages)
-    const icon = TheToast.iconForLevel(level)
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-toast', className, `the-toast-${level}`, {
-          'the-toast-empty': messages.length === 0,
-        })}
-      >
-        <div className='the-toast-inner'>
-          {messages.map((message) => (
-            <div
-              className='the-toast-item'
-              data-message={message}
-              key={message}
-              onClick={() => this.clearMessage(message)}
-            >
-              <span className='the-toast-text'>
-                {icon && <i className={c('the-toast-text', icon)} />}
-                {message}
-              </span>
-            </div>
-          ))}
-          <ChildContainer>{children}</ChildContainer>
-        </div>
-      </div>
-    )
-  }
-
-  reserveClearings() {
-    const {
-      props: { clearAfter, messages },
-    } = this
+  const reserveClearings = useCallback(() => {
     if (clearAfter > 0) {
-      const messagesToClear = normalizeMessages(messages).filter(
-        (message) => !this._clearTimers[message],
+      const messagesToClear = messages.filter(
+        (message) => !_clearTimers[message],
       )
       for (const message of messagesToClear) {
-        this._clearTimers[message] = setTimeout(() => {
-          this.clearMessage(message)
-          delete this._clearTimers[message]
+        _clearTimers[message] = setTimeout(() => {
+          clearMessage(message)
+          delete _clearTimers[message]
         }, clearAfter)
       }
     }
-  }
+  }, [messages, clearAfter])
+
+  useEffect(() => {
+    reserveClearings()
+    return () => {
+      for (const name of Object.keys(_clearTimers)) {
+        clearTimeout(_clearTimers[name])
+      }
+    }
+  }, [_clearTimers, messages])
+  const icon = TheToast.iconForLevel(level)
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-toast', className, `the-toast-${level}`, {
+        'the-toast-empty': messages.length === 0,
+      })}
+    >
+      <div className='the-toast-inner'>
+        {messages.filter(Boolean).map((message) => (
+          <div
+            className='the-toast-item'
+            data-message={message}
+            key={message}
+            onClick={() => clearMessage(message)}
+          >
+            <span className='the-toast-text'>
+              {icon && <i className={c('the-toast-text', icon)} />}
+              {message}
+            </span>
+          </div>
+        ))}
+        <ChildContainer>{children}</ChildContainer>
+      </div>
+    </div>
+  )
 }
 
 TheToast.Error = function Error(props) {
