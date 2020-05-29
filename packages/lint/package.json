@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.1",
-    "@the-/ast": "^16.2.1",
+    "@the-/ast": "^16.2.3",
     "@the-/util-file": "^15.7.3",
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
