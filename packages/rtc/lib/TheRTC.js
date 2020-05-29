@@ -115,6 +115,8 @@ class TheRTC extends TheRTCBase {
     await new Promise((resolve, reject) =>
       server.listen(port, (err) => (err ? reject(err) : resolve())),
     )
+    const { listeners } = this
+    listeners.onReady && listeners.onReady()
   }
 }
 
