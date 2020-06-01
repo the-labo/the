@@ -39,6 +39,7 @@ TheSignatureStyle.data = () => {
       position: 'relative',
     },
     '.the-signature-canvas': {
+      '--webkit-touch-callout': 'none',
       background: 'white',
       border: '1px solid #555',
       cursor: 'pointer',

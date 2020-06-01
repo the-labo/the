@@ -26,7 +26,7 @@
 ## @the-/ui-date
 Date ui
 
-**Version**: 17.0.0  
+**Version**: 17.0.1  
 <a name="TheDateStyle"></a>
 
 ## TheDateStyle()
