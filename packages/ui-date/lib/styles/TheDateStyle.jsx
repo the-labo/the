@@ -48,7 +48,13 @@ TheDateStyle.data = (options) => {
   } = options
 
   return Object.assign(
-    {},
+    {
+      '.flatpickr-current-month': {
+        '.flatpickr-monthDropdown-months': {
+          minHeight: 28,
+        },
+      },
+    },
     asStyleData({
       '.the-date': {},
     }),
