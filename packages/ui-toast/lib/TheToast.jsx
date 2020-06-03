@@ -53,8 +53,11 @@ const TheToast = (props) => {
   useEffect(() => {
     reserveClearings()
     return () => {
-      for (const name of Object.keys(_clearTimers)) {
-        clearTimeout(_clearTimers[name])
+      for (const message of Object.keys(_clearTimers)) {
+        if (!messages.includes(message)) {
+          clearTimeout(_clearTimers[message])
+          delete _clearTimers[message]
+        }
       }
     }
   }, [_clearTimers, messages])
