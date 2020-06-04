@@ -81,9 +81,9 @@ const TheToast = React.memo((props) => {
       })}
     >
       <div className='the-toast-inner'>
-        {messages.map((message, i) => (
+        {messages.map((message, i, arr) => (
           <TheToastItem
-            hidden={maxSize <= i}
+            hidden={maxSize < arr.length - i}
             icon={icon}
             id={message.id}
             key={message.id}
