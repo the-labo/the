@@ -25,23 +25,30 @@ const TheToast = (props) => {
     clearAfter,
     level,
     maxSize = 5,
-    messages,
     onUpdate,
   } = props
+
+  const normalizedMessage = useMemo(
+    () =>
+      props.messages.filter(uniqueFilter()).filter(Boolean).slice(0, maxSize),
+    [props.messages, maxSize],
+  )
 
   const clearMessage = useCallback(
     (message) => {
       onUpdate &&
         onUpdate({
-          [level]: messages.filter((filtering) => filtering !== message),
+          [level]: normalizedMessage.filter(
+            (filtering) => filtering !== message,
+          ),
         })
     },
-    [onUpdate],
+    [onUpdate, normalizedMessage, level],
   )
 
   const reserveClearings = useCallback(() => {
     if (clearAfter > 0) {
-      const messagesToClear = messages.filter(
+      const messagesToClear = normalizedMessage.filter(
         (message) => !_clearTimers[message],
       )
       for (const message of messagesToClear) {
@@ -51,42 +58,39 @@ const TheToast = (props) => {
         }, clearAfter)
       }
     }
-  }, [messages, clearAfter])
+  }, [normalizedMessage, clearAfter, clearMessage, _clearTimers])
 
   useEffect(() => {
     reserveClearings()
 
     return () => {
       for (const message of Object.keys(_clearTimers)) {
-        if (!messages.includes(message)) {
+        if (!normalizedMessage.includes(message)) {
           clearTimeout(_clearTimers[message])
           delete _clearTimers[message]
         }
       }
     }
-  }, [_clearTimers, messages])
+  }, [_clearTimers, normalizedMessage, reserveClearings])
+
   const icon = TheToast.iconForLevel(level)
   return (
     <div
       {...htmlAttributesFor(props, { except: ['className'] })}
       {...eventHandlersFor(props, { except: [] })}
       className={c('the-toast', className, `the-toast-${level}`, {
-        'the-toast-empty': messages.length === 0,
+        'the-toast-empty': normalizedMessage.length === 0,
       })}
     >
       <div className='the-toast-inner'>
-        {messages
-          .filter(uniqueFilter())
-          .filter(Boolean)
-          .slice(0, maxSize)
-          .map((message) => (
-            <TheToastItem
-              icon={icon}
-              key={message}
-              message={message}
-              onClear={clearMessage}
-            />
-          ))}
+        {normalizedMessage.map((message) => (
+          <TheToastItem
+            icon={icon}
+            key={message}
+            message={message}
+            onClear={clearMessage}
+          />
+        ))}
         <ChildContainer>{children}</ChildContainer>
       </div>
     </div>

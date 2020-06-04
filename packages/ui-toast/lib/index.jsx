@@ -4,7 +4,7 @@
  * @description Toast of the-components
  * @module @the-/ui-toast
  * @typicalname uiToast
- * @version 16.0.5
+ * @version 16.0.8
  */
 'use strict'
 
