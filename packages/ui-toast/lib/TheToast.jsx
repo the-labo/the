@@ -25,25 +25,25 @@ const TheToast = React.memo((props) => {
     maxSize = 5,
     onUpdate,
   } = props
+  const tmp = useMemo(
+    () => ({
+      clearTimers: [],
+      counts: {},
+    }),
+    [],
+  )
   const messages = useMemo(
     () =>
-      props.messages.map((message, i, arr) => {
+      props.messages.map((message) => {
         if (typeof message === 'string') {
-          const id = [
-            message,
-            [...arr].slice(0, i - 1).filter((m) => message === m).length,
-          ].join('--')
+          const number = (tmp.counts[message] || 0) + 1
+          tmp.counts[message] = number
+          const id = [message, number].join('--')
           return { id, message }
         }
         return message
       }, []),
-    [props.messages],
-  )
-  const tmp = useMemo(
-    () => ({
-      clearTimers: [],
-    }),
-    [],
+    [props.messages, tmp],
   )
 
   const clearMessage = useCallback(

@@ -12,12 +12,12 @@
     "name": "@the-/ui-toast",
     "order": 0,
     "typicalname": "uiToast",
-    "version": "17.0.0"
+    "version": "17.0.2"
   },
   {
     "description": "Toast of the-components",
     "id": "TheToast",
-    "kind": "function",
+    "kind": "constant",
     "longname": "TheToast",
     "meta": {
       "filename": "TheToast.jsx",
@@ -67,7 +67,7 @@
     "memberof": "TheToast.propTypes",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 136,
+      "lineno": 135,
       "path": "lib"
     },
     "name": "clearAfter",
@@ -82,7 +82,7 @@
     "memberof": "TheToast.propTypes",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 138,
+      "lineno": 137,
       "path": "lib"
     },
     "name": "level",
@@ -97,7 +97,7 @@
     "memberof": "TheToast.propTypes",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 140,
+      "lineno": 139,
       "path": "lib"
     },
     "name": "messages",
@@ -112,7 +112,7 @@
     "memberof": "TheToast.propTypes",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 142,
+      "lineno": 143,
       "path": "lib"
     },
     "name": "onUpdate",
