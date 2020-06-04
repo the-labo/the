@@ -4,14 +4,16 @@
  * @description Toast of the-components
  * @module @the-/ui-toast
  * @typicalname uiToast
- * @version 16.0.4
+ * @version 16.0.5
  */
 'use strict'
 
 import TheToast from './TheToast'
 import TheToastGroup from './TheToastGroup'
+import TheToastItem from './TheToastItem'
 
 export {
   TheToast,
   TheToastGroup,
+  TheToastItem,
 }

@@ -3,7 +3,9 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo } from 'react'
+import { uniqueFilter } from '@the-/util-array'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
+import TheToastItem from './TheToastItem'
 
 const ChildContainer = (props) => {
   props = Object.assign({}, props)
@@ -26,6 +28,7 @@ const TheToast = (props) => {
     messages,
     onUpdate,
   } = props
+
   const clearMessage = useCallback(
     (message) => {
       onUpdate &&
@@ -52,6 +55,7 @@ const TheToast = (props) => {
 
   useEffect(() => {
     reserveClearings()
+
     return () => {
       for (const message of Object.keys(_clearTimers)) {
         if (!messages.includes(message)) {
@@ -72,20 +76,16 @@ const TheToast = (props) => {
     >
       <div className='the-toast-inner'>
         {messages
+          .filter(uniqueFilter())
           .filter(Boolean)
           .slice(0, maxSize)
-          .map((message, i) => (
-            <div
-              className='the-toast-item'
-              data-message={message}
-              key={`${message}-${i}`}
-              onClick={() => clearMessage(message)}
-            >
-              <span className='the-toast-text'>
-                {icon && <i className={c('the-toast-text', icon)} />}
-                {message}
-              </span>
-            </div>
+          .map((message) => (
+            <TheToastItem
+              icon={icon}
+              key={message}
+              message={message}
+              onClear={clearMessage}
+            />
           ))}
         <ChildContainer>{children}</ChildContainer>
       </div>
