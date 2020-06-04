@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "17.0.26",
+  "version": "17.0.27",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -44,7 +44,7 @@
     "@the-/ui-style": "^16.0.2",
     "@the-/ui-tab": "^16.0.0",
     "@the-/ui-table": "^17.0.2",
-    "@the-/ui-toast": "^16.0.4",
+    "@the-/ui-toast": "^16.0.5",
     "@the-/ui-video": "^16.0.0",
     "@the-/ui-view": "^16.0.1",
     "classnames": "^2.2.6",
