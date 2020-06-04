@@ -45,18 +45,23 @@ const TheToast = React.memo((props) => {
       }, []),
     [props.messages, tmp],
   )
-
+  tmp.messages = messages
   const clearMessage = useCallback(
     (id) => {
+      const { messages } = tmp
       clearTimeout(tmp.clearTimers[id])
       delete tmp.clearTimers[id]
       const newMessages = messages.filter((m) => m.id !== id)
+      if (newMessages.length === messages.length) {
+        return
+      }
+      tmp.messages = newMessages
       onUpdate &&
         onUpdate({
           [level]: newMessages,
         })
     },
-    [onUpdate, messages, level.tmp],
+    [onUpdate, level, tmp],
   )
 
   useEffect(() => {
@@ -69,7 +74,7 @@ const TheToast = React.memo((props) => {
         }
       }
     }
-  }, [clearAfter, clearMessage, messages])
+  }, [clearAfter, clearMessage, messages, tmp])
 
   const icon = TheToast.iconForLevel(level)
   return (
