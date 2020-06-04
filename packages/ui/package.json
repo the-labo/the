@@ -44,7 +44,7 @@
     "@the-/ui-style": "^16.0.2",
     "@the-/ui-tab": "^16.0.0",
     "@the-/ui-table": "^17.0.2",
-    "@the-/ui-toast": "^16.0.10",
+    "@the-/ui-toast": "^17.0.3",
     "@the-/ui-video": "^16.0.0",
     "@the-/ui-view": "^16.0.1",
     "classnames": "^2.2.6",
