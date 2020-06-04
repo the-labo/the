@@ -30,7 +30,7 @@ const TheSignature = (props) => {
   const canvasRef = useRef(null)
   const [pad, setPad] = useState(null)
 
-  const reloadPad = useCallback(()=>{
+  const reloadPad = useCallback(() => {
     const { current: canvas } = canvasRef
     let resumeTouchScrolling = null
     const newPad = new SignaturePad(canvas, {
@@ -87,15 +87,15 @@ const TheSignature = (props) => {
     if (skip) {
       return
     }
+
     const newValue = pad.toDataURL()
     applyValue(newValue)
-    const timer = setTimeout(()=> {
+    const timer = setTimeout(() => {
       reloadPad()
     }, 300)
     return () => {
       clearTimeout(timer)
     }
-
   }, [pad, reloadPad])
 
   const syncPad = useCallback(() => {
@@ -105,7 +105,6 @@ const TheSignature = (props) => {
 
     pad.penColor = color
   }, [pad, color])
-
 
   useEffect(() => {
     const clear = reloadPad()

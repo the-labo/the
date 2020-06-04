@@ -27,7 +27,7 @@
 ## @the-/ui-toast
 Toast of the-components
 
-**Version**: 16.0.7  
+**Version**: 17.0.0  
 <a name="TheToast"></a>
 
 ## TheToast()

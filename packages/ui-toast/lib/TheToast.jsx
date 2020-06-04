@@ -3,7 +3,6 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo } from 'react'
-import { uniqueFilter } from '@the-/util-array'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheToastItem from './TheToastItem'
 
@@ -17,8 +16,7 @@ const ChildContainer = (props) => {
 /**
  * Toast of the-components
  */
-const TheToast = (props) => {
-  const _clearTimers = useMemo(() => ({}), [])
+const TheToast = React.memo((props) => {
   const {
     children,
     className,
@@ -27,51 +25,51 @@ const TheToast = (props) => {
     maxSize = 5,
     onUpdate,
   } = props
-
-  const normalizedMessage = useMemo(
+  const messages = useMemo(
     () =>
-      props.messages.filter(uniqueFilter()).filter(Boolean).slice(0, maxSize),
-    [props.messages, maxSize],
+      props.messages.map((message, i, arr) => {
+        if (typeof message === 'string') {
+          const id = [
+            message,
+            [...arr].slice(0, i - 1).filter((m) => message === m).length,
+          ].join('--')
+          return { id, message }
+        }
+        return message
+      }, []),
+    [props.messages],
+  )
+  const tmp = useMemo(
+    () => ({
+      clearTimers: [],
+    }),
+    [],
   )
 
   const clearMessage = useCallback(
-    (message) => {
+    (id) => {
+      clearTimeout(tmp.clearTimers[id])
+      delete tmp.clearTimers[id]
+      const newMessages = messages.filter((m) => m.id !== id)
       onUpdate &&
         onUpdate({
-          [level]: normalizedMessage.filter(
-            (filtering) => filtering !== message,
-          ),
+          [level]: newMessages,
         })
     },
-    [onUpdate, normalizedMessage, level],
+    [onUpdate, messages, level.tmp],
   )
 
-  const reserveClearings = useCallback(() => {
-    if (clearAfter > 0) {
-      const messagesToClear = normalizedMessage.filter(
-        (message) => !_clearTimers[message],
-      )
-      for (const message of messagesToClear) {
-        _clearTimers[message] = setTimeout(() => {
-          clearMessage(message)
-          delete _clearTimers[message]
-        }, clearAfter)
-      }
-    }
-  }, [normalizedMessage, clearAfter, clearMessage, _clearTimers])
-
   useEffect(() => {
-    reserveClearings()
-
-    return () => {
-      for (const message of Object.keys(_clearTimers)) {
-        if (!normalizedMessage.includes(message)) {
-          clearTimeout(_clearTimers[message])
-          delete _clearTimers[message]
+    for (const { id } of messages) {
+      if (clearAfter > 0) {
+        if (!tmp.clearTimers[id]) {
+          tmp.clearTimers[id] = setTimeout(() => {
+            clearMessage(id)
+          }, clearAfter)
         }
       }
     }
-  }, [_clearTimers, normalizedMessage, reserveClearings])
+  }, [clearAfter, clearMessage, messages])
 
   const icon = TheToast.iconForLevel(level)
   return (
@@ -79,15 +77,17 @@ const TheToast = (props) => {
       {...htmlAttributesFor(props, { except: ['className'] })}
       {...eventHandlersFor(props, { except: [] })}
       className={c('the-toast', className, `the-toast-${level}`, {
-        'the-toast-empty': normalizedMessage.length === 0,
+        'the-toast-empty': messages.length === 0,
       })}
     >
       <div className='the-toast-inner'>
-        {normalizedMessage.map((message) => (
+        {messages.map((message, i) => (
           <TheToastItem
+            hidden={maxSize <= i}
             icon={icon}
-            key={message}
-            message={message}
+            id={message.id}
+            key={message.id}
+            message={message.message}
             onClear={clearMessage}
           />
         ))}
@@ -95,7 +95,7 @@ const TheToast = (props) => {
       </div>
     </div>
   )
-}
+})
 
 TheToast.Error = function Error(props) {
   return <TheToast {...props} level='error' />
@@ -136,7 +136,9 @@ TheToast.propTypes = {
   /** Level of toast */
   level: PropTypes.oneOf(['info', 'normal', 'warn', 'error']),
   /** Messages to show */
-  messages: PropTypes.arrayOf(PropTypes.node),
+  messages: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  ),
   /** Handle update */
   onUpdate: PropTypes.func,
 }

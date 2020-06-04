@@ -137,6 +137,7 @@ class TheDB extends TheDBBase {
       options.indices = options.indexes
       delete options.indexes
     }
+
     const {
       cascaded,
       collectionClass,

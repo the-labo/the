@@ -3,14 +3,18 @@
 import c from 'classnames'
 import React, { useCallback } from 'react'
 
-const TheToastItem = React.memo(({ icon, message, onClear }) => {
+const TheToastItem = React.memo(({ hidden, icon, id, message, onClear }) => {
   const handleClick = useCallback(() => {
-    onClear(message)
-  }, [message, onClear])
+    onClear(id)
+  }, [id, onClear])
+  if (hidden) {
+    return null
+  }
   return (
     <div
       className='the-toast-item'
       data-message={message}
+      id={id}
       onClick={handleClick}
     >
       <span className='the-toast-text'>

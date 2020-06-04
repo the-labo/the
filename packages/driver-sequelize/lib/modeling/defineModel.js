@@ -61,9 +61,11 @@ function defineModel(sequelize, resourceName, schema, options = {}) {
         if (typeof index === 'string') {
           return { fields: [index] }
         }
+
         if (Array.isArray(index)) {
           return { fields: index }
         }
+
         return index
       }),
       ...defineModelIndexes(schema),
