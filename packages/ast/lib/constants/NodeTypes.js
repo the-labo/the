@@ -176,6 +176,7 @@ const NodeTypes =
     ClassPrivateProperty: 'ClassPrivateProperty',
     ClassPrivateMethod: 'ClassPrivateMethod',
     Import: 'Import',
+    ImportAttribute: 'ImportAttribute',
     Decorator: 'Decorator',
     DoExpression: 'DoExpression',
     ExportDefaultSpecifier: 'ExportDefaultSpecifier',
