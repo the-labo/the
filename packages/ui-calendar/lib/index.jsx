@@ -4,7 +4,7 @@
  * @description Calendar of the-components
  * @module @the-/ui-calendar
  * @typicalname uiCalendar
- * @version 16.1.0
+ * @version 16.1.1
  */
 'use strict'
 

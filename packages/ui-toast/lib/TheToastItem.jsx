@@ -10,6 +10,7 @@ const TheToastItem = React.memo(({ hidden, icon, id, message, onClear }) => {
   if (hidden) {
     return null
   }
+
   return (
     <div
       className='the-toast-item'

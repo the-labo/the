@@ -41,6 +41,7 @@ const TheToast = React.memo((props) => {
           const id = [message, number].join('--')
           return { id, message }
         }
+
         return message
       }, []),
     [props.messages, tmp],
@@ -55,6 +56,7 @@ const TheToast = React.memo((props) => {
       if (newMessages.length === messages.length) {
         return
       }
+
       tmp.messages = newMessages
       onUpdate &&
         onUpdate({

@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "19.0.2"
+    "version": "19.0.3"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -171,7 +171,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 242,
+      "lineno": 243,
       "path": "lib"
     },
     "name": "hooksFromMapping",
@@ -196,7 +196,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 259,
+      "lineno": 260,
       "path": "lib"
     },
     "name": "load",
@@ -241,7 +241,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 294,
+      "lineno": 295,
       "path": "lib"
     },
     "name": "loadFromMapping",
@@ -267,7 +267,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 304,
+      "lineno": 305,
       "path": "lib"
     },
     "name": "pluginFromMapping",
@@ -292,7 +292,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 318,
+      "lineno": 319,
       "path": "lib"
     },
     "name": "unref",
@@ -319,7 +319,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 363,
+      "lineno": 364,
       "path": "lib"
     },
     "name": "drop",
@@ -345,7 +345,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 399,
+      "lineno": 400,
       "path": "lib"
     },
     "name": "invalidate",
@@ -380,7 +380,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 436,
+      "lineno": 437,
       "path": "lib"
     },
     "name": "transaction",
@@ -416,7 +416,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 455,
+      "lineno": 456,
       "path": "lib"
     },
     "name": "updateVersion",
@@ -1000,7 +1000,7 @@
     "memberof": "module:@the-/db.helpers",
     "meta": {
       "filename": "binder.js",
-      "lineno": 35,
+      "lineno": 22,
       "path": "lib/helpers"
     },
     "name": "binder",

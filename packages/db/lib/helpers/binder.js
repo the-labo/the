@@ -3,19 +3,6 @@
 const { unlessProduction } = require('@the-/check-env')
 
 const noop = (v) => v
-const get = (obj, namepath) => {
-  if (!obj) {
-    return obj
-  }
-
-  const [name, ...remain] = namepath.split('.')
-  const value = obj[name]
-  if (remain.length > 0) {
-    return get(value, remain.join('.'))
-  } else {
-    return value
-  }
-}
 
 const asBound = (bound = noop) => async (resource, array, actionContext) =>
   Promise.all(
