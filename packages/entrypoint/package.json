@@ -18,7 +18,7 @@
     "@the-/window": "^15.8.3"
   },
   "devDependencies": {
-    "history": "^4.10.1",
+    "history": "^5.0.0",
     "injectmock": "^2.0.0"
   },
   "engines": {

@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.6.0",
-    "chalk": "^4.0.0",
+    "chalk": "^4.1.0",
     "hasbin": "^1.2.3",
     "semver": "^7.3.2"
   },
