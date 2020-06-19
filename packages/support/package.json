@@ -12,11 +12,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ast": "^16.2.3",
-    "acorn": "^7.2.0",
+    "@the-/ast": "^16.2.4",
+    "acorn": "^7.3.1",
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
-    "chalk": "^4.0.0",
+    "chalk": "^4.1.0",
     "log-syntax-error": "^0.1.1"
   },
   "devDependencies": {},

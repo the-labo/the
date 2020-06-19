@@ -22,7 +22,7 @@
     "asleep": "^1.0.3",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
-    "react-draggable": "^4.4.2"
+    "react-draggable": "^4.4.3"
   },
   "devDependencies": {
     "@the-/polyfill": "^17.1.8",

@@ -14,7 +14,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/jsdoc": "^15.4.13",
+    "@the-/jsdoc": "^15.4.14",
     "@the-/util-array": "^15.4.12",
     "aglob": "^3.0.1",
     "argx": "^4.0.4",

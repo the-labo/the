@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@the-/tmp": "^15.5.0",
-    "@the-/util-file": "^15.7.3",
+    "@the-/util-file": "^15.7.4",
     "aglob": "^3.0.2",
     "amkdirp": "^2.0.0",
     "asfs": "^2.3.0",
     "filecopy": "^4.1.0",
-    "sharp": "^0.25.3"
+    "sharp": "^0.25.4"
   },
   "devDependencies": {},
   "engines": {

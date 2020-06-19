@@ -17,7 +17,7 @@
     "@the-/util-file": "^15.7.4",
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
-    "chalk": "^4.0.0",
+    "chalk": "^4.1.0",
     "colorprint": "^6.1.1",
     "debug": "^4.1.1",
     "json-pointer": "^0.6.0",

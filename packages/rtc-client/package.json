@@ -30,12 +30,12 @@
     "wrtc": "^0.4.5"
   },
   "devDependencies": {
-    "@the-/rtc": "^15.7.2",
+    "@the-/rtc": "^15.7.3",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webrtc-adapter": "^7.6.1"
+    "webpack-cli": "^3.3.12",
+    "webrtc-adapter": "^7.6.2"
   },
   "engines": {
     "node": ">=10",
