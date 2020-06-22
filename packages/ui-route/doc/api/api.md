@@ -6,9 +6,6 @@
 <dt><a href="#module_@the-/ui-route">@the-/ui-route</a></dt>
 <dd><p>Route of the-components</p>
 </dd>
-<dt><a href="#module_@the-/ui-route">@the-/ui-route</a></dt>
-<dd><p>Route of the-components</p>
-</dd>
 </dl>
 
 ## Classes
@@ -35,12 +32,7 @@
 ## @the-/ui-route
 Route of the-components
 
-<a name="module_@the-/ui-route"></a>
-
-## @the-/ui-route
-Route of the-components
-
-**Version**: 16.0.1  
+**Version**: 16.0.2  
 <a name="TheRoute"></a>
 
 ## TheRoute

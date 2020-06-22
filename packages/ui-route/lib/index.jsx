@@ -4,7 +4,7 @@
  * @description Route of the-components
  * @module @the-/ui-route
  * @typicalname uiRoute
- * @version 16.0.1
+ * @version 16.0.2
  */
 'use strict'
 

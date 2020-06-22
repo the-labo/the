@@ -5,27 +5,14 @@
     "kind": "module",
     "longname": "module:@the-/ui-route",
     "meta": {
-      "filename": "index.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "@the-/ui-route",
-    "order": 0
-  },
-  {
-    "description": "Route of the-components",
-    "id": "module:@the-/ui-route",
-    "kind": "module",
-    "longname": "module:@the-/ui-route",
-    "meta": {
       "filename": "index.jsx",
       "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-route",
-    "order": 1,
+    "order": 0,
     "typicalname": "uiRoute",
-    "version": "16.0.1"
+    "version": "16.0.2"
   },
   {
     "description": "Route of the-components",
@@ -38,7 +25,7 @@
       "path": "lib"
     },
     "name": "TheRoute",
-    "order": 2,
+    "order": 1,
     "scope": "global"
   },
   {
@@ -52,7 +39,7 @@
       "path": "lib"
     },
     "name": "TheRouteStack",
-    "order": 9,
+    "order": 8,
     "scope": "global"
   },
   {
@@ -66,7 +53,7 @@
       "path": "lib/styles"
     },
     "name": "TheRouteStyle",
-    "order": 13,
+    "order": 12,
     "params": [],
     "scope": "global"
   },
@@ -82,7 +69,7 @@
       "path": "lib"
     },
     "name": "animationDuration",
-    "order": 3,
+    "order": 2,
     "scope": "static"
   },
   {
@@ -97,7 +84,7 @@
       "path": "lib"
     },
     "name": "component",
-    "order": 4,
+    "order": 3,
     "scope": "static"
   },
   {
@@ -112,7 +99,7 @@
       "path": "lib"
     },
     "name": "exact",
-    "order": 5,
+    "order": 4,
     "scope": "static"
   },
   {
@@ -127,7 +114,7 @@
       "path": "lib"
     },
     "name": "path",
-    "order": 6,
+    "order": 5,
     "scope": "static"
   },
   {
@@ -142,7 +129,7 @@
       "path": "lib"
     },
     "name": "scrollToTop",
-    "order": 7,
+    "order": 6,
     "scope": "static"
   },
   {
@@ -157,7 +144,7 @@
       "path": "lib"
     },
     "name": "strict",
-    "order": 8,
+    "order": 7,
     "scope": "static"
   },
   {
@@ -172,7 +159,7 @@
       "path": "lib"
     },
     "name": "direction",
-    "order": 10,
+    "order": 9,
     "scope": "static"
   },
   {
@@ -187,7 +174,7 @@
       "path": "lib"
     },
     "name": "onChange",
-    "order": 11,
+    "order": 10,
     "scope": "static"
   },
   {
@@ -202,7 +189,7 @@
       "path": "lib"
     },
     "name": "stack",
-    "order": 12,
+    "order": 11,
     "scope": "static"
   },
   {
@@ -217,7 +204,7 @@
       "path": "lib/styles"
     },
     "name": "options",
-    "order": 14,
+    "order": 13,
     "scope": "static"
   }
 ]
