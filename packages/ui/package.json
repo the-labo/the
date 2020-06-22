@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "17.1.3",
+  "version": "17.1.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -36,8 +36,8 @@
     "@the-/ui-meta": "^15.4.18",
     "@the-/ui-pager": "^16.0.0",
     "@the-/ui-root": "^16.0.0",
-    "@the-/ui-route": "^16.0.1",
-    "@the-/ui-router": "^16.0.1",
+    "@the-/ui-route": "^16.0.2",
+    "@the-/ui-router": "^16.0.2",
     "@the-/ui-section": "^16.0.1",
     "@the-/ui-spin": "^16.0.1",
     "@the-/ui-step": "^16.0.3",

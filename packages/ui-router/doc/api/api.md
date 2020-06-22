@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheRouter">TheRouter</a></dt>
-<dd><p>Router of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheRouter">TheRouter()</a> ⇒ <code>*</code></dt>
+<dd><p>Router of the-components</p>
+</dd>
 <dt><a href="#TheRouterStyle">TheRouterStyle()</a></dt>
 <dd><p>Style for TheRouter</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-router
 Router of the-components
 
-**Version**: 16.0.1  
+**Version**: 16.0.2  
 <a name="TheRouter"></a>
 
-## TheRouter
+## TheRouter() ⇒ <code>\*</code>
 Router of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheRouterStyle"></a>
 
 ## TheRouterStyle()

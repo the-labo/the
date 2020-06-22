@@ -12,20 +12,30 @@
     "name": "@the-/ui-router",
     "order": 0,
     "typicalname": "uiRouter",
-    "version": "16.0.1"
+    "version": "16.0.2"
   },
   {
     "description": "Router of the-components",
     "id": "TheRouter",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheRouter",
     "meta": {
       "filename": "TheRouter.jsx",
-      "lineno": 16,
+      "lineno": 17,
       "path": "lib"
     },
     "name": "TheRouter",
     "order": 1,
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "global"
   },
   {
