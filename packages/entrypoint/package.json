@@ -1,7 +1,7 @@
 {
   "name": "@the-/entrypoint",
   "description": "Browser entrypoint for the-framework",
-  "version": "15.5.3",
+  "version": "15.5.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@the-/check": "^15.6.3",
-    "@the-/ui-router": "^16.0.2",
     "@the-/url": "^15.4.12",
     "@the-/window": "^15.8.3"
   },
   "devDependencies": {
+    "@the-/ui-router": "^16.0.2",
     "history": "^5.0.0",
     "injectmock": "^2.0.0"
   },
@@ -33,6 +33,7 @@
   "license": "MIT",
   "main": "lib",
   "peerDependencies": {
+    "@the-/ui-router": ">=16",
     "history": ">=4",
     "react": ">=16",
     "react-dom": ">=16"
