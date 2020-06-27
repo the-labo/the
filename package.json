@@ -40,7 +40,7 @@
     "aglob": "^3.0.2",
     "babel-eslint": "^10.1.0",
     "coz": "^7.2.0",
-    "eslint": "^7.3.0",
+    "eslint": "^7.3.1",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsdoc": "^27.1.2",
     "eslint-plugin-json-light": "^1.0.3",
