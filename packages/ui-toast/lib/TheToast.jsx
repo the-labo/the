@@ -34,7 +34,7 @@ const TheToast = React.memo((props) => {
   )
   const messages = useMemo(
     () =>
-      props.messages.map((message) => {
+      props.messages.filter(Boolean).map((message) => {
         if (typeof message === 'string') {
           const number = (tmp.counts[message] || 0) + 1
           tmp.counts[message] = number
@@ -153,6 +153,7 @@ TheToast.propTypes = {
 TheToast.defaultProps = {
   clearAfter: -1,
   level: 'normal',
+  messages: [],
   role: 'alert',
 }
 
