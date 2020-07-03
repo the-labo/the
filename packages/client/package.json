@@ -1,7 +1,7 @@
 {
   "name": "@the-/client",
   "description": "Client for the-server",
-  "version": "17.2.13",
+  "version": "17.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -26,7 +26,6 @@
     "rfunc-client": "^5.1.0",
     "rfunc-constants": "^1.0.5",
     "socket.io-client": "^2.3.0",
-    "url": "^0.11.0",
     "uuid": "^8.1.0"
   },
   "devDependencies": {
