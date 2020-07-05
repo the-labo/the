@@ -16,7 +16,7 @@
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
     "asobj": "^3.0.1",
-    "binary-extensions": "^2.0.0",
+    "binary-extensions": "^2.1.0",
     "builtin-modules": "^3.1.0",
     "colorprint": "^6.1.1",
     "compressed-extensions": "^2.1.0",

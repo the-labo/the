@@ -108,7 +108,7 @@ tryExample().catch((err) => console.error(err))
   - [.debugController(controller)](./doc/api/api.md#module_@the-/client.helpers.debugController)
   - [.debugStream(stream)](./doc/api/api.md#module_@the-/client.helpers.debugStream)
   - [.InfoAccess()](./doc/api/api.md#module_@the-/client.helpers.InfoAccess)
-  - [.parseClientUrl()](./doc/api/api.md#module_@the-/client.helpers.parseClientUrl)
+  - [.parseClientUrl(url)](./doc/api/api.md#module_@the-/client.helpers.parseClientUrl)
 - module:@the-/client.helpers.InfoAccess
   - [~infoAccess](./doc/api/api.md#module_@the-/client.helpers.InfoAccess~infoAccess)
 - module:@the-/client.mixins

@@ -1,7 +1,9 @@
 'use strict'
 
+const {
+  strict: { equal },
+} = require('assert')
 const { parseClientUrl } = require('../lib/helpers')
-const { equal } = require('assert').strict
 
 /**
  * @file Test for parseClientUrl.
@@ -13,11 +15,10 @@ describe('parse-client-url', () => {
   after(() => {})
 
   it('Do test', () => {
-
     const parsed = parseClientUrl({
       hostname: 'xxxx',
       pathname: '/x',
-      port: 3000
+      port: 3000,
     })
     equal(parsed, 'http://xxxx:3000/x')
   })

@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check": "^15.6.3",
-    "@the-/ui-router": "^16.0.1",
+    "@the-/ui-router": "^16.0.2",
     "@the-/url": "^15.4.12",
     "@the-/window": "^15.8.3"
   },

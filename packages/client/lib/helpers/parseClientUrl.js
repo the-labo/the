@@ -10,7 +10,7 @@ const { DEFAULT_URL } = require('rfunc-constants')
  * @param {Object|string} url - URL string or config
  * @returns {string} - Parsed url
  */
-function parseClientUrl (url) {
+function parseClientUrl(url) {
   if (typeof url === 'string') {
     const { pathname } = new URL(url)
     if (pathname === '/') {

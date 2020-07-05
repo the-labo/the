@@ -15,7 +15,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ast": "^16.2.4",
+    "@the-/ast": "^16.2.5",
     "@the-/const-code": "^15.5.2",
     "@the-/util-file": "^15.7.4",
     "@the-/util-path": "^15.4.4",

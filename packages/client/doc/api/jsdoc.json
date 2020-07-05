@@ -13,7 +13,7 @@
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "17.2.13"
+    "version": "17.3.0"
   },
   {
     "id": "module:@the-/client.TheClient()",
@@ -757,7 +757,7 @@
     "memberof": "module:@the-/client.helpers",
     "meta": {
       "filename": "parseClientUrl.js",
-      "lineno": 7,
+      "lineno": 6,
       "path": "lib/helpers"
     },
     "name": "parseClientUrl",
@@ -770,7 +770,8 @@
             "string"
           ]
         },
-        "description": "URL string or config"
+        "description": "URL string or config",
+        "name": "url"
       }
     ],
     "returns": [

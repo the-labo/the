@@ -21,7 +21,7 @@
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
     "mkdirp": "^1.0.4",
-    "sequelize": "^6.2.0",
+    "sequelize": "^6.3.0",
     "utf8": "^3.0.0"
   },
   "devDependencies": {

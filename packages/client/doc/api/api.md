@@ -38,7 +38,7 @@
 ## @the-/client
 Client for the-server
 
-**Version**: 17.2.13  
+**Version**: 17.3.0  
 **License**: MIT  
 
 * [@the-/client](#module_@the-/client)
@@ -52,7 +52,7 @@ Client for the-server
         * [.debugStream(stream)](#module_@the-/client.helpers.debugStream) ⇒ <code>\*</code>
         * [.InfoAccess()](#module_@the-/client.helpers.InfoAccess) ⇒ <code>Object</code>
             * [~infoAccess](#module_@the-/client.helpers.InfoAccess..infoAccess) : <code>object</code>
-        * [.parseClientUrl()](#module_@the-/client.helpers.parseClientUrl) ⇒ <code>string</code>
+        * [.parseClientUrl(url)](#module_@the-/client.helpers.parseClientUrl) ⇒ <code>string</code>
     * [.create(...args)](#module_@the-/client.create) ⇒ <code>TheClient</code>
     * [.default()](#module_@the-/client.default)
 
@@ -96,7 +96,7 @@ Helper functions
     * [.debugStream(stream)](#module_@the-/client.helpers.debugStream) ⇒ <code>\*</code>
     * [.InfoAccess()](#module_@the-/client.helpers.InfoAccess) ⇒ <code>Object</code>
         * [~infoAccess](#module_@the-/client.helpers.InfoAccess..infoAccess) : <code>object</code>
-    * [.parseClientUrl()](#module_@the-/client.helpers.parseClientUrl) ⇒ <code>string</code>
+    * [.parseClientUrl(url)](#module_@the-/client.helpers.parseClientUrl) ⇒ <code>string</code>
 
 <a name="module_@the-/client.helpers.asController"></a>
 
@@ -143,15 +143,15 @@ Wrap stream with debug utility
 **Kind**: inner namespace of [<code>InfoAccess</code>](#module_@the-/client.helpers.InfoAccess)  
 <a name="module_@the-/client.helpers.parseClientUrl"></a>
 
-#### helpers.parseClientUrl() ⇒ <code>string</code>
+#### helpers.parseClientUrl(url) ⇒ <code>string</code>
 Parse caller URL
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/client.helpers)  
 **Returns**: <code>string</code> - - Parsed url  
 
-| Type | Description |
-| --- | --- |
-| <code>Object</code> \| <code>string</code> | URL string or config |
+| Param | Type | Description |
+| --- | --- | --- |
+| url | <code>Object</code> \| <code>string</code> | URL string or config |
 
 <a name="module_@the-/client.create"></a>
 
