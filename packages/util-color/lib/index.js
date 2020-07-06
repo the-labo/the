@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-color
  * @typicalname utilColor
- * @version 16.0.0
+ * @version 16.1.0
  */
 'use strict'
 

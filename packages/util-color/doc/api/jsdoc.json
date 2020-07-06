@@ -13,7 +13,7 @@
     "name": "@the-/util-color",
     "order": 3,
     "typicalname": "utilColor",
-    "version": "16.0.0"
+    "version": "16.1.0"
   },
   {
     "description": "Make sure a color is dark enough to work with while",
@@ -159,7 +159,7 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "rotatedColorsFor.js",
-      "lineno": 5,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "rotatedColorsFor",

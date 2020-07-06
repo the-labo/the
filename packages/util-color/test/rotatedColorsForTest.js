@@ -16,6 +16,8 @@ describe('rotated-colors-for', () => {
 
   it('Do test', () => {
     equal(rotatedColorsFor('#381', { count: 3 }).length, 3)
+
+    console.log(rotatedColorsFor('#FF6633'))
   })
 })
 
