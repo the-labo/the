@@ -13,7 +13,7 @@
     "name": "@the-/util-color",
     "order": 3,
     "typicalname": "utilColor",
-    "version": "15.5.2"
+    "version": "16.0.0"
   },
   {
     "description": "Make sure a color is dark enough to work with while",

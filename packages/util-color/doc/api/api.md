@@ -21,7 +21,7 @@
 ## @the-/util-color
 Color utility for the-framework
 
-**Version**: 15.5.2  
+**Version**: 16.0.0  
 **License**: MIT  
 
 * [@the-/util-color](#module_@the-/util-color)
