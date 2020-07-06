@@ -16,7 +16,9 @@ function colorWithText(text, options = {}) {
     .split('')
     .map((letter) => letter.charCodeAt(0))
     .reduce((result, value) => result + value, 0)
-  return rotate(base, parseInt(value % 360.0))
+  return rotate(base, parseInt(value % 360.0), {
+    lch: true,
+  })
 }
 
 colorWithText.of = function colorWithTextOf(base) {
