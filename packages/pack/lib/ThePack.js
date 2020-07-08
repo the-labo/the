@@ -65,7 +65,11 @@ class ThePack {
     try {
       return msgpackEncode(data)
     } catch (e) {
-      throw new Error(`[ThePack] Failed to encode data: ${e.message}`)
+      throw new Error(
+        `[ThePack] Failed to encode data: ${e.message} ( ${JSON.stringify(
+          data,
+        )} )`,
+      )
     }
   }
 }
