@@ -46,6 +46,16 @@ const TheToast = React.memo((props) => {
       }, []),
     [props.messages, tmp],
   )
+  useEffect(() => {
+    const needsUpdate =
+      !!props.message && messages.some((m) => typeof m !== typeof props.message)
+    if (needsUpdate) {
+      onUpdate &&
+        onUpdate({
+          [level]: newMessages,
+        })
+    }
+  }, [messages, props.message, level])
   tmp.messages = messages
   const clearMessage = useCallback(
     (id) => {
