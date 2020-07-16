@@ -4,8 +4,8 @@ import React from 'react'
 import { TheImage } from '@the-/ui-image'
 import { TheImageStyle } from '@the-/ui-image/styles'
 
-const IMAGE_URL =
-  'https://raw.githubusercontent.com/apeman-asset-labo/apeman-asset-images/master/dist/dummy/01.jpg'
+const IMAGE_URL = 'https://homepages.cae.wisc.edu/~ece533/images/monarch.png'
+const IMAGE2_URL = 'https://homepages.cae.wisc.edu/~ece533/images/pool.png'
 
 const ExampleComponent = () => {
   const width = 120
@@ -41,17 +41,17 @@ const ExampleComponent = () => {
           asLink
           height='24px'
           scale='fill'
-          src={IMAGE_URL}
+          src={IMAGE2_URL}
           width='33%'
         />
         <TheImage
           asLink
           height='24px'
           scale='fill'
-          src={IMAGE_URL}
+          src={IMAGE2_URL}
           width='33%'
         />
-        <TheImage height='24px' scale='fill' src={IMAGE_URL} width='33%' />
+        <TheImage height='24px' scale='fill' src={IMAGE2_URL} width='33%' />
       </div>
     </div>
   )

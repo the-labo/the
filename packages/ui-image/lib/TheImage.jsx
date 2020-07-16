@@ -29,6 +29,7 @@ const TheImage = (props) => {
     width,
   } = props
   const elmRef = useRef(null)
+  const imageRef = useRef(null)
 
   const [busy, setBusy] = useState(true)
   const [failed, setFailed] = useState(false)
@@ -71,9 +72,10 @@ const TheImage = (props) => {
   }, [resizeInterval, resize])
 
   useEffect(() => {
-    setBusy(true)
+    const { current: img } = imageRef
+    setBusy(!img.complete)
     setFailed(false)
-  }, [src])
+  }, [src, imageRef])
 
   const handleError = useCallback(
     (e) => {
@@ -129,6 +131,7 @@ const TheImage = (props) => {
             loading={loading}
             onError={handleError}
             onLoad={handleLoad}
+            ref={imageRef}
             src={src}
             width={actualWidth || width}
           />
