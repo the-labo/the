@@ -4,7 +4,7 @@
  * @description Button of the-components
  * @module @the-/ui-button
  * @typicalname uiButton
- * @version 16.0.5
+ * @version 16.0.6
  */
 'use strict'
 

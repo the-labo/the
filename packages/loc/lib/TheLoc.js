@@ -110,7 +110,7 @@ class TheLoc {
     unlessProduction(() => {
       console.warn(`[TheLoc] Failed to resolve keypath: "${keypath}"`)
     })
-    return null
+    return ''
   }
 
   /**

@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/cache
  * @typicalname cache
- * @version 15.5.3
+ * @version 15.6.0
  */
 'use strict'
 
