@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.10.4",
+    "@babel/runtime": "^7.10.5",
     "@the-/ast": "^16.2.5",
     "@the-/util-file": "^15.7.4",
     "aglob": "^3.0.2",
