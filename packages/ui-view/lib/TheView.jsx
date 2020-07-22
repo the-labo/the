@@ -72,6 +72,7 @@ TheView.Header = function Header(props) {
     children,
     className,
     icon,
+    leftDisabled,
     leftIcon,
     leftNode = null,
     leftText,
@@ -79,6 +80,7 @@ TheView.Header = function Header(props) {
     narrow,
     onLeftClick,
     onRightClick,
+    rightDisabled,
     rightIcon,
     rightNode = null,
     rightText,
@@ -101,6 +103,7 @@ TheView.Header = function Header(props) {
         <span className='the-view-header-col'>
           {leftNode}
           <HeaderButton
+            disabled={leftDisabled}
             icon={leftIcon}
             onClick={onLeftClick}
             text={leftText}
@@ -118,6 +121,7 @@ TheView.Header = function Header(props) {
         </span>
         <span className='the-view-header-col'>
           <HeaderButton
+            disabled={rightDisabled}
             icon={rightIcon}
             onClick={onRightClick}
             text={rightText}
@@ -130,7 +134,13 @@ TheView.Header = function Header(props) {
   )
 }
 
-TheView.HeaderButton = function HeaderButton({ icon, onClick, text, to }) {
+TheView.HeaderButton = function HeaderButton({
+  disabled,
+  icon,
+  onClick,
+  text,
+  to,
+}) {
   const valid = icon || text || onClick || to
   if (!valid) {
     return null
@@ -139,6 +149,7 @@ TheView.HeaderButton = function HeaderButton({ icon, onClick, text, to }) {
   return (
     <TheButton
       className='the-view-header-button'
+      disabled={disabled}
       icon={icon}
       onClick={onClick}
       simple
