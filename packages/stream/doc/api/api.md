@@ -5,7 +5,7 @@
 ## @the-/stream
 Base of the streams
 
-**Version**: 15.4.14  
+**Version**: 15.4.15  
 **License**: MIT  
 
 * [@the-/stream](#module_@the-/stream)
