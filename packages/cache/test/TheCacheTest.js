@@ -38,6 +38,17 @@ describe('the-cache', () => {
     cache.get('x')
     equal(accessCount, 1)
   })
+
+  it('withLocalStorage', () => {
+    global.window = {
+      localStorage: {},
+    }
+    const cache = TheCache.withLocalStorage('hoge')
+    equal(!!cache, true)
+    cache.set('x', 1)
+    equal(cache.get('x'), 1)
+    delete global.window
+  })
 })
 
 /* global describe, before, after, it */

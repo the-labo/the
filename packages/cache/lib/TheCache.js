@@ -9,6 +9,41 @@ const LRUCache = require('lru-cache')
  * @see https://github.com/isaacs/node-lru-cache#readme
  */
 class TheCache extends LRUCache {
+  static withLocalStorage(key, options = {}) {
+    const { storageMaxAge = options.maxAge, ...cacheOptions } = options
+    const localStorage = typeof window !== 'undefined' && window.localStorage
+    if (!localStorage) {
+      console.warn('localStorage not supported')
+      return
+    }
+    const storageKey = `the:cache:${key}`
+    const save = (values) =>
+      (localStorage[storageKey] = JSON.stringify({
+        at: new Date().getTime(),
+        data: values,
+      }))
+    const cache = new this({
+      dispose: () => {
+        save(cache.dump())
+      },
+      ...cacheOptions,
+    })
+    const restored =
+      localStorage[storageKey] && JSON.parse(localStorage[storageKey])
+    const shouldLoad =
+      !!restored && (!storageMaxAge || new Date() - restored.at < storageMaxAge)
+    if (shouldLoad) {
+      cache.load(restored.data)
+    }
+    const { set } = cache
+    cache.set = function setAndSave() {
+      set.apply(cache, arguments)
+      save(cache.dump())
+    }
+
+    return cache
+  }
+
   /**
    * Get cache or initialize and set
    * @param {string} key - Cache key

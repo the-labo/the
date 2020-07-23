@@ -13,7 +13,7 @@
     "name": "@the-/cache",
     "order": 2,
     "typicalname": "cache",
-    "version": "15.6.0"
+    "version": "15.6.1"
   },
   {
     "async": true,
@@ -24,7 +24,7 @@
     "memberof": "TheCache",
     "meta": {
       "filename": "TheCache.js",
-      "lineno": 18,
+      "lineno": 53,
       "path": "lib"
     },
     "name": "for",
