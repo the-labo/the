@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-chat",
   "description": "Chat UI of the-components",
-  "version": "16.0.3",
+  "version": "16.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,7 +22,7 @@
     "@the-/ui-spin": "^16.0.1",
     "@the-/ui-style": "^16.0.2",
     "@the-/ui-video": "^16.0.0",
-    "@the-/util-color": "^15.5.2",
+    "@the-/util-color": "^16.1.0",
     "@the-/util-ui": "^16.4.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"

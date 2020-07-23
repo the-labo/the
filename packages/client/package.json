@@ -29,7 +29,7 @@
     "uuid": "^8.2.0"
   },
   "devDependencies": {
-    "@the-/server": "^17.7.5",
+    "@the-/server": "^17.7.6",
     "aport": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

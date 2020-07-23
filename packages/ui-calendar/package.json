@@ -21,7 +21,7 @@
     "moment": "^2.27.0",
     "objnest": "^5.0.10",
     "prop-types": "^15.7.2",
-    "react-big-calendar": "^0.25.0"
+    "react-big-calendar": "^0.26.0"
   },
   "devDependencies": {
     "@the-/ui-demo": "^16.0.3",
