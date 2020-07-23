@@ -27,7 +27,7 @@
   "devDependencies": {
     "clay-lump": "^4.4.31",
     "mysql2": "^2.1.0",
-    "sqlite3": "^4.2.0"
+    "sqlite3": "^5.0.0"
   },
   "engines": {
     "node": ">=10",
