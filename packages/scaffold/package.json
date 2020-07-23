@@ -1,7 +1,7 @@
 {
   "name": "@the-/scaffold",
   "description": "Scaffold for the-projects",
-  "version": "15.5.1",
+  "version": "15.5.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
     "asfs": "^2.3.0",
     "askconfig": "^4.0.4",
     "asobj": "^3.0.1",
-    "commander": "^5.1.0",
+    "commander": "^6.0.0",
     "filemode": "^3.0.0",
     "gitconfig": "^2.0.8",
     "tmplconv": "^5.0.1"

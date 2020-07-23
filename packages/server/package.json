@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "17.7.6",
+  "version": "17.7.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -29,7 +29,7 @@
     "locale": "^0.1.0",
     "qs": "^6.9.4",
     "redis": "^3.0.2",
-    "rfunc": "^4.3.3",
+    "rfunc": "^4.4.0",
     "rimraf": "^3.0.2",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0",
