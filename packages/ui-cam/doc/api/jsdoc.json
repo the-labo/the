@@ -12,7 +12,7 @@
     "name": "@the-/ui-cam",
     "order": 0,
     "typicalname": "uiCam",
-    "version": "16.0.8"
+    "version": "16.0.9"
   },
   {
     "description": "Embed camera component",
