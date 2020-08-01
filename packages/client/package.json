@@ -26,10 +26,10 @@
     "rfunc-client": "^5.1.0",
     "rfunc-constants": "^1.0.5",
     "socket.io-client": "^2.3.0",
-    "uuid": "^8.2.0"
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
-    "@the-/server": "^17.7.6",
+    "@the-/server": "^17.7.7",
     "aport": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
