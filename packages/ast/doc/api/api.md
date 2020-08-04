@@ -21,7 +21,7 @@
 ## @the-/ast
 AST (abstract syntax tree) parser
 
-**Version**: 16.2.5  
+**Version**: 16.2.6  
 **License**: MIT  
 
 * [@the-/ast](#module_@the-/ast)

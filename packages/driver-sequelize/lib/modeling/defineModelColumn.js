@@ -59,6 +59,7 @@ function defineModelColumn(propertyName, def = {}) {
       } else if (big) {
         sType = Sequelize.BIGINT
       }
+
       return { ...base, type: sType }
     }
     case OBJECT:

@@ -52,7 +52,7 @@ const TheToast = React.memo((props) => {
     if (needsUpdate) {
       onUpdate &&
         onUpdate({
-          [level]: newMessages,
+          [level]: messages,
         })
     }
   }, [messages, props.message, level])

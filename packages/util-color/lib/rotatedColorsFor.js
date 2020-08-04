@@ -23,6 +23,7 @@ function rotatedColorsFor(base = '#38E', options = {}) {
   if (sort) {
     return colors.sort((a, b) => Color(a).hue() - Color(b).hue())
   }
+
   return colors
 }
 

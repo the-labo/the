@@ -13,7 +13,7 @@
   "dependencies": {},
   "description": "Demo of mono repo with the",
   "devDependencies": {
-    "@the-/eslint-config-react": "^15.6.7"
+    "@the-/eslint-config-react": "^15.6.8"
   },
   "engines": {
     "node": ">=10",

@@ -65,6 +65,7 @@ class TheDB extends TheDBBase {
       name = uuid(),
       plugins = {},
       refreshInterval = 300,
+      resourceLogEnabled = true,
       resourceLogFile = 'var/db/resources.log',
       resources = {},
     } = config
@@ -95,7 +96,7 @@ class TheDB extends TheDBBase {
     this.indices = {}
     this.closed = false
     this.loadFromMapping({
-      TheDBLog: TheLogResource,
+      ...(resourceLogEnabled ? { TheDBLog: TheLogResource } : {}),
       TheDBSchema: TheSchemaResource,
       ...resources,
     })
@@ -105,12 +106,16 @@ class TheDB extends TheDBBase {
     this.hooksFromMapping({
       ...hooks,
     })
-    const {
-      _resources: { TheDBLog },
-    } = this
-    TheDBLog.prepare({
-      filename: resourceLogFile,
-    })
+
+    if (resourceLogEnabled) {
+      const {
+        _resources: { TheDBLog },
+      } = this
+      TheDBLog.prepare({
+        filename: resourceLogFile,
+      })
+    }
+
     this.startRefreshLoop({ interval: refreshInterval })
     this.startCascadeLink()
   }
@@ -282,7 +287,7 @@ class TheDB extends TheDBBase {
     assert(!!resource, 'Resource factory should return a resource')
 
     this.setResource(resourceName, resource)
-    this.theDBLogEnabled = true
+    this.theDBResourceLogEnabled = true
     resource.db = this
 
     return resource

@@ -16,6 +16,7 @@ class TheCache extends LRUCache {
       console.warn('localStorage not supported')
       return
     }
+
     const storageKey = `the:cache:${key}`
     const save = (values) =>
       (localStorage[storageKey] = JSON.stringify({
@@ -35,6 +36,7 @@ class TheCache extends LRUCache {
     if (shouldLoad) {
       cache.load(restored.data)
     }
+
     const { set } = cache
     cache.set = function setAndSave() {
       set.apply(cache, arguments)

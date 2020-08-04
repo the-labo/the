@@ -168,8 +168,8 @@ const TheLogResource = ({ define }) => {
     },
     async flushData() {
       const { stream } = Log
-      const { theDBLogEnabled } = Log.db || {}
-      if (!theDBLogEnabled) {
+      const { theDBResourceLogEnabled } = Log.db || {}
+      if (!theDBResourceLogEnabled) {
         return
       }
 
