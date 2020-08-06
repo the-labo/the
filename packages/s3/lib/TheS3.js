@@ -41,7 +41,7 @@ class TheS3 {
         console.warn('[TheS3] Unknown configurations:', restKeys)
       }
     })
-
+    this.bucketName = Bucket
     this.s3 = new S3({
       accessKeyId,
       params: { Bucket },
@@ -89,6 +89,30 @@ class TheS3 {
 
       throw e
     }
+  }
+
+  /**
+   * Generate signed url to upload
+   * @param {string} pathname - Path to upload
+   * @param {Object} [options={}] - Optional settings
+   * @returns {Promise<string>}
+   */
+  async generateUploadUrl(pathname, options = {}) {
+    const { bucketName, s3 } = this
+    const { expires = 60 * 5 } = options
+    return new Promise((resolve, reject) => {
+      s3.getSignedUrl(
+        'putObject',
+        {
+          Bucket: bucketName,
+          Expires: expires,
+          Key: pathname,
+        },
+        (err, url) => {
+          err ? reject(err) : resolve(url)
+        },
+      )
+    })
   }
 
   /**

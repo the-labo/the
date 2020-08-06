@@ -13,7 +13,7 @@
     "name": "@the-/s3",
     "order": 2,
     "typicalname": "s3",
-    "version": "15.5.14"
+    "version": "15.5.16"
   },
   {
     "id": "module:@the-/s3.TheS3()",
@@ -152,6 +152,53 @@
   },
   {
     "async": true,
+    "description": "Generate signed url to upload",
+    "id": "TheS3#generateUploadUrl",
+    "kind": "function",
+    "longname": "TheS3#generateUploadUrl",
+    "memberof": "TheS3",
+    "meta": {
+      "filename": "TheS3.js",
+      "lineno": 100,
+      "path": "lib"
+    },
+    "name": "generateUploadUrl",
+    "order": 7,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Path to upload",
+        "name": "pathname"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<string>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
     "description": "Upload file into s3",
     "id": "TheS3#upload",
     "kind": "function",
@@ -159,11 +206,11 @@
     "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 100,
+      "lineno": 124,
       "path": "lib"
     },
     "name": "upload",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
