@@ -14,7 +14,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/core": "^7.11.0",
+    "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-do-expressions": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
@@ -22,7 +22,7 @@
     "@babel/polyfill": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
-    "@babel/runtime": "^7.11.0",
+    "@babel/runtime": "^7.11.2",
     "@the-/code": "^15.17.2",
     "@the-/tmp": "^15.5.0",
     "ababel": "^6.1.4",
@@ -31,7 +31,7 @@
     "asenv": "^3.0.2",
     "asfs": "^2.3.0",
     "asleep": "^1.0.3",
-    "awatch": "^2.0.3",
+    "awatch": "^2.0.4",
     "babel-loader": "^8.1.0",
     "commander": "^6.0.0",
     "coz": "^7.2.0",
