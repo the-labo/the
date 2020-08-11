@@ -179,16 +179,10 @@ class TheDriverSequelize extends Driver {
   async drop(resourceName) {
     await this.untilReady()
     const Model = this.modelFor(resourceName)
-    const {
-      sequelize: { queryInterface },
-      tableName,
-    } = Model
-    const indexNames = (Model._indexes || []).map((i) => i.name).filter(Boolean)
-    for (const indexName of indexNames) {
-      await queryInterface.removeIndex(tableName, indexName)
-    }
-    await Model.drop()
-    await Model.sync()
+    await Model.drop({ force: true })
+    await Model.sync().catch(() => {
+      // 失敗したら諦める
+    })
   }
 
   async list(resourceName, condition = {}, options = {}) {

@@ -13,7 +13,7 @@
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "17.0.4"
+    "version": "17.0.6"
   },
   {
     "description": "Define schema",
@@ -67,7 +67,7 @@
     "memberof": "TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 330,
+      "lineno": 324,
       "path": "lib"
     },
     "name": "untilReady",
