@@ -17,7 +17,7 @@
     "@the-/window": "^15.8.3",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
-    "flatpickr": "^4.6.3",
+    "flatpickr": "^4.6.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 {
   "name": "@the-/assets",
   "description": "Assets for the-framework",
-  "version": "16.2.4",
+  "version": "16.2.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +16,7 @@
     "filelink": "^4.1.1"
   },
   "devDependencies": {
-    "flatpickr": "^4.6.3",
+    "flatpickr": "^4.6.6",
     "uglifycss": "0.0.29"
   },
   "engines": {

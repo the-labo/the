@@ -35,7 +35,7 @@
     "asleep": "^1.0.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webrtc-adapter": "^7.6.4"
+    "webrtc-adapter": "^7.7.0"
   },
   "engines": {
     "node": ">=10",

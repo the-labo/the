@@ -13,7 +13,7 @@
     "name": "@the-/assets",
     "order": 2,
     "typicalname": "assets",
-    "version": "16.2.4"
+    "version": "16.2.5"
   },
   {
     "async": true,
