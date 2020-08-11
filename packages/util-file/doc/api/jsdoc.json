@@ -13,7 +13,7 @@
     "name": "@the-/util-file",
     "order": 4,
     "typicalname": "utilFile",
-    "version": "15.7.4"
+    "version": "15.7.5"
   },
   {
     "id": "module:@the-/util-file.copyAsJsonSync",
