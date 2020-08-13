@@ -73,6 +73,9 @@ const TheImage = (props) => {
 
   useEffect(() => {
     const { current: img } = imageRef
+    if (!img) {
+      return
+    }
     setBusy(!img.complete)
     setFailed(false)
   }, [src, imageRef])

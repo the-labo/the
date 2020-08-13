@@ -12,7 +12,7 @@
     "name": "@the-/ui-image",
     "order": 0,
     "typicalname": "uiImage",
-    "version": "16.0.1"
+    "version": "16.0.2"
   },
   {
     "description": "Image of the-components",
@@ -52,7 +52,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 147,
+      "lineno": 150,
       "path": "lib"
     },
     "name": "asLink",
@@ -67,7 +67,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 149,
+      "lineno": 152,
       "path": "lib"
     },
     "name": "draggable",
@@ -82,7 +82,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 151,
+      "lineno": 154,
       "path": "lib"
     },
     "name": "height",
@@ -97,7 +97,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 153,
+      "lineno": 156,
       "path": "lib"
     },
     "name": "notFoundMessage",
@@ -112,7 +112,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 155,
+      "lineno": 158,
       "path": "lib"
     },
     "name": "onError",
@@ -127,7 +127,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 157,
+      "lineno": 160,
       "path": "lib"
     },
     "name": "onLoad",
@@ -142,7 +142,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 159,
+      "lineno": 162,
       "path": "lib"
     },
     "name": "resizeInterval",
@@ -157,7 +157,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 161,
+      "lineno": 164,
       "path": "lib"
     },
     "name": "scale",
@@ -172,7 +172,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 163,
+      "lineno": 166,
       "path": "lib"
     },
     "name": "width",
