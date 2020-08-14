@@ -99,12 +99,13 @@ class TheS3 {
    */
   async generateUploadUrl(pathname, options = {}) {
     const { bucketName, s3 } = this
-    const { expires = 60 * 5 } = options
+    const { expires = 60 * 5, type } = options
     return new Promise((resolve, reject) => {
       s3.getSignedUrl(
         'putObject',
         {
           Bucket: bucketName,
+          ContentType: type,
           Expires: expires,
           Key: pathname,
         },

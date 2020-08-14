@@ -97,6 +97,7 @@ tryExample().catch((err) => console.error(err))
 - TheS3
   - [#download(params)](./doc/api/api.md#TheS3#download)
   - [#exists(params)](./doc/api/api.md#TheS3#exists)
+  - [#generateUploadUrl(pathname,options)](./doc/api/api.md#TheS3#generateUploadUrl)
   - [#upload(src,options)](./doc/api/api.md#TheS3#upload)
 
 See [API Guide](./doc/api/api.md) for more detail

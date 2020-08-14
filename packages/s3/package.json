@@ -1,7 +1,7 @@
 {
   "name": "@the-/s3",
   "description": "S3 upload helper",
-  "version": "15.5.16",
+  "version": "15.5.17",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/assert": "^15.4.1",
     "@the-/check-env": "^15.6.0",
-    "aws-sdk": "^2.732.0",
+    "aws-sdk": "^2.733.0",
     "debug": "^4.1.1",
     "mime": "^2.4.6"
   },

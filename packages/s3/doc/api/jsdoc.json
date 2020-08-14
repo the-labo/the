@@ -13,7 +13,7 @@
     "name": "@the-/s3",
     "order": 2,
     "typicalname": "s3",
-    "version": "15.5.16"
+    "version": "15.5.17"
   },
   {
     "id": "module:@the-/s3.TheS3()",
@@ -206,7 +206,7 @@
     "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 124,
+      "lineno": 125,
       "path": "lib"
     },
     "name": "upload",
