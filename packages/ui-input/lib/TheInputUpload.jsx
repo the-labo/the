@@ -69,14 +69,17 @@ const TheInputUpload = React.memo((props) => {
     [convertFile, multiple, name, value],
   )
 
-  const handleError = useCallback(() => {
-    setError(error)
-    if (onError) {
-      onError(error)
-    } else {
-      console.error('[TheInputUpload] File change failed', error)
-    }
-  }, [setError])
+  const handleError = useCallback(
+    (error) => {
+      setError(error)
+      if (onError) {
+        onError(error)
+      } else {
+        console.error('[TheInputUpload] File change failed', error)
+      }
+    },
+    [setError],
+  )
 
   const spinWhile = useCallback(
     async (action) => {
