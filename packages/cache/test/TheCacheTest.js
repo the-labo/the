@@ -4,6 +4,7 @@
  * Test for TheCache.
  * Runs with mocha.
  */
+const asleep = require('asleep')
 const {
   strict: { equal, ok },
 } = require('assert')
@@ -17,7 +18,9 @@ describe('the-cache', () => {
   it('Do test', async () => {
     ok(TheCache)
 
-    const cache = new TheCache({})
+    const cache = new TheCache({
+      maxAge: 1,
+    })
 
     cache.set('foo', 'bar')
     equal(cache.get('foo'), 'bar')
@@ -37,13 +40,16 @@ describe('the-cache', () => {
     cache.get('x')
     cache.get('x')
     equal(accessCount, 1)
+    await asleep(50)
   })
 
   it('withLocalStorage', () => {
     global.window = {
       localStorage: {},
     }
-    const cache = TheCache.withLocalStorage('hoge')
+    const cache = TheCache.withLocalStorage('hoge', {
+      maxAge: 1,
+    })
     equal(!!cache, true)
     cache.set('x', 1)
     equal(cache.get('x'), 1)

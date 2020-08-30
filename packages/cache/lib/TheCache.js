@@ -46,6 +46,20 @@ class TheCache extends LRUCache {
     return cache
   }
 
+  constructor(options) {
+    super(options)
+    const { maxAge } = this
+    if (maxAge <= 0) {
+      console.warn('[TheCache] maxAge should be longer than 0')
+    }
+    const pruneTimer = setInterval(() => {
+      this.prune()
+    }, maxAge)
+    if (pruneTimer.unref) {
+      pruneTimer.unref()
+    }
+  }
+
   /**
    * Get cache or initialize and set
    * @param {string} key - Cache key

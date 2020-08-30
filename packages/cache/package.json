@@ -1,7 +1,7 @@
 {
   "name": "@the-/cache",
   "description": "Cache manager of the-frameworks",
-  "version": "15.6.1",
+  "version": "15.6.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,9 @@
   "dependencies": {
     "lru-cache": "^6.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "asleep": "^1.0.3"
+  },
   "engines": {
     "node": ">=10",
     "npm": ">=6"

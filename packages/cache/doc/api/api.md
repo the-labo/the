@@ -5,7 +5,7 @@
 ## @the-/cache
 Cache manager of the-frameworks
 
-**Version**: 15.6.1  
+**Version**: 15.6.2  
 **License**: MIT  
 
 * [@the-/cache](#module_@the-/cache)
