@@ -11,9 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/queue",
-    "order": 2,
+    "order": 4,
     "typicalname": "queue",
-    "version": "15.4.12"
+    "version": "15.4.14"
   },
   {
     "id": "module:@the-/queue.TheQueue()",
@@ -21,7 +21,7 @@
     "longname": "module:@the-/queue.TheQueue",
     "memberof": "module:@the-/queue.TheQueue",
     "name": "TheQueue",
-    "order": 4,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -65,6 +65,29 @@
     ]
   },
   {
+    "description": "現状積まれている処理が全部終わるまで待つ",
+    "id": "wait",
+    "kind": "function",
+    "longname": "wait",
+    "meta": {
+      "filename": "ConcurrentQueue.js",
+      "lineno": 36,
+      "path": "lib"
+    },
+    "name": "wait",
+    "order": 1,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
     "description": "Push next task",
     "id": "TheQueue#push",
     "kind": "function",
@@ -76,7 +99,7 @@
       "path": "lib"
     },
     "name": "push",
-    "order": 5,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -102,7 +125,7 @@
       "path": "lib"
     },
     "name": "start",
-    "order": 6,
+    "order": 8,
     "params": [],
     "scope": "instance"
   },
@@ -118,7 +141,7 @@
       "path": "lib"
     },
     "name": "stop",
-    "order": 7,
+    "order": 9,
     "params": [],
     "scope": "instance"
   },
@@ -135,7 +158,7 @@
       "path": "lib"
     },
     "name": "wait",
-    "order": 8,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -182,7 +205,38 @@
       "path": "lib"
     },
     "name": "TheQueue",
-    "order": 3,
+    "order": 5,
+    "scope": "static"
+  },
+  {
+    "description": "Queue with concurrency",
+    "id": "module:@the-/queue.ConcurrentQueue",
+    "kind": "function",
+    "longname": "module:@the-/queue.ConcurrentQueue",
+    "memberof": "module:@the-/queue",
+    "meta": {
+      "filename": "ConcurrentQueue.js",
+      "lineno": 11,
+      "path": "lib"
+    },
+    "name": "ConcurrentQueue",
+    "order": 0,
+    "params": [
+      {
+        "description": "Hom many tasks runs in parallel",
+        "name": "concurrency",
+        "defaultvalue": 10
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -197,7 +251,7 @@
       "path": "lib"
     },
     "name": "create",
-    "order": 0,
+    "order": 2,
     "params": [
       {
         "type": {
@@ -232,7 +286,7 @@
       "path": "lib"
     },
     "name": "default",
-    "order": 1,
+    "order": 3,
     "scope": "static"
   }
 ]

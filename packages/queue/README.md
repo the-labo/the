@@ -100,6 +100,7 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/queue
+  - [.ConcurrentQueue(concurrency)](./doc/api/api.md#module_@the-/queue.ConcurrentQueue)
   - [.create(args)](./doc/api/api.md#module_@the-/queue.create)
   - [.default()](./doc/api/api.md#module_@the-/queue.default)
   - [.TheQueue](./doc/api/api.md#module_@the-/queue.TheQueue)
@@ -108,6 +109,8 @@ tryExample().catch((err) => console.error(err))
   - [#start()](./doc/api/api.md#TheQueue#start)
   - [#stop()](./doc/api/api.md#TheQueue#stop)
   - [#wait(options)](./doc/api/api.md#TheQueue#wait)
+- global
+  - [wait()](./doc/api/api.md#wait)
 
 See [API Guide](./doc/api/api.md) for more detail
 

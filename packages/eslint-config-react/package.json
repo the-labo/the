@@ -13,7 +13,7 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.0.8"
+    "eslint-plugin-react-hooks": "^4.1.0"
   },
   "engines": {
     "node": ">=10",

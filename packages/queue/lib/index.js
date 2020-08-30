@@ -5,15 +5,17 @@
  * @license MIT
  * @module @the-/queue
  * @typicalname queue
- * @version 15.4.12
+ * @version 15.4.14
  */
 'use strict'
 
+const ConcurrentQueue_ = require('./ConcurrentQueue')
 const TheQueue_ = require('./TheQueue')
 const create_ = require('./create')
 const default__ = require('./default')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.ConcurrentQueue = ConcurrentQueue_
 exports.TheQueue = TheQueue_
 exports.create = create_
 

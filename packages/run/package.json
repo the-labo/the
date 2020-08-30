@@ -15,7 +15,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "commander": "^6.0.0",
+    "commander": "^6.1.0",
     "fkill": "^7.0.1",
     "pretty-exceptions": "^1.4.0"
   },

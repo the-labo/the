@@ -1,7 +1,7 @@
 {
   "name": "@the-/support",
   "description": "JS support version checker",
-  "version": "15.4.21",
+  "version": "15.4.22",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/ast": "^16.2.6",
-    "acorn": "^7.4.0",
+    "acorn": "^8.0.1",
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
     "chalk": "^4.1.0",

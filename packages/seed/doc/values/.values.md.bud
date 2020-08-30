@@ -24,7 +24,13 @@ module.exports = {
           embed: `${moduleName}.${methodName}`,
           results: new Array(3)
             .fill(null)
-            .map(() => faker[moduleName][methodName]())
+            .map(() => {
+              const m = faker[moduleName]
+              if (typeof m[methodName] !== 'function') {
+                return null
+              }
+              return m[methodName]()
+            })
             .filter(Boolean)
             .map((v) => {
               let str = JSON.stringify(v)

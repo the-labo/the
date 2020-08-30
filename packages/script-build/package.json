@@ -14,7 +14,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-do-expressions": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
@@ -33,7 +33,7 @@
     "asleep": "^1.0.3",
     "awatch": "^2.0.4",
     "babel-loader": "^8.1.0",
-    "commander": "^6.0.0",
+    "commander": "^6.1.0",
     "coz": "^7.2.0",
     "filecopy": "^4.1.0",
     "lebab": "^3.1.0",

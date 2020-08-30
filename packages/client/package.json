@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/check-env": "^15.6.0",
     "@the-/pack": "^16.2.15",
-    "@the-/queue": "^15.4.12",
+    "@the-/queue": "^15.4.14",
     "@the-/stream": "^15.4.15",
     "asleep": "^1.0.3",
     "browser-cookies": "^1.2.0",
