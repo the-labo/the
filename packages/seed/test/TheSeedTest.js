@@ -36,7 +36,7 @@ describe('the-seed', () => {
     }
     equal(users.length, 100)
 
-    equal(users[10].num, 11)
+    equal(users[10].num, '11')
     equal(users[10].hoge, 10)
 
     {
