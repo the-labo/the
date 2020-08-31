@@ -611,14 +611,15 @@ describe('the-driver-sequelize', function () {
       username: DB_USER,
     })
     driver.define('A', {
-      b: { indexed: true, indexPriority: 3, type: NUMBER },
-      c: { indexed: true, indexPriority: 5, type: NUMBER },
+      b: { indexed: true, type: NUMBER },
+      c: { indexed: true, type: NUMBER },
       x: { type: NUMBER },
       z: { maxLength: 32, type: STRING },
     })
     const a1 = await driver.create('A', { x: 1 })
     equal(a1.x, 1)
     driver.define('A', {
+      c: { indexed: true, type: NUMBER },
       x: { type: NUMBER },
       y: { type: NUMBER },
       z: { maxLength: 1024, type: STRING },

@@ -56,20 +56,7 @@ function defineModel(sequelize, resourceName, schema, options = {}) {
   return sequelize.define(resourceName, attributes, {
     createdAt: false,
     freezeTableName: true,
-    indexes: [
-      ...(indices || []).map((index) => {
-        if (typeof index === 'string') {
-          return { fields: [index] }
-        }
-
-        if (Array.isArray(index)) {
-          return { fields: index }
-        }
-
-        return index
-      }),
-      ...defineModelIndexes(schema),
-    ].filter(Boolean),
+    indexes: defineModelIndexes(schema, { indices }),
     timestamps: false,
     updatedAt: false,
   })

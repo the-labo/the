@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/seed
  * @typicalname seed
- * @version 15.5.0
+ * @version 15.5.1
  */
 'use strict'
 

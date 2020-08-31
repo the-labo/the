@@ -52,7 +52,23 @@ async function prepareModel(Model, Schema) {
       descriptions = await queryInterface.describeTable(tableName)
     }
   }
+
   await Model.sync()
+
+  {
+    const indexes = await queryInterface.showIndex(tableName)
+    const known = ['PRIMARY', 'id', ...Model.options.indexes.map((i) => i.name)]
+    const unknown = indexes
+      .filter((i) => !i.primary && !i.unique)
+      .map((i) => i.name)
+      .filter((n) => !known.includes(n))
+    for (const indexName of unknown) {
+      console.warn(
+        `[TheDB] Remove unknown index "${indexName}" on ${tableName}`,
+      )
+      await queryInterface.removeIndex(tableName, indexName)
+    }
+  }
 }
 
 module.exports = prepareModel

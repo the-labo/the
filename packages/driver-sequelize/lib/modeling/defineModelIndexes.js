@@ -13,7 +13,8 @@ const TypesToIndex = [ENTITY, ID, REF]
  * @param schema
  * @returns {string[]}
  */
-function defineModelIndexes(schema) {
+function defineModelIndexes(schema, options = {}) {
+  const { indices } = options
   const refColumnNames = Object.keys(schema)
     .filter((key) => {
       const def = schema[key]
@@ -21,40 +22,41 @@ function defineModelIndexes(schema) {
     })
     .filter(Boolean)
     .map((name) => {
-      const { indexedWith } = schema[name] || {}
-      if (indexedWith) {
-        return [name].concat(indexedWith)
-      }
-
-      return name
+      const def = schema[name] || {}
+      return [].concat(name).concat(def.indexedWith).filter(Boolean)
     })
-  const indexColumnNames = Object.keys(schema)
-    .filter((name) => {
-      const def = schema[name]
+  const indexedNames = Object.keys(schema)
+    .map((name) => {
+      const def = schema[name] || {}
       const skip = TypesToIndex.includes(def.type)
       if (skip) {
-        return false
+        return null
       }
-
-      return def.indexed
+      if (!def.indexed) {
+        return null
+      }
+      return [].concat(name).concat(def.indexedWith).filter(Boolean)
     })
-    .sort((a, b) => {
-      const pa = schema[a].indexPriority || 0
-      const pb = schema[b].indexPriority || 0
-      return pb - pa
-    })
+    .filter(Boolean)
   return [
     ...refColumnNames.map((name) => ({
       fields: [].concat(name),
     })),
-    ...(indexColumnNames.length > 0
-      ? [
-          {
-            fields: indexColumnNames,
-          },
-        ]
-      : []),
-  ]
+    ...indexedNames.map((name) => ({
+      fields: [].concat(name),
+    })),
+    ...(indices || []).map((index) => {
+      if (typeof index === 'string') {
+        return { fields: [index] }
+      }
+
+      if (Array.isArray(index)) {
+        return { fields: index }
+      }
+
+      return index
+    }),
+  ].filter(Boolean)
 }
 
 module.exports = defineModelIndexes
