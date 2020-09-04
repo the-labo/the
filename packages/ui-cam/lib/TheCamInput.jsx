@@ -3,7 +3,6 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useMemo, useState } from 'react'
-import Draggable from 'react-draggable'
 import { TheIcon } from '@the-/ui-icon'
 import {
   eventHandlersFor,
@@ -21,7 +20,6 @@ const noop = () => null
  */
 const TheCamInput = (props) => {
   const [busy, setBusy] = useState(false)
-  const [dragging, setDragging] = useState(false)
   const [media, setMedia] = useState(null)
   const [rejected, setRejected] = useState(false)
   const {
@@ -61,10 +59,6 @@ const TheCamInput = (props) => {
   )
 
   const handleShutter = useCallback(async () => {
-    if (dragging) {
-      return
-    }
-
     setBusy(true)
     try {
       const File = get('File', { strict: true })
@@ -79,7 +73,7 @@ const TheCamInput = (props) => {
     } finally {
       setBusy(false)
     }
-  }, [setBusy, onUpdate, media, convertFile, name, dragging])
+  }, [setBusy, onUpdate, media, convertFile, name])
 
   const handleUploadChange = useCallback(
     async (e) => {
@@ -98,16 +92,6 @@ const TheCamInput = (props) => {
     },
     [onUpdate, setBusy, convertFile],
   )
-
-  const handleDrag = useCallback(() => {
-    !dragging && setDragging(true)
-  }, [setDragging, dragging])
-  const handleDragStop = useCallback(() => {
-    const timer = setTimeout(() => {
-      dragging && setDragging(false)
-    }, 300)
-    return () => clearTimeout(timer)
-  }, [setDragging, dragging])
 
   const hasValue = !!value
   return (
@@ -181,9 +165,7 @@ const TheCamInput = (props) => {
       )}
       {!rejected && !hasValue && !busy && (
         <div className='the-cam-input-action'>
-          <Draggable onDrag={handleDrag} onStop={handleDragStop}>
-            <a className='the-cam-input-shutter' onClick={handleShutter} />
-          </Draggable>
+          <a className='the-cam-input-shutter' onClick={handleShutter} />
         </div>
       )}
       {children}

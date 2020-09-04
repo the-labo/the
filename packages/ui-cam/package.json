@@ -21,8 +21,7 @@
     "@the-/window": "^15.8.3",
     "asleep": "^1.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "react-draggable": "^4.4.3"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@the-/polyfill": "^17.1.9",
