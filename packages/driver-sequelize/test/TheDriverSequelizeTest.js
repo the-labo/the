@@ -616,6 +616,12 @@ describe('the-driver-sequelize', function () {
       x: { type: NUMBER },
       z: { maxLength: 32, type: STRING },
     })
+    driver.define('B', {
+      aId: {
+        type: STRING,
+        associate: ['A', { as: 'a' }],
+      },
+    })
     const a1 = await driver.create('A', { x: 1 })
     equal(a1.x, 1)
     driver.define('A', {
@@ -637,7 +643,18 @@ describe('the-driver-sequelize', function () {
       equal(created.length, 100)
     }
 
+    {
+      const b1 = await driver.create('B', {
+        aId: a1.id,
+      })
+      equal(b1.a.id, a1.id)
+      const b1One = await driver.one('B', b1.id)
+      equal(b1One.a.id, a1.id)
+      equal(b1One.aId, a1.id)
+    }
+
     await driver.drop('A')
+    await driver.drop('B')
     await driver.close()
   })
   it('mysql DATE type should support fractional seconds', async () => {
