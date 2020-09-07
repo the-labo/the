@@ -14,7 +14,7 @@ const parseAttributeName = require('../parsing/parseAttributeName')
  * @returns {*}
  */
 function convertOutbound(values, options = {}) {
-  const { ModelName, Schema, resourceName, associated=[], outbound } = options
+  const { ModelName, Schema, associated = [], outbound, resourceName } = options
   const converted = {
     $$as: resourceName,
     $$at: values[MetaColumnNames.$$at],
@@ -31,7 +31,7 @@ function convertOutbound(values, options = {}) {
       continue
     }
 
-    if(associated.includes(name)){
+    if (associated.includes(name)) {
       converted[name] = outbound(v)
       continue
     }

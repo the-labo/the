@@ -618,8 +618,8 @@ describe('the-driver-sequelize', function () {
     })
     driver.define('B', {
       aId: {
-        type: STRING,
         associate: ['A', { as: 'a' }],
+        type: STRING,
       },
     })
     const a1 = await driver.create('A', { x: 1 })
@@ -651,6 +651,13 @@ describe('the-driver-sequelize', function () {
       const b1One = await driver.one('B', b1.id)
       equal(b1One.a.id, a1.id)
       equal(b1One.aId, a1.id)
+
+      const list = await driver.list('B', {
+        filter: {
+          'a.id': a1.id,
+        },
+      })
+      equal(list.entities.length, 1)
     }
 
     await driver.drop('A')

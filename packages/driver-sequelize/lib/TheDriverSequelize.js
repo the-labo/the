@@ -1,6 +1,5 @@
 'use strict'
 
-const prepareModelAssociations = require('./modeling/prepareModelAssociations')
 const clayCollection = require('clay-collection')
 const { Driver } = require('clay-driver-base')
 const { pageToOffsetLimit } = require('clay-list-pager')
@@ -15,6 +14,7 @@ const convertOutbound = require('./converters/convertOutbound')
 const createSequelize = require('./helpers/createSequelize')
 const defineModel = require('./modeling/defineModel')
 const prepareModel = require('./modeling/prepareModel')
+const prepareModelAssociations = require('./modeling/prepareModelAssociations')
 const { parseAttributes, parseFilter, parseSort } = require('./parsing')
 
 /**
@@ -22,7 +22,7 @@ const { parseAttributes, parseFilter, parseSort } = require('./parsing')
  * @class TheDriverSequelize
  */
 class TheDriverSequelize extends Driver {
-  constructor (config = {}) {
+  constructor(config = {}) {
     super()
     const {
       charset = 'utf8',
@@ -54,17 +54,28 @@ class TheDriverSequelize extends Driver {
         ...otherOptions,
       },
     ]
-    this.includesFor = name => {
+    this.includesFor = (name) => {
       const schema = this.schemas[name]
       const associations = Object.values(schema)
-        .map(def => def.associate)
+        .map((def) => def.associate)
         .filter(Boolean)
         .map(([name, opt = {}]) => opt.as || name)
       return associations
     }
+    this.associatedModelFor = (name, alias) => {
+      const schema = this.schemas[name]
+      const [associateName] =
+        Object.values(schema)
+          .map((def) => def.associate)
+          .find((associate) => {
+            const [, associateOpt] = associate || []
+            return associateOpt.as === alias
+          }) || []
+      return this.models[associateName]
+    }
   }
 
-  get sequelize () {
+  get sequelize() {
     if (!this._sequelize) {
       this._sequelize = createSequelize(...this._sequelizeArgs)
     }
@@ -72,7 +83,7 @@ class TheDriverSequelize extends Driver {
     return this._sequelize
   }
 
-  assertOpen () {
+  assertOpen() {
     if (this.closed) {
       if (!isProduction()) {
         console.trace('[TheDriverSequelize] DB access after closed')
@@ -88,7 +99,7 @@ class TheDriverSequelize extends Driver {
    * @param {Object} schema
    * @param {Object} [options={}]
    */
-  define (resourceName, schema, options = {}) {
+  define(resourceName, schema, options = {}) {
     const { indices } = options
     const Model = defineModel(this.sequelize, resourceName, schema, {
       indices,
@@ -98,14 +109,14 @@ class TheDriverSequelize extends Driver {
     this._prepared = false
   }
 
-  inbound (resourceName, values) {
+  inbound(resourceName, values) {
     const Model = this.modelFor(resourceName)
     const Schema = this.schemaFor(resourceName)
     const { name: ModelName, rawAttributes: ModelAttributes } = Model
     return convertInbound(values, { ModelAttributes, ModelName, Schema })
   }
 
-  modelFor (resourceName) {
+  modelFor(resourceName) {
     const Model = this.models[resourceName]
     if (!Model) {
       throw new Error(
@@ -116,7 +127,7 @@ class TheDriverSequelize extends Driver {
     return Model
   }
 
-  outbound (resourceName, values) {
+  outbound(resourceName, values) {
     const Model = this.modelFor(resourceName)
     const Schema = this.schemaFor(resourceName)
     const include = this.includesFor(Model.name)
@@ -126,15 +137,13 @@ class TheDriverSequelize extends Driver {
       ModelAttributes,
       ModelName,
       Schema,
-      resourceName,
       associated,
-      outbound: (v) => {
-        return this.outbound(v.constructor.name, v.dataValues)
-      }
+      outbound: (v) => this.outbound(v.constructor.name, v.dataValues),
+      resourceName,
     })
   }
 
-  schemaFor (resourceName) {
+  schemaFor(resourceName) {
     const Schema = this.schemas[resourceName]
     if (!Schema) {
       throw new Error(
@@ -145,7 +154,7 @@ class TheDriverSequelize extends Driver {
     return Schema
   }
 
-  async close () {
+  async close() {
     await this.prepareIfNeeded()
 
     const { sequelize } = this
@@ -153,7 +162,7 @@ class TheDriverSequelize extends Driver {
     await sequelize.close()
   }
 
-  async create (resourceName, values = {}, options = {}) {
+  async create(resourceName, values = {}, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -161,11 +170,11 @@ class TheDriverSequelize extends Driver {
     const { id } = await Model.create(this.inbound(resourceName, values), {
       transaction,
     })
-    const model = await Model.findByPk(id, { transaction, include, })
+    const model = await Model.findByPk(id, { include, transaction })
     return this.outbound(resourceName, model.dataValues)
   }
 
-  async createBulk (resourceName, valuesArray, options = {}) {
+  async createBulk(resourceName, valuesArray, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -180,7 +189,7 @@ class TheDriverSequelize extends Driver {
     return created
   }
 
-  async destroy (resourceName, id, options = {}) {
+  async destroy(resourceName, id, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -193,7 +202,7 @@ class TheDriverSequelize extends Driver {
     return 1
   }
 
-  async drop (resourceName) {
+  async drop(resourceName) {
     await this.untilReady()
     const Model = this.modelFor(resourceName)
     await Model.drop({ force: true })
@@ -202,7 +211,7 @@ class TheDriverSequelize extends Driver {
     })
   }
 
-  async list (resourceName, condition = {}, options = {}) {
+  async list(resourceName, condition = {}, options = {}) {
     const { attributes, transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -212,8 +221,38 @@ class TheDriverSequelize extends Driver {
     const { filter = {}, page = {}, sort = [] } = condition
     const { limit, offset } = pageToOffsetLimit(page)
     const order = parseSort(sort, { ModelAttributes, ModelName, Schema })
-    const where = parseFilter(filter, { ModelAttributes, ModelName, Schema })
-    const include = this.includesFor(Model.name)
+    const filterEntries = Object.entries(filter)
+    const rootFilter = Object.fromEntries(
+      filterEntries.filter(([k]) => !k.includes('.')),
+    )
+    const nestedFilters = Object.fromEntries(
+      filterEntries.filter(([k]) => k.includes('.')),
+    )
+    const where = parseFilter(rootFilter, {
+      ModelAttributes,
+      ModelName,
+      Schema,
+    })
+    const include = this.includesFor(Model.name, {
+      wheres: Object.entries(nestedFilters).reduce(
+        (wheres, [k, v]) => {
+          const [alias, key] = k.split('.')
+          const associatedModel = this.associatedModelFor(ModelName, alias)
+          wheres[alias] = {
+            ...(wheres[alias] || {}),
+            ...parseFilter(
+              { [key]: v },
+              {
+                ModelAttributes: associatedModel.rawAttributes,
+                ModelName: associatedModel.name,
+                Schema: this.schemaFor(associatedModel.name),
+              },
+            ),
+          }
+        },
+        [{}],
+      ),
+    })
     const { count, rows } = await Model.findAndCountAll({
       attributes: parseAttributes(attributes),
       include,
@@ -238,7 +277,7 @@ class TheDriverSequelize extends Driver {
     })
   }
 
-  async one (resourceName, id, options = {}) {
+  async one(resourceName, id, options = {}) {
     const { attributes, transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -254,8 +293,8 @@ class TheDriverSequelize extends Driver {
     })
     const model = await Model.findByPk(id, {
       attributes: parseAttributes(attributes),
-      transaction,
       include: this.includesFor(Model.name),
+      transaction,
     })
     if (!model) {
       return null
@@ -263,7 +302,7 @@ class TheDriverSequelize extends Driver {
     return this.outbound(resourceName, model.dataValues)
   }
 
-  async oneBulk (resourceName, ids, options = {}) {
+  async oneBulk(resourceName, ids, options = {}) {
     const { attributes, transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -285,7 +324,7 @@ class TheDriverSequelize extends Driver {
     return found
   }
 
-  async prepare () {
+  async prepare() {
     const { sequelize } = this
     const { dialect, storage } = sequelize.options || {}
     switch (dialect) {
@@ -311,7 +350,7 @@ class TheDriverSequelize extends Driver {
     }
   }
 
-  async prepareIfNeeded () {
+  async prepareIfNeeded() {
     await this._preparing
     if (this._prepared) {
       return
@@ -328,7 +367,7 @@ class TheDriverSequelize extends Driver {
     }
   }
 
-  async resources () {
+  async resources() {
     const { models } = this
     return Object.entries(models).map(([resourceName]) => {
       const { domain, name } = clayResourceName(resourceName)
@@ -336,7 +375,7 @@ class TheDriverSequelize extends Driver {
     })
   }
 
-  async transaction () {
+  async transaction() {
     return this.sequelize.transaction(...arguments)
   }
 
@@ -344,12 +383,12 @@ class TheDriverSequelize extends Driver {
    * Wait until ready
    * @returns {Promise<undefined>}
    */
-  async untilReady () {
+  async untilReady() {
     this.assertOpen()
     await this.prepareIfNeeded()
   }
 
-  async update (resourceName, id, values, options = {}) {
+  async update(resourceName, id, values, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -365,9 +404,9 @@ class TheDriverSequelize extends Driver {
         ...values,
         [MetaColumnNames.$$num]: version + 1,
       }),
-      { transaction, include, },
+      { include, transaction },
     )
-    const { dataValues } = await Model.findByPk(id, { transaction, include, })
+    const { dataValues } = await Model.findByPk(id, { include, transaction })
     return this.outbound(resourceName, dataValues)
   }
 }

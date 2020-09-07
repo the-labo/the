@@ -13,14 +13,14 @@ const associateForSchema = async (Model, schema, { models }) => {
     }
 
     Model.belongsTo(belongingModel, {
-      foreignKey: {name},
       as: associateOpt.as,
+      foreignKey: { name },
     })
     await Model.sync()
   }
 }
 
-async function prepareModelAssociations (models, schemas) {
+async function prepareModelAssociations(models, schemas) {
   for (const [modelName, schema] of Object.entries(schemas)) {
     await associateForSchema(models[modelName], schema, { models })
   }
