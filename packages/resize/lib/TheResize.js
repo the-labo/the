@@ -16,15 +16,26 @@ const imageFilePattern = '**/+(*.jpeg|*.jpg|*.png|*.svg|*.webp)'
  * @class TheResize
  * @param {Object} [config] - Configuration
  * @param {string} [config.fit] - Fit policy ('cover','contain','fill', 'inside' or 'outside')
+ * @param {boolean} [config.enlarge] - Do not enlarge if the width or height are already less than the specified dimensions
+ * @param {number} [config.height] - Height of resized image
+ * @param {number} [config.width] - Width of resized image
+ * @param {boolean} [config.withMetadata] - Whether to keep image metadata or not
  * @see http://sharp.pixelplumbing.com/en/stable/api-resize/#parameters
  */
 class TheResize {
   constructor(config = {}) {
-    const { enlarge = false, fit = 'inside', height, width } = config
+    const {
+      enlarge = false,
+      fit = 'inside',
+      height,
+      width,
+      withMetadata = false,
+    } = config
     this.width = width
     this.height = height
     this.enlarge = enlarge
     this.fit = fit
+    this.withMetadata = withMetadata
   }
 
   /**
@@ -71,10 +82,15 @@ class TheResize {
    * @returns {Promise<Object>}
    */
   async convertFile(src, dest, options = {}) {
-    const { enlarge, fit, height, width } = this
+    const { enlarge, fit, height, width, withMetadata } = this
     await amkdirp(path.dirname(dest))
     const srcStat = await statAsync(src)
-    const result = await sharp(src)
+    const converting = sharp(src)
+    if (withMetadata) {
+      converting.withMetadata()
+    }
+
+    const result = await converting
       .rotate()
       .resize({
         fit,

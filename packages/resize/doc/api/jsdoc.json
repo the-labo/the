@@ -42,6 +42,46 @@
         "optional": true,
         "description": "Fit policy ('cover','contain','fill', 'inside' or 'outside')",
         "name": "config.fit"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Do not enlarge if the width or height are already less than the specified dimensions",
+        "name": "config.enlarge"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "description": "Height of resized image",
+        "name": "config.height"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "description": "Width of resized image",
+        "name": "config.width"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Whether to keep image metadata or not",
+        "name": "config.withMetadata"
       }
     ]
   },
@@ -54,7 +94,7 @@
     "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
-      "lineno": 37,
+      "lineno": 48,
       "path": "lib"
     },
     "name": "convert",
@@ -110,7 +150,7 @@
     "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
-      "lineno": 55,
+      "lineno": 66,
       "path": "lib"
     },
     "name": "convertDir",
@@ -166,7 +206,7 @@
     "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
-      "lineno": 73,
+      "lineno": 84,
       "path": "lib"
     },
     "name": "convertFile",
@@ -220,7 +260,7 @@
     "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
-      "lineno": 109,
+      "lineno": 125,
       "path": "lib"
     },
     "name": "overwrite",
@@ -267,7 +307,7 @@
     "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
-      "lineno": 126,
+      "lineno": 142,
       "path": "lib"
     },
     "name": "overwriteDir",
@@ -314,7 +354,7 @@
     "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
-      "lineno": 142,
+      "lineno": 158,
       "path": "lib"
     },
     "name": "overwriteFile",
@@ -360,7 +400,7 @@
     "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
-      "lineno": 156,
+      "lineno": 172,
       "path": "lib"
     },
     "name": "overwriteIfPossible",

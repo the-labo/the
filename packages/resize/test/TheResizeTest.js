@@ -7,6 +7,7 @@
 const {
   strict: { equal, ok },
 } = require('assert')
+const sharp = require('sharp')
 const TheResize = require('../lib/TheResize')
 
 describe('the-resize', () => {
@@ -63,6 +64,23 @@ describe('the-resize', () => {
       `${__dirname}/../tmp/testing/test2-01.png`,
     )
     ok(converted2.changed)
+  })
+
+  it('withMetadata', async () => {
+    const resize = new TheResize({
+      height: 100,
+      width: 100,
+      withMetadata: true,
+    })
+
+    const converted = await resize.convert(
+      `${__dirname}/../misc/mocks/test3.jpg`,
+      `${__dirname}/../tmp/testing/test3-01.jpg`,
+    )
+    ok(converted.changed)
+
+    const meta = await sharp(converted.filename).metadata()
+    ok(meta.exif)
   })
 })
 
