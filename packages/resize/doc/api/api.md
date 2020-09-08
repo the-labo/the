@@ -48,4 +48,4 @@ Create a TheResize instance
 ### resize.default()
 Alias of [create](#module_@the-/resize.create)
 
-**Kind**: static method of [<code>@the-/resize</code>](#module_@the-/resize)  
+**Kind**: static method of [<code>@the-/resize</code>](#module_@the-/resize)
