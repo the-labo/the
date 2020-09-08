@@ -27,6 +27,10 @@ Resize image files
 | --- | --- | --- |
 | [config] | <code>Object</code> | Configuration |
 | [config.fit] | <code>string</code> | Fit policy ('cover','contain','fill', 'inside' or 'outside') |
+| [config.enlarge] | <code>boolean</code> | Do not enlarge if the width or height are already less than the specified dimensions |
+| [config.height] | <code>number</code> | Height of resized image |
+| [config.width] | <code>number</code> | Width of resized image |
+| [config.withMetadata] | <code>boolean</code> | Whether to keep image metadata or not |
 
 <a name="module_@the-/resize.create"></a>
 
