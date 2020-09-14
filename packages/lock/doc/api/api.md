@@ -23,7 +23,7 @@
 ## @the-/lock
 Async lock
 
-**Version**: 15.4.13  
+**Version**: 15.4.14  
 **License**: MIT  
 <a name="TheLock"></a>
 
