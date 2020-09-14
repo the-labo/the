@@ -6,7 +6,7 @@
 
 const asleep = require('asleep')
 const {
-  strict: { equal, ok },
+  strict: { deepEqual, equal, ok },
 } = require('assert')
 const TheLock = require('../lib/TheLock')
 
@@ -48,18 +48,27 @@ describe('the-lock', () => {
     const lock = TheLock()
     await lock.acquire('k1', () => {})
     const promises = []
+    const indexes = []
     for (let i = 0; i < 100; i++) {
       promises.push(
         lock.acquire('k1', async () => {
           await asleep(2)
+          indexes.push(i)
         }),
       )
     }
     await Promise.all(promises)
+    deepEqual(
+      indexes,
+      Array.from({ length: 100 }).map((_, i) => i),
+    )
   })
 
   it('Releases lock even when rejected', async () => {
     const lock = TheLock()
+    void lock.acquire('k1', async () => {
+      await asleep(1)
+    })
     let error = null
     try {
       await lock.acquire('k1', async () => {
