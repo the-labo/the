@@ -52,7 +52,7 @@ describe('the-lock', () => {
     for (let i = 0; i < 100; i++) {
       promises.push(
         lock.acquire('k1', async () => {
-          await asleep(2)
+          await asleep(Math.random() * 10)
           indexes.push(i)
         }),
       )
