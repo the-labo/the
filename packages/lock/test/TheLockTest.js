@@ -57,6 +57,24 @@ describe('the-lock', () => {
     }
     await Promise.all(promises)
   })
+
+  it('Releases lock even when rejected', async () => {
+    const lock = TheLock()
+    let error = null
+    try {
+      await lock.acquire('k1', async () => {
+        throw new Error('error')
+      })
+    } catch (e) {
+      error = e
+    }
+    ok(error)
+    let called = false
+    await lock.acquire('k1', async () => {
+      called = true
+    })
+    equal(called, true)
+  })
 })
 
 /* global describe, before, after, it */

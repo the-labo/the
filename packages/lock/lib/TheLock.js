@@ -14,8 +14,11 @@ function TheLock() {
      * @returns {Promise}
      */
     async acquire(key, task) {
-      await locks[key]
-      const promise = Promise.resolve(locks[key]).then(async () => task())
+      const promise = Promise.resolve(locks[key])
+        .catch(() => {
+          // 前回の promise 返却時にエラーハンドリングしているはず
+        })
+        .finally(async () => task())
       locks[key] = promise
       return promise
     },
