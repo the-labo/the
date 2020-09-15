@@ -1,7 +1,7 @@
 {
   "name": "@the-/lock",
   "description": "Async lock",
-  "version": "15.4.14",
+  "version": "15.4.15",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
