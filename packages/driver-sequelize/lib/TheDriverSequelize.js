@@ -57,7 +57,7 @@ class TheDriverSequelize extends Driver {
     this.includesFor = (name, options = {}) => {
       const { wheres } = options
       const schema = this.schemas[name]
-      const associations = Object.values(schema)
+      return Object.values(schema)
         .map((def) => def.associate)
         .filter(Boolean)
         .map(([name, opt = {}]) => {
@@ -72,7 +72,6 @@ class TheDriverSequelize extends Driver {
           }
           return include
         })
-      return associations
     }
     this.associatedModelFor = (name, alias) => {
       const schema = this.schemas[name]
@@ -232,7 +231,13 @@ class TheDriverSequelize extends Driver {
 
     const { filter = {}, page = {}, sort = [] } = condition
     const { limit, offset } = pageToOffsetLimit(page)
-    const order = parseSort(sort, { ModelAttributes, ModelName, Schema })
+    const order = parseSort(sort, {
+      ModelAttributes, ModelName, Schema,
+      resolveAssociation: alias => {
+        const associatedModel = this.associatedModelFor(ModelName, alias)
+        return { as: alias, associatedModel }
+      }
+    })
     const [rootFilter, nestedFilters] = parseFilter.splitNested(filter)
     const where = parseFilter(rootFilter, {
       ModelAttributes,

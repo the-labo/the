@@ -13,8 +13,8 @@ const SORT_DEST_PREFIX = /^-/
  * @param options
  * @returns {*}
  */
-function parseSort(sort, options) {
-  const { ModelAttributes = {}, ModelName } = options
+function parseSort (sort, options) {
+  const { ModelAttributes = {}, ModelName, resolveAssociation } = options
   return []
     .concat(sort)
     .filter(Boolean)
@@ -22,11 +22,21 @@ function parseSort(sort, options) {
     .filter(Boolean)
     .map((name) => {
       const isDesc = SORT_DEST_PREFIX.test(name)
-      const normalizeName = parseAttributeName(
-        name.replace(SORT_DEST_PREFIX, ''),
-      )
+      const absName = name.replace(SORT_DEST_PREFIX, '')
+      const normalizeName = parseAttributeName(absName,)
       if (!normalizeName) {
         return null
+      }
+
+      const isNested = absName.includes('.')
+      if (isNested) {
+        const [as, subName] = absName.split('.')
+        const association = resolveAssociation(as)
+        if (!association) {
+          logger.warn(`Unknown association "${as}" for ${ModelName}`)
+          return null
+        }
+        return [association, parseAttributeName(subName), isDesc ? 'DESC' : 'ASC']
       }
 
       {

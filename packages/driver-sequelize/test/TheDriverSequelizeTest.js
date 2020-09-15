@@ -666,7 +666,11 @@ describe('the-driver-sequelize', function () {
       const list2 = await driver.list('B', {
         sort: ['-a.x']
       })
-      console.log(list2)
+      const list3 = await driver.list('B', {
+        sort: ['a.x']
+      })
+      equal(list2.entities[0].aId, a3.id)
+      equal(list3.entities[0].aId, a1.id)
     }
 
     await driver.drop('A')
