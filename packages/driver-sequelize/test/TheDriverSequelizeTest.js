@@ -631,7 +631,7 @@ describe('the-driver-sequelize', function () {
       z: { maxLength: 1024, type: STRING },
     })
     const longZ = new Array(500).fill('123').join('')
-    const a3 = await driver.create('A', { z: longZ })
+    const a3 = await driver.create('A', { x: 3, z: longZ })
     equal(a3.z, longZ.slice(0, 1024))
     const a4 = await driver.one('A', a3.id)
     equal(a4.z, longZ.slice(0, 1024))
@@ -652,12 +652,21 @@ describe('the-driver-sequelize', function () {
       equal(b1One.a.id, a1.id)
       equal(b1One.aId, a1.id)
 
+      const b2 = await driver.create('B', {
+        aId: a3.id,
+      })
+
       const list = await driver.list('B', {
         filter: {
           'a.id': a1.id,
         },
       })
       equal(list.entities.length, 1)
+
+      const list2 = await driver.list('B', {
+        sort: ['-a.x']
+      })
+      console.log(list2)
     }
 
     await driver.drop('A')

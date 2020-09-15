@@ -44,4 +44,8 @@ function parseSort(sort, options) {
     .filter(Boolean)
 }
 
+parseSort.splitNested = sort => {
+
+}
+
 module.exports = parseSort
