@@ -221,7 +221,7 @@ class TheDriverSequelize extends Driver {
     const { filter = {}, page = {}, sort = [] } = condition
     const { limit, offset } = pageToOffsetLimit(page)
     const order = parseSort(sort, { ModelAttributes, ModelName, Schema })
-    const filterEntries = Object.entries(filter)
+    const filterEntries = Object.entries(filter || {})
     const rootFilter = Object.fromEntries(
       filterEntries.filter(([k]) => !k.includes('.')),
     )

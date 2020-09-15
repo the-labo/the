@@ -55,7 +55,7 @@ const TheDBBase = [
  * @param {Object} [config.resources] - Database resource classes
  */
 class TheDB extends TheDBBase {
-  constructor (config = {}) {
+  constructor(config = {}) {
     if (!new.target) {
       throw new Error('`TheDB()` must be called with `new`')
     }
@@ -120,19 +120,19 @@ class TheDB extends TheDBBase {
     this.startCascadeLink()
   }
 
-  get env () {
+  get env() {
     return this._env
   }
 
-  get plugins () {
+  get plugins() {
     return this._plugins
   }
 
-  get resources () {
+  get resources() {
     return this._resources
   }
 
-  defineResource (resourceName, schema = {}, options = {}) {
+  defineResource(resourceName, schema = {}, options = {}) {
     const {
       driver,
       env: { dialect },
@@ -157,11 +157,11 @@ class TheDB extends TheDBBase {
     const { onCreate, onDestroy, onDrop, onUpdate } = hooks
 
     class ResourceClass extends TheResource {
-      static get cascaded () {
+      static get cascaded() {
         return cascaded
       }
 
-      async invalidated (...args) {
+      async invalidated(...args) {
         return invalidated(...args)
       }
     }
@@ -194,7 +194,7 @@ class TheDB extends TheDBBase {
     {
       const { applyInbound } = resource
       const inboundHandler = asBound(inbound)
-      resource.applyInbound = async function applyInboundWrap (
+      resource.applyInbound = async function applyInboundWrap(
         attributesArray,
         actionContext = {},
       ) {
@@ -216,7 +216,7 @@ class TheDB extends TheDBBase {
     {
       const { applyOutbound } = resource
       const outboundHandler = asBound(outbound)
-      resource.applyOutbound = async function applyOutboundWrap (
+      resource.applyOutbound = async function applyOutboundWrap(
         entities,
         actionContext = {},
       ) {
@@ -246,7 +246,7 @@ class TheDB extends TheDBBase {
    * Register hooks from mapping
    * @param {Object} HookMapping
    */
-  hooksFromMapping (HookMapping) {
+  hooksFromMapping(HookMapping) {
     for (const [resourceName, creator] of Object.entries(HookMapping)) {
       this.assertResource(resourceName)
       const resource = this.getResource(resourceName)
@@ -263,7 +263,7 @@ class TheDB extends TheDBBase {
    * @param {string} resourceName - Name of resource
    * @returns {Object} Loaded resource instance
    */
-  load (ResourceFactory, resourceName) {
+  load(ResourceFactory, resourceName) {
     unlessProduction(() => {
       assert(!!ResourceFactory, `[${resourceName}] ResourceClass is required`)
       assert(
@@ -298,7 +298,7 @@ class TheDB extends TheDBBase {
    * Load resources from mapping object
    * @param {Object<string, Function>} ResourceMapping - Resource name and factory
    */
-  loadFromMapping (ResourceMapping) {
+  loadFromMapping(ResourceMapping) {
     for (const [as, ResourceFactory] of Object.entries(ResourceMapping)) {
       this.load(ResourceFactory, as)
     }
@@ -308,7 +308,7 @@ class TheDB extends TheDBBase {
    * Register plugins from mapping
    * @param {Object} PluginMapping
    */
-  pluginFromMapping (PluginMapping) {
+  pluginFromMapping(PluginMapping) {
     for (const [pluginName, creator] of Object.entries(PluginMapping)) {
       if (pluginName in this._plugins) {
         throw new Error(`[TheDB] Plugin already exists: "${pluginName}"`)
@@ -322,7 +322,7 @@ class TheDB extends TheDBBase {
    * Aut close before exit
    * @returns {TheDB} this
    */
-  unref () {
+  unref() {
     if (this._unref) {
       throw new Error('Already unref')
     }
@@ -337,7 +337,7 @@ class TheDB extends TheDBBase {
     return this
   }
 
-  async close (...args) {
+  async close(...args) {
     await asleep(10)
     if (this.closed) {
       return
@@ -367,7 +367,7 @@ class TheDB extends TheDBBase {
    * Drop database
    * @returns {Promise<undefined>}
    */
-  async drop () {
+  async drop() {
     const {
       driver,
       env: { database, dialect, storage },
@@ -403,7 +403,7 @@ class TheDB extends TheDBBase {
    * @param {string} entityRef
    * @returns {Promise<undefined>}
    */
-  async invalidate (entityRef) {
+  async invalidate(entityRef) {
     if (Array.isArray(entityRef)) {
       return Promise.all(entityRef.map((r) => this.invalidate(r)))
     }
@@ -415,7 +415,7 @@ class TheDB extends TheDBBase {
     this.requestToRefresh(entityRef)
   }
 
-  async setup () {
+  async setup() {
     const { driver, env, indices, schemas } = this
     await setupForEnv(env)
     for (const [resourceName, schema] of Object.entries(schemas)) {
@@ -440,7 +440,7 @@ class TheDB extends TheDBBase {
    * @param {?Function} callback
    * @returns {Promise<*>}
    */
-  async transaction (callback) {
+  async transaction(callback) {
     const { driver } = this
     if (!driver.transaction) {
       console.warn('[TheDB] transaction() is not implemented!')
@@ -459,7 +459,7 @@ class TheDB extends TheDBBase {
    * @param {string} version - Version string
    * @returns {Promise<boolean>} Success or not
    */
-  async updateVersion (version) {
+  async updateVersion(version) {
     return this.updateMigrationVersion(version)
   }
 }
