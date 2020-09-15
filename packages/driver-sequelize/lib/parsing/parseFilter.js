@@ -80,14 +80,10 @@ function parseFilter(filter, options = {}) {
   return parsed
 }
 
-parseFilter.splitNested = obj => {
+parseFilter.splitNested = (obj) => {
   const entries = Object.entries(obj || {})
-  const root = Object.fromEntries(
-    entries.filter(([k]) => !k.includes('.')),
-  )
-  const nested = Object.fromEntries(
-    entries.filter(([k]) => k.includes('.')),
-  )
+  const root = Object.fromEntries(entries.filter(([k]) => !k.includes('.')))
+  const nested = Object.fromEntries(entries.filter(([k]) => k.includes('.')))
   return [root, nested]
 }
 
