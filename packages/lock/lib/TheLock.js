@@ -18,7 +18,7 @@ function TheLock() {
         .catch(() => {
           // 前回の promise 返却時にエラーハンドリングしているはず
         })
-        .finally(async () => task())
+        .then(async () => task())
       locks[key] = promise
       return promise
     },

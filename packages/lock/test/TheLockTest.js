@@ -84,6 +84,20 @@ describe('the-lock', () => {
     })
     equal(called, true)
   })
+
+  it('Lock must return the result', async () => {
+    const lock = TheLock()
+    try {
+      await lock.acquire('foo', async () => {
+        throw 'x'
+      })
+    } catch (e) {}
+    const result = await lock.acquire('foo', async () => {
+      await asleep(1)
+      return 'done!'
+    })
+    equal(result, 'done!')
+  })
 })
 
 /* global describe, before, after, it */
