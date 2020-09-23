@@ -25,8 +25,8 @@ class TheDriverSequelize extends Driver {
   constructor(config = {}) {
     super()
     const {
-      charset = 'utf8',
-      collate = 'utf8_general_ci',
+      charset = 'utf8mb4',
+      collate = 'utf8mb4_unicode_ci',
       database,
       dialect = 'sqlite',
       enableLegacyEncoding = false,
