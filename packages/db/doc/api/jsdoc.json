@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "20.3.4"
+    "version": "20.3.5"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -345,7 +345,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 406,
+      "lineno": 409,
       "path": "lib"
     },
     "name": "invalidate",
@@ -380,7 +380,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 443,
+      "lineno": 446,
       "path": "lib"
     },
     "name": "transaction",
@@ -416,7 +416,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 462,
+      "lineno": 465,
       "path": "lib"
     },
     "name": "updateVersion",
