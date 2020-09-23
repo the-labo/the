@@ -374,6 +374,7 @@ class TheDB extends TheDBBase {
       resources,
     } = this
     switch (String(dialect).trim()) {
+      case 'sequelize/mysql':
       case 'mysql': {
         await this.close().catch(() => null)
         await asleep(100)
@@ -393,7 +394,9 @@ class TheDB extends TheDBBase {
     }
 
     for (const resourceName of Object.keys(resources)) {
-      await driver.drop(resourceName)
+      await driver.drop(resourceName).catch(() => {
+        console.warn(`Failed to drop resource: ${resourceName}`)
+      })
     }
     await asleep(10)
   }
