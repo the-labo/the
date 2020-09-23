@@ -5,7 +5,12 @@
  * Runs with mocha.
  */
 const { unlinkAsync } = require('asfs')
-const { deepStrictEqual: deepEqual, ok, strictEqual: equal } = require('assert')
+const {
+  deepStrictEqual: deepEqual,
+  ok,
+  strictEqual: equal,
+  notStrictEqual: notEqual,
+} = require('assert')
 const {
   DataTypes: { DATE, NUMBER, OBJECT, REF, STRING },
 } = require('clay-constants')
@@ -748,6 +753,38 @@ describe('the-driver-sequelize', function () {
     ok(b)
     ok(b.a[0])
     await driver.close()
+  })
+  it('Migration string encoding', async () => {
+    const storage = `${__dirname}/../tmp/migration-encoding.db`
+    await unlinkAsync(storage).catch(() => null)
+    const driver = new TheDriverSequelize({
+      dialect: 'sqlite',
+      storage,
+    })
+    const driverLegacy = new TheDriverSequelize({
+      dialect: 'sqlite',
+      storage,
+      enableLegacyEncoding: true,
+    })
+    driver.define('A', {
+      text: { type: STRING },
+    })
+    driverLegacy.define('A', {
+      text: { type: STRING },
+    })
+    const ja = { text: 'あいう' }
+    const en = { text: 'abc' }
+    const emoji = { text: '🍣🍺' }
+    const entities = await driverLegacy.createBulk('A', [ja, en, emoji])
+    const got = await driver.one('A', entities[0].id)
+    notEqual(entities[0].text, got.text) // エンコードの違いで異なる文字列になる
+    for (const entity of entities) {
+      await driver.update('A', entity.id, { text: entity.text })
+    }
+    const migrated = await driver.list('A', {})
+    ok(migrated.entities.find(({ text }) => text === ja.text))
+    ok(migrated.entities.find(({ text }) => text === en.text))
+    ok(migrated.entities.find(({ text }) => text === emoji.text))
   })
 })
 
