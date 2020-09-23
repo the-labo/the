@@ -652,7 +652,7 @@ describe('the-driver-sequelize', function () {
       equal(b1One.a.id, a1.id)
       equal(b1One.aId, a1.id)
 
-      const b2 = await driver.create('B', {
+      await driver.create('B', {
         aId: a3.id,
       })
 
@@ -671,6 +671,19 @@ describe('the-driver-sequelize', function () {
       })
       equal(list2.entities[0].aId, a3.id)
       equal(list3.entities[0].aId, a1.id)
+    }
+    {
+      await driver.create('A', {
+        z: 'あいうえお',
+      })
+      const list = await driver.list('A', {
+        filter: {
+          z: {
+            $like: '%う%',
+          },
+        },
+      })
+      equal(list.meta.length, 1)
     }
 
     await driver.drop('A')
