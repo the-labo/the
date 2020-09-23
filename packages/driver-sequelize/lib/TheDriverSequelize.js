@@ -237,7 +237,7 @@ class TheDriverSequelize extends Driver {
       Schema,
       resolveAssociation: (alias) => {
         const associatedModel = this.associatedModelFor(ModelName, alias)
-        return { as: alias, associatedModel }
+        return { as: alias, model: associatedModel }
       },
     })
     const [rootFilter, nestedFilters] = parseFilter.splitNested(filter)
