@@ -29,6 +29,7 @@ class TheDriverSequelize extends Driver {
       collate = 'utf8_general_ci',
       database,
       dialect = 'sqlite',
+      enableLegacyEncoding = false,
       logging = false,
       password,
       storage = `var/db/${database}.db`,
@@ -41,6 +42,7 @@ class TheDriverSequelize extends Driver {
     this.prepareLocks = {}
     this.charset = charset
     this.collate = collate
+    this.enableLegacyEncoding = enableLegacyEncoding
     this._sequelizeArgs = [
       database,
       username,
@@ -70,6 +72,7 @@ class TheDriverSequelize extends Driver {
               where,
             }
           }
+
           return include
         })
     }
@@ -124,7 +127,12 @@ class TheDriverSequelize extends Driver {
     const Model = this.modelFor(resourceName)
     const Schema = this.schemaFor(resourceName)
     const { name: ModelName, rawAttributes: ModelAttributes } = Model
-    return convertInbound(values, { ModelAttributes, ModelName, Schema })
+    return convertInbound(values, {
+      ModelAttributes,
+      ModelName,
+      Schema,
+      enableLegacyEncoding: this.enableLegacyEncoding,
+    })
   }
 
   modelFor(resourceName) {
@@ -149,6 +157,7 @@ class TheDriverSequelize extends Driver {
       ModelName,
       Schema,
       associated,
+      enableLegacyEncoding: this.enableLegacyEncoding,
       outbound: (v) => this.outbound(v.constructor.name, v.dataValues),
       resourceName,
     })
@@ -245,6 +254,7 @@ class TheDriverSequelize extends Driver {
       ModelAttributes,
       ModelName,
       Schema,
+      enableLegacyEncoding: this.enableLegacyEncoding,
     })
     const include = this.includesFor(Model.name, {
       wheres: Object.entries(nestedFilters).reduce((wheres, [k, v]) => {
@@ -260,6 +270,7 @@ class TheDriverSequelize extends Driver {
                 ModelAttributes: associatedModel.rawAttributes,
                 ModelName: associatedModel.name,
                 Schema: this.schemaFor(associatedModel.name),
+                enableLegacyEncoding: this.enableLegacyEncoding,
               },
             ),
           },
@@ -312,6 +323,7 @@ class TheDriverSequelize extends Driver {
     if (!model) {
       return null
     }
+
     return this.outbound(resourceName, model.dataValues)
   }
 

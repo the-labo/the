@@ -23,7 +23,12 @@ function parseFilter(filter, options = {}) {
     return filter
   }
 
-  const { ModelAttributes = {}, ModelName, Schema } = options
+  const {
+    ModelAttributes = {},
+    ModelName,
+    Schema,
+    enableLegacyEncoding,
+  } = options
   if (Array.isArray(filter)) {
     return { [Op.or]: filter.map((filter) => parseFilter(filter, options)) }
   }
@@ -71,6 +76,7 @@ function parseFilter(filter, options = {}) {
       }
       default: {
         parsed[parseAttributeName(propertyName)] = serializer.serialize(value, {
+          enableLegacyEncoding,
           schema: Schema[propertyName],
         })
         break
