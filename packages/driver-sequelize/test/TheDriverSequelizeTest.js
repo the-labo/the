@@ -108,7 +108,6 @@ describe('the-driver-sequelize', function () {
       const user01 = await driver.create('User', { a: 1 })
       const user01updated = await driver.update('User', user01.id, { b: 2 })
       const user02 = await driver.create('User', { c: 3 })
-      console.log('user01updated', user01updated)
       equal(user01updated.a, 1)
       equal(user01updated.b, 2)
       equal(user02.c, 3)
@@ -678,9 +677,14 @@ describe('the-driver-sequelize', function () {
       equal(list3.entities[0].aId, a1.id)
     }
     {
-      await driver.create('A', {
-        z: 'あいうえお',
-      })
+      await driver.createBulk('A', [
+        {
+          z: 'あいうえお',
+        },
+        {
+          z: '🍣🍺🍣',
+        },
+      ])
       const list = await driver.list('A', {
         filter: {
           z: {
@@ -689,6 +693,14 @@ describe('the-driver-sequelize', function () {
         },
       })
       equal(list.meta.length, 1)
+      const list2 = await driver.list('A', {
+        filter: {
+          z: {
+            $like: '%🍺%',
+          },
+        },
+      })
+      equal(list2.meta.length, 1)
     }
 
     await driver.drop('A')
