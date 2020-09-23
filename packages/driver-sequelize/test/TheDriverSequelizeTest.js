@@ -7,9 +7,9 @@
 const { unlinkAsync } = require('asfs')
 const {
   deepStrictEqual: deepEqual,
+  notStrictEqual: notEqual,
   ok,
   strictEqual: equal,
-  notStrictEqual: notEqual,
 } = require('assert')
 const {
   DataTypes: { DATE, NUMBER, OBJECT, REF, STRING },
@@ -763,8 +763,8 @@ describe('the-driver-sequelize', function () {
     })
     const driverLegacy = new TheDriverSequelize({
       dialect: 'sqlite',
-      storage,
       enableLegacyEncoding: true,
+      storage,
     })
     driver.define('A', {
       text: { type: STRING },
