@@ -53,6 +53,7 @@ const TheDBBase = [
  * @param {Object} [config.plugins] - Database plugin creators
  * @param {Object} [config.hooks] - Database hook creators
  * @param {Object} [config.resources] - Database resource classes
+ * @param {boolean} [config.enableLegacyEncoding] - Encode string with utf8 before saving to support the old version
  */
 class TheDB extends TheDBBase {
   constructor(config = {}) {
@@ -61,6 +62,7 @@ class TheDB extends TheDBBase {
     }
 
     const {
+      enableLegacyEncoding = false,
       hooks = {},
       name = uuid(),
       plugins = {},
@@ -72,7 +74,7 @@ class TheDB extends TheDBBase {
     const env = toLowerKeys(
       config.env || clone(config, { without: ['name', 'resources'] }),
     )
-    const driver = driverFromEnv(env)
+    const driver = driverFromEnv(env, { enableLegacyEncoding })
     super(name, { driver })
 
     this._unref = false

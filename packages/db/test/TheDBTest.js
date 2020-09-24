@@ -8,6 +8,7 @@ const asleep = require('asleep')
 const {
   strict: { deepEqual, equal, ok },
 } = require('assert')
+const utf8 = require('utf8')
 const { TheRefresher } = require('@the-/refresher')
 const {
   DataTypes: { ENTITY, STRING },
@@ -315,6 +316,91 @@ describe('the-db', function () {
 
     await db.drop()
     await db.close()
+  })
+
+  it('Migration v20 -> v21', async () => {
+    const DB_USER = 't01'
+    const DB_PASSWORD = 't01'
+    const DATABASE = 'the-db-test-sequelize-migration20'
+    const DB_HOST = '127.0.0.1'
+
+    const env = {
+      database: DATABASE,
+      dialect: 'sequelize/mysql',
+      host: DB_HOST,
+      logging: console.log,
+      password: DB_PASSWORD,
+      username: DB_USER,
+    }
+    const UserResource = ({ define }) =>
+      define({
+        name: { type: STRING },
+      })
+    const legacy = new TheDB({
+      enableLegacyEncoding: true,
+      env: {
+        ...env,
+        charset: 'utf8',
+        collate: 'utf8_general_ci',
+      },
+    })
+    await legacy.setup()
+    const UserLegacy = legacy.load(UserResource, 'User')
+    await UserLegacy.createBulk([
+      { name: 'user' },
+      { name: 'ユーザー' },
+      { name: '🍣🍺' },
+    ])
+
+    const db = new TheDB({
+      env: {
+        ...env,
+        charset: 'utf8mb4',
+        collate: 'utf8mb4_unicode_ci',
+      },
+    })
+    await db.setup()
+
+    const User = db.load(UserResource, 'User')
+    {
+      // レガシーなデータに対して日本語で検索できない
+      const user1 = await User.first({ name: 'user' })
+      ok(user1)
+      const user2 = await User.first({ name: 'ユーザー' })
+      ok(!user2)
+    }
+
+    // Migration
+    await db.exec(
+      'alter table User convert to character set utf8mb4 collate utf8mb4_unicode_ci;',
+    )
+    // UserLegacy は使わない。途中から開始すると utf8 デコード前とデコード後のデータが混在するため。
+    await User.each(async (user) => {
+      if (typeof user.name === 'string') {
+        try {
+          user.name = utf8.decode(user.name)
+        } catch (e) {
+          // give up
+          console.error(e)
+        }
+      }
+
+      await User.update(user.id, user, { allowReserved: true })
+    })
+
+    {
+      // マイグレーション後は検索できる
+      const user1 = await User.first({ name: 'user' })
+      ok(user1)
+      const user2 = await User.first({ name: 'ユーザー' })
+      ok(user2)
+      const user3 = await User.first({ name: '🍣🍺' })
+      ok(user3)
+    }
+
+    await db.drop()
+    await db.close()
+    await legacy.close()
   })
 })
 
