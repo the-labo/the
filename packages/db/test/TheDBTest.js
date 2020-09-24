@@ -376,7 +376,7 @@ describe('the-db', function () {
     )
     // UserLegacy は使わない。途中から開始すると utf8 デコード前とデコード後のデータが混在するため。
     await User.each(async (user) => {
-      if (user.name !== null || user.name !== undefined) {
+      if (typeof user.name === 'string') {
         try {
           user.name = utf8.decode(user.name)
         } catch (e) {
