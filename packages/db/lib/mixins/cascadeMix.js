@@ -8,52 +8,60 @@ const debug = require('debug')('the:db:cascade')
  * @param {function()} Class
  * @returns {function()} Mixed Class
  */
-function cascadeMix(Class) {
+function cascadeMix (Class) {
   /**
    * @memberof module:@the-/db.cascadeMix
    * @class CascadeMixed
    * @inner
    */
   class CascadeMixed extends Class {
-    constructor() {
+    constructor () {
       super(...arguments)
-      this._cascadeListeners = []
+      this._cascadeListeners = {}
     }
 
-    startCascadeLink() {
-      for (const [, follower] of Object.entries(this.resources)) {
-        const {
-          constructor: { cascaded = {} },
-        } = follower
-        for (const [followeeName, creator] of Object.entries(cascaded)) {
-          const followee = this.getResource(followeeName)
-          this._cascadeListeners.push(
-            followee.listenToDestroy(async ({ gone }) => {
-              const condition = await creator(gone)
-              if (!condition) {
-                debug('Nothing to cascade', followeeName)
-                return
-              }
-
-              const entities = await follower.all(condition)
-              const destroyingIds = entities
-                .map(({ id }) => id && String(id))
-                .filter(Boolean)
-              debug(
-                'Cascade',
-                gone.toRef(),
-                follower.resourceName,
-                destroyingIds,
-              )
-              await follower.destroyBulk(destroyingIds)
-            }),
-          )
-        }
+    startCascadeLink () {
+      for (const [followerName, follower] of Object.entries(this.resources)) {
+        this.startCascadeLinkForFollower(followerName, follower)
       }
     }
 
-    stopCascadeLink() {
-      for (const close of this._cascadeListeners) {
+    startCascadeLinkForFollower (followerName, follower) {
+      const {
+        constructor: { cascaded = {} },
+      } = follower
+      for (const [followeeName, creator] of Object.entries(cascaded)) {
+        const key = [followerName, followeeName].join('/')
+        const alreadyStarted = this._cascadeListeners[key]
+        if (alreadyStarted) {
+          continue
+        }
+        const followee = this.getResource(followeeName)
+        this._cascadeListeners[key] = followee.listenToDestroy(async ({ gone }) => {
+          const condition = await creator(gone)
+          if (!condition) {
+            debug('Nothing to cascade', followeeName)
+            return
+          }
+
+          const entities = await follower.all(condition)
+          const destroyingIds = entities
+            .map(({ id }) => id && String(id))
+            .filter(Boolean)
+          debug(
+            'Cascade',
+            gone.toRef(),
+            follower.resourceName,
+            destroyingIds,
+          )
+          await follower.destroyBulk(destroyingIds)
+        })
+
+      }
+    }
+
+    stopCascadeLink () {
+      for (const close of Object.values(this._cascadeListeners)) {
         close()
       }
       this._cascadeListeners = []

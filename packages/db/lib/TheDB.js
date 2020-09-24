@@ -119,7 +119,6 @@ class TheDB extends TheDBBase {
     }
 
     this.startRefreshLoop({ interval: refreshInterval })
-    this.startCascadeLink()
   }
 
   get env() {
@@ -304,6 +303,7 @@ class TheDB extends TheDBBase {
     for (const [as, ResourceFactory] of Object.entries(ResourceMapping)) {
       this.load(ResourceFactory, as)
     }
+    this.startCascadeLink()
   }
 
   /**

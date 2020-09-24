@@ -181,7 +181,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 251,
+      "lineno": 250,
       "path": "lib"
     },
     "name": "hooksFromMapping",
@@ -206,7 +206,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 268,
+      "lineno": 267,
       "path": "lib"
     },
     "name": "load",
@@ -251,7 +251,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 303,
+      "lineno": 302,
       "path": "lib"
     },
     "name": "loadFromMapping",
