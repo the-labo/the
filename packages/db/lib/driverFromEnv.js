@@ -15,6 +15,8 @@ const { toLowerKeys } = require('@the-/util-db')
  */
 function driverFromEnv(env, options = {}) {
   const {
+    charset,
+    collate,
     database,
     dialect = 'memory',
     host,
@@ -26,8 +28,6 @@ function driverFromEnv(env, options = {}) {
     ssl = false,
     storage,
     username,
-    charset,
-    collate,
   } = toLowerKeys(env)
   const { enableLegacyEncoding = false } = options
   switch (String(dialect).toLowerCase().trim()) {
@@ -40,12 +40,12 @@ function driverFromEnv(env, options = {}) {
       throw new Error('No longer supported')
     case 'sequelize/mysql':
       return require('@the-/driver-sequelize')({
+        charset,
+        collate,
         database,
         dialect: 'mysql',
         dialectOptions: { ssl },
         enableLegacyEncoding,
-        charset,
-        collate,
         host,
         password,
         pool: {
@@ -60,11 +60,11 @@ function driverFromEnv(env, options = {}) {
     case 'sequelize/sqlite':
       mkdirp.sync(path.dirname(storage))
       return require('@the-/driver-sequelize')({
+        charset,
+        collate,
         database,
         dialect: 'sqlite',
         enableLegacyEncoding,
-        charset,
-        collate,
         isolationLevel: 'READ COMMITTED',
         retry: { match: ['SQLITE_BUSY: database is locked'], max: 10 },
         storage,

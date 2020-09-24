@@ -5,10 +5,10 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
-const utf8 = require('utf8')
 const {
   strict: { deepEqual, equal, ok },
 } = require('assert')
+const utf8 = require('utf8')
 const { TheRefresher } = require('@the-/refresher')
 const {
   DataTypes: { ENTITY, STRING },
