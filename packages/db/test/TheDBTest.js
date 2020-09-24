@@ -316,6 +316,72 @@ describe('the-db', function () {
     await db.drop()
     await db.close()
   })
+
+  it('Migration v20 -> v21', async () => {
+    const DB_USER = 't01'
+    const DB_PASSWORD = 't01'
+    const DATABASE = 'the-db-test-sequelize-migration20'
+    const DB_HOST = '127.0.0.1'
+
+    const env = {
+      database: DATABASE,
+      dialect: 'sequelize/mysql',
+      host: DB_HOST,
+      logging: console.log,
+      password: DB_PASSWORD,
+      username: DB_USER,
+    }
+    const UserResource = ({ define }) =>
+      define({
+        name: { type: STRING },
+      })
+    const legacy = new TheDB({
+      enableLegacyEncoding: true,
+      env,
+    })
+    await legacy.setup()
+    const UserLegacy = legacy.load(UserResource, 'User')
+    await UserLegacy.createBulk([
+      { name: 'user' },
+      { name: 'ユーザー' },
+      { name: '🍣🍺' },
+    ])
+
+    const db = new TheDB({
+      env,
+    })
+    await db.setup()
+
+    const User = db.load(UserResource, 'User')
+    {
+      // レガシーなデータに対して日本語で検索できない
+      const user1 = await User.first({ name: 'user' })
+      ok(user1)
+      const user2 = await User.first({ name: 'ユーザー' })
+      ok(!user2)
+      const user3 = await User.first({ name: '🍣🍺' })
+      ok(!user3)
+    }
+
+    // Migration
+    await UserLegacy.each(async (user) => {
+      await User.update(user.id, user, { allowReserved: true })
+    })
+
+    {
+      // マイグレーション後は検索できる
+      const user1 = await User.first({ name: 'user' })
+      ok(user1)
+      const user2 = await User.first({ name: 'ユーザー' })
+      ok(user2)
+      const user3 = await User.first({ name: '🍣🍺' })
+      ok(user3)
+    }
+
+    await db.drop()
+    await db.close()
+    await legacy.close()
+  })
 })
 
 /* global describe, before, after, it */
