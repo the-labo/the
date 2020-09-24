@@ -14,7 +14,14 @@ const parseAttributeName = require('../parsing/parseAttributeName')
  * @returns {*}
  */
 function convertOutbound(values, options = {}) {
-  const { ModelName, Schema, associated = [], outbound, resourceName } = options
+  const {
+    ModelName,
+    Schema,
+    associated = [],
+    enableLegacyEncoding,
+    outbound,
+    resourceName,
+  } = options
   const converted = {
     $$as: resourceName,
     $$at: values[MetaColumnNames.$$at],
@@ -45,7 +52,9 @@ function convertOutbound(values, options = {}) {
       continue
     }
 
-    converted[name] = serializer.deserialize(v, def.type)
+    converted[name] = serializer.deserialize(v, def.type, {
+      enableLegacyEncoding,
+    })
   }
   return clayEntity(converted)
 }

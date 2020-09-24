@@ -10,7 +10,7 @@ const utf8 = require('utf8')
 const isEmpty = (v) => v === null || typeof v === 'undefined'
 
 exports.serialize = (value, options = {}) => {
-  const { schema = {} } = options
+  const { enableLegacyEncoding = false, schema = {} } = options
   const type = typeOf(value)
   const isMultiple = type !== OBJECT && Array.isArray(value)
   if (isMultiple) {
@@ -38,7 +38,11 @@ exports.serialize = (value, options = {}) => {
         value = String(value).slice(0, maxLength)
       }
 
-      return utf8.encode(String(value))
+      if (enableLegacyEncoding) {
+        return utf8.encode(String(value))
+      } else {
+        return String(value)
+      }
     }
     default: {
       return value
@@ -46,11 +50,13 @@ exports.serialize = (value, options = {}) => {
   }
 }
 
-exports.deserialize = (value, type) => {
+exports.deserialize = (value, type, options = {}) => {
   const isMultiple = type !== OBJECT && Array.isArray(value)
   if (isMultiple) {
     return value.map((value) => exports.serialize(value, type))
   }
+
+  const { enableLegacyEncoding = false } = options
 
   switch (type) {
     case ENTITY:
@@ -61,7 +67,11 @@ exports.deserialize = (value, type) => {
       return String(value)
     }
     case STRING:
-      return isEmpty(value) ? null : utf8.decode(String(value))
+      if (enableLegacyEncoding) {
+        return isEmpty(value) ? null : utf8.decode(String(value))
+      } else {
+        return isEmpty(value) ? null : String(value)
+      }
     default:
       return value
   }

@@ -5,7 +5,12 @@
  * Runs with mocha.
  */
 const { unlinkAsync } = require('asfs')
-const { deepStrictEqual: deepEqual, ok, strictEqual: equal } = require('assert')
+const {
+  deepStrictEqual: deepEqual,
+  notStrictEqual: notEqual,
+  ok,
+  strictEqual: equal,
+} = require('assert')
 const {
   DataTypes: { DATE, NUMBER, OBJECT, REF, STRING },
 } = require('clay-constants')
@@ -103,7 +108,6 @@ describe('the-driver-sequelize', function () {
       const user01 = await driver.create('User', { a: 1 })
       const user01updated = await driver.update('User', user01.id, { b: 2 })
       const user02 = await driver.create('User', { c: 3 })
-      console.log('user01updated', user01updated)
       equal(user01updated.a, 1)
       equal(user01updated.b, 2)
       equal(user02.c, 3)
@@ -652,7 +656,7 @@ describe('the-driver-sequelize', function () {
       equal(b1One.a.id, a1.id)
       equal(b1One.aId, a1.id)
 
-      const b2 = await driver.create('B', {
+      await driver.create('B', {
         aId: a3.id,
       })
 
@@ -671,6 +675,32 @@ describe('the-driver-sequelize', function () {
       })
       equal(list2.entities[0].aId, a3.id)
       equal(list3.entities[0].aId, a1.id)
+    }
+    {
+      await driver.createBulk('A', [
+        {
+          z: 'あいうえお',
+        },
+        {
+          z: '🍣🍺🍣',
+        },
+      ])
+      const list = await driver.list('A', {
+        filter: {
+          z: {
+            $like: '%う%',
+          },
+        },
+      })
+      equal(list.meta.length, 1)
+      const list2 = await driver.list('A', {
+        filter: {
+          z: {
+            $like: '%🍺%',
+          },
+        },
+      })
+      equal(list2.meta.length, 1)
     }
 
     await driver.drop('A')
@@ -735,6 +765,38 @@ describe('the-driver-sequelize', function () {
     ok(b)
     ok(b.a[0])
     await driver.close()
+  })
+  it('Migration string encoding', async () => {
+    const storage = `${__dirname}/../tmp/migration-encoding.db`
+    await unlinkAsync(storage).catch(() => null)
+    const driver = new TheDriverSequelize({
+      dialect: 'sqlite',
+      storage,
+    })
+    const driverLegacy = new TheDriverSequelize({
+      dialect: 'sqlite',
+      enableLegacyEncoding: true,
+      storage,
+    })
+    driver.define('A', {
+      text: { type: STRING },
+    })
+    driverLegacy.define('A', {
+      text: { type: STRING },
+    })
+    const ja = { text: 'あいう' }
+    const en = { text: 'abc' }
+    const emoji = { text: '🍣🍺' }
+    const entities = await driverLegacy.createBulk('A', [ja, en, emoji])
+    const got = await driver.one('A', entities[0].id)
+    notEqual(entities[0].text, got.text) // エンコードの違いで異なる文字列になる
+    for (const entity of entities) {
+      await driver.update('A', entity.id, { text: entity.text })
+    }
+    const migrated = await driver.list('A', {})
+    ok(migrated.entities.find(({ text }) => text === ja.text))
+    ok(migrated.entities.find(({ text }) => text === en.text))
+    ok(migrated.entities.find(({ text }) => text === emoji.text))
   })
 })
 

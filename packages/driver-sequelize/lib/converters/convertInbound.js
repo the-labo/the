@@ -13,7 +13,12 @@ const parseAttributeName = require('../parsing/parseAttributeName')
  * @returns {*}
  */
 function convertInbound(values, options = {}) {
-  const { ModelAttributes = {}, ModelName, Schema } = options
+  const {
+    ModelAttributes = {},
+    ModelName,
+    Schema,
+    enableLegacyEncoding,
+  } = options
   const converted = {
     [MetaColumnNames.$$at]: values.$$at || new Date(),
   }
@@ -37,6 +42,7 @@ function convertInbound(values, options = {}) {
     }
 
     converted[attributeName] = serializer.serialize(v, {
+      enableLegacyEncoding,
       schema: Schema[propertyName],
     })
   }
