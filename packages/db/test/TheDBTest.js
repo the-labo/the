@@ -250,25 +250,38 @@ describe('the-db', function () {
     equal(await A.count(), 1)
     await db.close()
   })
+})
 
-  it('sequelize/Mysql', async () => {
-    const DB_USER = 't01'
-    const DB_PASSWORD = 't01'
-    const DATABASE = 'the-db-test-sequelize123'
-    const DB_HOST = '127.0.0.1'
-
-    const env = {
-      database: DATABASE,
-      dialect: 'sequelize/mysql',
-      host: DB_HOST,
-      logging: console.log,
-      password: DB_PASSWORD,
-      username: DB_USER,
-    }
-    const db = new TheDB({
+describe('sequelize/mysql', function () {
+  this.timeout(40000)
+  const DB_USER = 't01'
+  const DB_PASSWORD = 't01'
+  const DATABASE = 'the-db-test-sequelize123'
+  const DB_HOST = '127.0.0.1'
+  const env = {
+    charset: 'utf8mb4',
+    collate: 'utf8mb4_unicode_ci',
+    database: DATABASE,
+    dialect: 'sequelize/mysql',
+    host: DB_HOST,
+    logging: console.log,
+    password: DB_PASSWORD,
+    username: DB_USER,
+  }
+  let db
+  beforeEach(async () => {
+    db = new TheDB({
       env,
     })
     await db.setup()
+  })
+
+  afterEach(async () => {
+    await db.drop()
+    await db.close()
+  })
+
+  it('Do test', async () => {
     await db.exec('SHOW TABLES')
 
     const UserResource = ({ define }) =>
@@ -313,25 +326,9 @@ describe('the-db', function () {
     })
 
     await db.invalidate(user01)
-
-    await db.drop()
-    await db.close()
   })
 
   it('Migration v20 -> v21', async () => {
-    const DB_USER = 't01'
-    const DB_PASSWORD = 't01'
-    const DATABASE = 'the-db-test-sequelize-migration20'
-    const DB_HOST = '127.0.0.1'
-
-    const env = {
-      database: DATABASE,
-      dialect: 'sequelize/mysql',
-      host: DB_HOST,
-      logging: console.log,
-      password: DB_PASSWORD,
-      username: DB_USER,
-    }
     const UserResource = ({ define }) =>
       define({
         name: { type: STRING },
@@ -351,15 +348,6 @@ describe('the-db', function () {
       { name: 'ユーザー' },
       { name: '🍣🍺' },
     ])
-
-    const db = new TheDB({
-      env: {
-        ...env,
-        charset: 'utf8mb4',
-        collate: 'utf8mb4_unicode_ci',
-      },
-    })
-    await db.setup()
 
     const User = db.load(UserResource, 'User')
     {
@@ -398,10 +386,8 @@ describe('the-db', function () {
       ok(user3)
     }
 
-    await db.drop()
-    await db.close()
     await legacy.close()
   })
 })
 
-/* global describe, before, after, it */
+/* global describe, before, beforeEach, after, afterEach, it */
