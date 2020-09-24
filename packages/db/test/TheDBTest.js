@@ -5,6 +5,7 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
+const utf8 = require('utf8')
 const {
   strict: { deepEqual, equal, ok },
 } = require('assert')
@@ -337,7 +338,11 @@ describe('the-db', function () {
       })
     const legacy = new TheDB({
       enableLegacyEncoding: true,
-      env,
+      env: {
+        ...env,
+        charset: 'utf8',
+        collate: 'utf8_general_ci',
+      },
     })
     await legacy.setup()
     const UserLegacy = legacy.load(UserResource, 'User')
@@ -348,7 +353,11 @@ describe('the-db', function () {
     ])
 
     const db = new TheDB({
-      env,
+      env: {
+        ...env,
+        charset: 'utf8mb4',
+        collate: 'utf8mb4_unicode_ci',
+      },
     })
     await db.setup()
 
@@ -359,12 +368,23 @@ describe('the-db', function () {
       ok(user1)
       const user2 = await User.first({ name: 'ユーザー' })
       ok(!user2)
-      const user3 = await User.first({ name: '🍣🍺' })
-      ok(!user3)
     }
 
     // Migration
-    await UserLegacy.each(async (user) => {
+    await db.exec(
+      'alter table User convert to character set utf8mb4 collate utf8mb4_unicode_ci;',
+    )
+    // UserLegacy は使わない。途中から開始すると utf8 デコード前とデコード後のデータが混在するため。
+    await User.each(async (user) => {
+      if (user.name !== null || user.name !== undefined) {
+        try {
+          user.name = utf8.decode(user.name)
+        } catch (e) {
+          // give up
+          console.error(e)
+        }
+      }
+
       await User.update(user.id, user, { allowReserved: true })
     })
 
