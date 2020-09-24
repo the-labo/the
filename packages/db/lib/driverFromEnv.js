@@ -10,9 +10,10 @@ const { toLowerKeys } = require('@the-/util-db')
  * @memberof module:@the-/db
  * @function driverFromEnv
  * @param env
+ * @param options
  * @returns {*}
  */
-function driverFromEnv(env) {
+function driverFromEnv(env, options = {}) {
   const {
     database,
     dialect = 'memory',
@@ -26,6 +27,7 @@ function driverFromEnv(env) {
     storage,
     username,
   } = toLowerKeys(env)
+  const { enableLegacyEncoding = false } = options
   switch (String(dialect).toLowerCase().trim()) {
     case 'json':
       return require('clay-driver-json')(storage)
@@ -39,6 +41,7 @@ function driverFromEnv(env) {
         database,
         dialect: 'mysql',
         dialectOptions: { ssl },
+        enableLegacyEncoding,
         host,
         password,
         pool: {
@@ -55,6 +58,7 @@ function driverFromEnv(env) {
       return require('@the-/driver-sequelize')({
         database,
         dialect: 'sqlite',
+        enableLegacyEncoding,
         isolationLevel: 'READ COMMITTED',
         retry: { match: ['SQLITE_BUSY: database is locked'], max: 10 },
         storage,
