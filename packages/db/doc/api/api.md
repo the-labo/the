@@ -33,7 +33,7 @@ DB for the-framework
         * [.resources](#module_@the-/db.resources) : <code>object</code>
         * [.create(...args)](#module_@the-/db.create) ⇒ [<code>TheDB</code>](#module_@the-/db.TheDB)
         * [.default()](#module_@the-/db.default)
-        * [.driverFromEnv(env)](#module_@the-/db.driverFromEnv) ⇒ <code>\*</code>
+        * [.driverFromEnv(env, options)](#module_@the-/db.driverFromEnv) ⇒ <code>\*</code>
         * [.execForEnv(env, sql)](#module_@the-/db.execForEnv) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.setupForEnv(env)](#module_@the-/db.setupForEnv) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.cascadeMix(Class)](#module_@the-/db.cascadeMix) ⇒ <code>function</code>
@@ -94,6 +94,7 @@ DB for the-framework
 | [config.plugins] | <code>Object</code> |  | Database plugin creators |
 | [config.hooks] | <code>Object</code> |  | Database hook creators |
 | [config.resources] | <code>Object</code> |  | Database resource classes |
+| [config.enableLegacyEncoding] | <code>boolean</code> |  | Encode string with utf8 before saving to support the old version |
 
 <a name="module_@the-/db.refreshMix..RefreshMixed+requestToRefresh"></a>
 
@@ -272,7 +273,7 @@ Alias of [create](#module_@the-/db.create)
 **Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
 <a name="module_@the-/db.driverFromEnv"></a>
 
-### db.driverFromEnv(env) ⇒ <code>\*</code>
+### db.driverFromEnv(env, options) ⇒ <code>\*</code>
 Create driver from env
 
 **Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
@@ -280,6 +281,7 @@ Create driver from env
 | Param |
 | --- |
 | env | 
+| options | 
 
 <a name="module_@the-/db.execForEnv"></a>
 

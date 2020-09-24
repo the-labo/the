@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/assert": "^15.4.1",
     "@the-/check-env": "^15.6.0",
-    "@the-/driver-sequelize": "^17.5.1",
+    "@the-/driver-sequelize": "^18.0.0",
     "@the-/hash": "^15.4.10",
     "@the-/refresher": "^15.4.0",
     "@the-/resource": "^15.4.16",

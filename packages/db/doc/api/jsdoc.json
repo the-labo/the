@@ -142,6 +142,16 @@
         "optional": true,
         "description": "Database resource classes",
         "name": "config.resources"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Encode string with utf8 before saving to support the old version",
+        "name": "config.enableLegacyEncoding"
       }
     ]
   },
@@ -171,7 +181,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 249,
+      "lineno": 251,
       "path": "lib"
     },
     "name": "hooksFromMapping",
@@ -196,7 +206,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 266,
+      "lineno": 268,
       "path": "lib"
     },
     "name": "load",
@@ -241,7 +251,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 301,
+      "lineno": 303,
       "path": "lib"
     },
     "name": "loadFromMapping",
@@ -267,7 +277,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 311,
+      "lineno": 313,
       "path": "lib"
     },
     "name": "pluginFromMapping",
@@ -292,7 +302,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 325,
+      "lineno": 327,
       "path": "lib"
     },
     "name": "unref",
@@ -319,7 +329,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 370,
+      "lineno": 372,
       "path": "lib"
     },
     "name": "drop",
@@ -345,7 +355,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 409,
+      "lineno": 411,
       "path": "lib"
     },
     "name": "invalidate",
@@ -380,7 +390,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 446,
+      "lineno": 448,
       "path": "lib"
     },
     "name": "transaction",
@@ -416,7 +426,7 @@
     "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 465,
+      "lineno": 467,
       "path": "lib"
     },
     "name": "updateVersion",
@@ -1119,6 +1129,9 @@
     "params": [
       {
         "name": "env"
+      },
+      {
+        "name": "options"
       }
     ],
     "returns": [
