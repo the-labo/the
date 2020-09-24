@@ -52,7 +52,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 150,
+      "lineno": 156,
       "path": "lib"
     },
     "name": "asLink",
@@ -67,7 +67,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 152,
+      "lineno": 158,
       "path": "lib"
     },
     "name": "draggable",
@@ -82,7 +82,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 154,
+      "lineno": 160,
       "path": "lib"
     },
     "name": "height",
@@ -97,7 +97,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 156,
+      "lineno": 162,
       "path": "lib"
     },
     "name": "notFoundMessage",
@@ -112,7 +112,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 158,
+      "lineno": 164,
       "path": "lib"
     },
     "name": "onError",
@@ -127,7 +127,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 160,
+      "lineno": 166,
       "path": "lib"
     },
     "name": "onLoad",
@@ -142,7 +142,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 162,
+      "lineno": 168,
       "path": "lib"
     },
     "name": "resizeInterval",
@@ -157,7 +157,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 164,
+      "lineno": 170,
       "path": "lib"
     },
     "name": "scale",
@@ -172,7 +172,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 166,
+      "lineno": 172,
       "path": "lib"
     },
     "name": "width",

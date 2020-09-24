@@ -76,8 +76,8 @@ const TheImage = (props) => {
     if (!img) {
       return
     }
+
     setBusy(!img.complete)
-    setFailed(false)
   }, [src, imageRef])
 
   const handleError = useCallback(
@@ -93,6 +93,7 @@ const TheImage = (props) => {
     (e) => {
       onLoad && onLoad(e)
       setBusy(false)
+      setFailed(false)
       resize()
     },
     [resize, onLoad],
@@ -114,33 +115,32 @@ const TheImage = (props) => {
       aria-busy={spinning}
       ref={elmRef}
     >
-      {notFound ? (
+      {notFound && (
         <span className='the-image-notfound'>{notFoundMessage}</span>
-      ) : (
-        <div className='the-image-inner'>
-          {spinning && (
-            <div className='the-image-spin'>
-              <TheIcon.Spin />
-            </div>
-          )}
-
-          <img
-            alt={alt}
-            className={c('the-image-img', {
-              'the-image-img-failed': failed,
-            })}
-            draggable={draggable}
-            height={actualHeight || height}
-            loading={loading}
-            onError={handleError}
-            onLoad={handleLoad}
-            ref={imageRef}
-            src={src}
-            width={actualWidth || width}
-          />
-          {children}
-        </div>
       )}
+      <div className='the-image-inner'>
+        {spinning && (
+          <div className='the-image-spin'>
+            <TheIcon.Spin />
+          </div>
+        )}
+
+        <img
+          alt={alt}
+          className={c('the-image-img', {
+            'the-image-img-failed': failed,
+          })}
+          draggable={draggable}
+          height={actualHeight || height}
+          loading={loading}
+          onError={handleError}
+          onLoad={handleLoad}
+          ref={imageRef}
+          src={src}
+          width={actualWidth || width}
+        />
+        {children}
+      </div>
     </Wrap>
   )
 }
