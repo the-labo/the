@@ -1,7 +1,7 @@
 {
   "name": "@the-/ps",
   "description": "Process manager for the-framework",
-  "version": "15.6.1",
+  "version": "15.6.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

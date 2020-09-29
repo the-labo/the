@@ -88,7 +88,7 @@ class ThePS {
       )
       const abort = exists && !(await this.canKill(pid))
       if (abort) {
-        throw new Error('[the-ps] Failed to acquire')
+        throw new Error(`[the-ps] Failed to acquire: ${this.filename}`)
       }
 
       try {
