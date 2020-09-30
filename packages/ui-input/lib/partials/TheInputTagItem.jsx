@@ -7,7 +7,7 @@ import { TheIcon } from '@the-/ui-icon'
 export default React.memo(function TheInputTagItem({ icon, onRemove, text }) {
   const handleRemoveClick = useCallback(() => {
     onRemove(text)
-  }, [text])
+  }, [onRemove, text])
   return (
     <span className='the-input-tag-tag'>
       <span className='the-input-tag-back' />
