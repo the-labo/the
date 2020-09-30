@@ -14,7 +14,7 @@
   "dependencies": {
     "bwindow": "^2.0.3",
     "core-js": "^3.6.5",
-    "cross-fetch": "^3.0.5",
+    "cross-fetch": "^3.0.6",
     "dom4": "^2.1.5",
     "fastclick": "^1.0.6",
     "image-capture": "^0.4.0",

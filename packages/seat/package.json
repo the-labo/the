@@ -15,7 +15,7 @@
     "@the-/util-file": "^15.7.6",
     "abind": "^1.0.3",
     "asfs": "^2.3.0",
-    "json-pointer": "^0.6.0",
+    "json-pointer": "^0.6.1",
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {},

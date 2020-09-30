@@ -11,7 +11,7 @@
   "dependencies": {
     "@the-/check": "^15.6.3",
     "asobj": "^3.0.1",
-    "debug": "^4.1.1"
+    "debug": "^4.2.0"
   },
   "description": "Utility for controllers",
   "devDependencies": {},

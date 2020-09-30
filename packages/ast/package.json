@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/parser": "^7.11.4",
-    "@babel/types": "^7.11.0",
+    "@babel/parser": "^7.11.5",
+    "@babel/types": "^7.11.5",
     "lodash.clone": "^4.5.0"
   },
   "devDependencies": {},

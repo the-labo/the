@@ -19,8 +19,8 @@
     "asfs": "^2.3.0",
     "chalk": "^4.1.0",
     "colorprint": "^6.1.1",
-    "debug": "^4.1.1",
-    "json-pointer": "^0.6.0",
+    "debug": "^4.2.0",
+    "json-pointer": "^0.6.1",
     "objnest": "^5.0.10",
     "stringcase": "^4.3.1"
   },

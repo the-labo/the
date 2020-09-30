@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "asleep": "^1.0.3",
-    "debug": "^4.1.1"
+    "debug": "^4.2.0"
   },
   "description": "Random delay timer",
   "devDependencies": {},

@@ -14,8 +14,8 @@
   "dependencies": {
     "@the-/assert": "^15.4.1",
     "@the-/check-env": "^15.6.0",
-    "aws-sdk": "^2.742.0",
-    "debug": "^4.1.1",
+    "aws-sdk": "^2.763.0",
+    "debug": "^4.2.0",
     "mime": "^2.4.6"
   },
   "devDependencies": {},

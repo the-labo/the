@@ -20,7 +20,7 @@
     "browser-cookies": "^1.2.0",
     "bstorage": "^2.0.4",
     "bwindow": "^2.0.3",
-    "debug": "^4.1.1",
+    "debug": "^4.2.0",
     "prop-types": "^15.7.2",
     "qs": "^6.9.4",
     "rfunc-client": "^5.1.0",

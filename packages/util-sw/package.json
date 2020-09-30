@@ -16,7 +16,7 @@
     "url-parse": "^1.4.6"
   },
   "devDependencies": {
-    "cross-fetch": "^3.0.5",
+    "cross-fetch": "^3.0.6",
     "injectmock": "^2.0.0"
   },
   "engines": {

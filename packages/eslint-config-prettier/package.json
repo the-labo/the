@@ -10,7 +10,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "eslint-config-prettier": "^6.11.0"
+    "eslint-config-prettier": "^6.12.0"
   },
   "engines": {
     "node": ">=10",
