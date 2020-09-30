@@ -56,7 +56,7 @@ const TheInputTag = React.memo((props) => {
       onBlur && onBlur(e)
       setFocused(false)
     },
-    [updateBySplitValues, onBlur],
+    [splitValue, updateBySplitValues, onBlur],
   )
 
   const handleEnter = useCallback(() => {
@@ -66,10 +66,13 @@ const TheInputTag = React.memo((props) => {
     }
   }, [splitValue, updateBySplitValues])
 
-  const handleFocus = useCallback((e) => {
-    onFocus && onFocus(e)
-    setFocused(true)
-  }, [])
+  const handleFocus = useCallback(
+    (e) => {
+      onFocus && onFocus(e)
+      setFocused(true)
+    },
+    [onFocus],
+  )
 
   const handleKeyDown = useCallback(
     (e) => {
@@ -114,7 +117,7 @@ const TheInputTag = React.memo((props) => {
 
   const [edittingValue, ...tagValues] = splitValue()
   const inputProps = clone(props, {
-    without: ['value', 'splitter', 'options'],
+    without: ['value', 'splitter', 'options', 'onUpdate'],
   })
 
   return (
