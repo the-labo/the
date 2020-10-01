@@ -51,8 +51,6 @@ var/
 /packages/demo-lib/lib/index.js
 /packages/demo-ui/doc/demo/bundle.js
 /packages/demo-ui/lib/index.jsx
-/packages/driver-mongo/lib/index.js
-/packages/driver-mongo/lib/mixins/index.js
 /packages/driver-sequelize/lib/constants/index.js
 /packages/driver-sequelize/lib/converters/index.js
 /packages/driver-sequelize/lib/helpers/index.js
@@ -209,7 +207,6 @@ var/
 /packages/ui-root/doc/demo/bundle.js
 /packages/ui-root/lib/index.jsx
 /packages/ui-route/doc/demo/bundle.js
-/packages/ui-route/lib/index.js
 /packages/ui-route/lib/index.jsx
 /packages/ui-router/doc/demo/bundle.js
 /packages/ui-router/lib/index.jsx

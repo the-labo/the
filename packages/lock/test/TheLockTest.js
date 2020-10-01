@@ -89,9 +89,11 @@ describe('the-lock', () => {
     const lock = TheLock()
     try {
       await lock.acquire('foo', async () => {
-        throw 'x'
+        throw new Error('x')
       })
-    } catch (e) {}
+    } catch (e) {
+      // DO Nothing
+    }
     const result = await lock.acquire('foo', async () => {
       await asleep(1)
       return 'done!'

@@ -36,6 +36,7 @@ function parseSort(sort, options) {
           logger.warn(`Unknown association "${as}" for ${ModelName}`)
           return null
         }
+
         return [
           association,
           parseAttributeName(subName),

@@ -22,7 +22,7 @@
     "filedel": "^4.1.2",
     "findout": "^3.0.2",
     "stringcase": "^4.3.1",
-    "writeout": "^2.3.2"
+    "writeout": "^2.3.4"
   },
   "devDependencies": {
     "injectmock": "^2.0.0"

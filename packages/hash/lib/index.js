@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/hash
  * @typicalname hash
- * @version 15.4.12
+ * @version 15.4.14
  */
 'use strict'
 

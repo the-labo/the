@@ -13,7 +13,7 @@
     "name": "@the-/pack",
     "order": 2,
     "typicalname": "pack",
-    "version": "16.2.15"
+    "version": "17.0.0"
   },
   {
     "description": "Pack handler",
@@ -128,7 +128,7 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 8,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "ThePack",

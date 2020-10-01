@@ -1,7 +1,7 @@
 {
   "name": "@the-/code",
   "description": "Code formatter of the-frameworks",
-  "version": "15.17.3",
+  "version": "15.17.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,7 +17,7 @@
   "dependencies": {
     "@the-/ast": "^16.2.6",
     "@the-/const-code": "^15.5.2",
-    "@the-/util-file": "^15.7.6",
+    "@the-/util-file": "^15.7.7",
     "@the-/util-path": "^15.4.4",
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
@@ -25,7 +25,7 @@
     "commander": "^6.1.0",
     "comment-parser": "^0.7.6",
     "debug": "^4.2.0",
-    "fmtjson": "^5.0.1",
+    "fmtjson": "^5.0.2",
     "ignore": "^5.1.8",
     "minimatch": "^3.0.4",
     "postcss": "^8.1.1",

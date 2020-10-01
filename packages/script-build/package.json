@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/runtime": "^7.11.2",
-    "@the-/code": "^15.17.3",
+    "@the-/code": "^15.17.4",
     "@the-/tmp": "^15.5.0",
     "ababel": "^6.1.5",
     "aglob": "^3.0.2",
@@ -34,7 +34,7 @@
     "awatch": "^2.0.4",
     "babel-loader": "^8.1.0",
     "commander": "^6.1.0",
-    "coz": "^7.2.0",
+    "coz": "^7.2.1",
     "filecopy": "^4.1.0",
     "lebab": "^3.1.0",
     "webpack": "^4.44.2"

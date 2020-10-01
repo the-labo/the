@@ -32,9 +32,11 @@ function defineModelIndexes(schema, options = {}) {
       if (skip) {
         return null
       }
+
       if (!def.indexed) {
         return null
       }
+
       return [].concat(name).concat(def.indexedWith).filter(Boolean)
     })
     .filter(Boolean)

@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/jsdoc
  * @typicalname jsdoc
- * @version 15.4.14
+ * @version 15.4.15
  */
 'use strict'
 

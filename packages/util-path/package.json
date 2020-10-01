@@ -36,5 +36,5 @@
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.13"
+  "version": "15.4.14"
 }

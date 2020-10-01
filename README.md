@@ -60,7 +60,6 @@ root for the-project
 - [demo-lib](./packages/demo-lib)
 - [demo-monorepo](./packages/demo-monorepo)
 - [demo-ui](./packages/demo-ui)
-- [driver-mongo](./packages/driver-mongo)
 - [driver-sequelize](./packages/driver-sequelize)
 - [entrypoint](./packages/entrypoint)
 - [eslint-config-code](./packages/eslint-config-code)

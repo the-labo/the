@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/scope
  * @typicalname scope
- * @version 15.4.13
+ * @version 15.4.14
  */
 'use strict'
 

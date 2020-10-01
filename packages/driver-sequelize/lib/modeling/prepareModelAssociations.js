@@ -6,6 +6,7 @@ const associateForSchema = async (Model, schema, { models }) => {
     if (!associate) {
       continue
     }
+
     const [associateName, associateOpt = {}] = [].concat(associate)
     const belongingModel = models[associateName]
     if (!belongingModel) {

@@ -36,6 +36,7 @@ function cascadeMix(Class) {
         if (alreadyStarted) {
           continue
         }
+
         const followee = this.getResource(followeeName)
         this._cascadeListeners[key] = followee.listenToDestroy(
           async ({ gone }) => {

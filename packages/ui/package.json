@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@the-/ui-demo": "^16.0.3",
-    "fmtjson": "^5.0.1",
+    "fmtjson": "^5.0.2",
     "injectmock": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

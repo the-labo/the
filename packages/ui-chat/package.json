@@ -30,7 +30,7 @@
   "devDependencies": {
     "@the-/ui-demo": "^16.0.3",
     "babel-runtime": "^6.26.0",
-    "coz": "^7.2.0",
+    "coz": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0"

@@ -52,6 +52,7 @@ class TheCache extends LRUCache {
     if (maxAge <= 0) {
       console.warn('[TheCache] maxAge should be longer than 0')
     }
+
     const pruneTimer = setInterval(() => {
       this.prune()
     }, maxAge)

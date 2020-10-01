@@ -32,13 +32,13 @@
     "rfunc": "^4.4.0",
     "rimraf": "^3.0.2",
     "socket.io": "^2.3.0",
-    "socket.io-client": "^2.3.0",
+    "socket.io-client": "^2.3.1",
     "socket.io-redis": "^5.4.0",
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
     "@msgpack/msgpack": "^1.12.2",
-    "@the-/client": "^17.3.2",
+    "@the-/client": "^17.3.3",
     "arequest": "^3.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

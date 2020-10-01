@@ -1,9 +1,6 @@
 'use strict'
 
-const {
-  decode: msgpackDecode,
-  encode: msgpackEncode,
-} = require('@msgpack/msgpack')
+const { Decoder, Encoder } = require('@msgpack/msgpack')
 
 /**
  * Pack handler
@@ -14,6 +11,9 @@ class ThePack {
   constructor() {
     this.decode = this.decode.bind(this)
     this.encode = this.encode.bind(this)
+
+    this.encoder = new Encoder()
+    this.decoder = new Decoder()
   }
 
   /**
@@ -38,7 +38,7 @@ class ThePack {
     }
 
     try {
-      return msgpackDecode(encoded)
+      return this.decoder.decode(encoded)
     } catch (e) {
       const isBuffer =
         encoded instanceof ArrayBuffer || encoded instanceof Uint8Array
@@ -63,7 +63,7 @@ class ThePack {
     }
 
     try {
-      return msgpackEncode(data)
+      return this.encoder.encode(data)
     } catch (e) {
       throw new Error(
         `[ThePack] Failed to encode data: ${e.message} ( ${JSON.stringify(
