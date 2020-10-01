@@ -30,6 +30,20 @@ const TheSignature = (props) => {
   const canvasRef = useRef(null)
   const [pad, setPad] = useState(null)
 
+  const handlePadBegin = useCallback(
+    (pad) => {
+      onBegin && onBegin({ pad })
+    },
+    [onBegin],
+  )
+
+  const handleEnd = useCallback(
+    (pad) => {
+      onEnd && onEnd({ pad })
+    },
+    [onEnd],
+  )
+
   const reloadPad = useCallback(() => {
     const { current: canvas } = canvasRef
     let resumeTouchScrolling = null
@@ -54,21 +68,7 @@ const TheSignature = (props) => {
       setPad(null)
       resumeTouchScrolling && resumeTouchScrolling()
     }
-  }, [canvasRef])
-
-  const handlePadBegin = useCallback(
-    (pad) => {
-      onBegin && onBegin({ pad })
-    },
-    [onBegin],
-  )
-
-  const handleEnd = useCallback(
-    (pad) => {
-      onEnd && onEnd({ pad })
-    },
-    [onEnd],
-  )
+  }, [canvasRef, handleEnd, handlePadBegin, onPad])
 
   const applyValue = useCallback(
     (value) => {
@@ -96,7 +96,7 @@ const TheSignature = (props) => {
     return () => {
       clearTimeout(timer)
     }
-  }, [pad, reloadPad])
+  }, [canvasRef, pad, applyValue, reloadPad])
 
   const syncPad = useCallback(() => {
     if (!pad) {
