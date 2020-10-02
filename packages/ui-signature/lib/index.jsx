@@ -4,7 +4,7 @@
  * @description Signature pad of the-components
  * @module @the-/ui-signature
  * @typicalname uiSignature
- * @version 16.0.3
+ * @version 16.0.4
  */
 'use strict'
 
