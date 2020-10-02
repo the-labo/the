@@ -36,4 +36,4 @@ Signature pad of the-components
 ## TheSignatureStyle()
 Style for TheSignature
 
-**Kind**: global function  
+**Kind**: global function

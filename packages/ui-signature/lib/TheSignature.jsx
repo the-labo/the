@@ -46,18 +46,7 @@ const TheSignature = (props) => {
 
   const reloadPad = useCallback(() => {
     const { current: canvas } = canvasRef
-    let resumeTouchScrolling = null
-    const newPad = new SignaturePad(canvas, {
-      onBegin: () => {
-        handlePadBegin(newPad)
-        resumeTouchScrolling && resumeTouchScrolling()
-        resumeTouchScrolling = stopTouchScrolling()
-      },
-      onEnd: () => {
-        handleEnd(newPad)
-        resumeTouchScrolling && resumeTouchScrolling()
-      },
-    })
+    const newPad = new SignaturePad(canvas)
     setPad(newPad)
 
     onPad && onPad(newPad)
@@ -66,9 +55,28 @@ const TheSignature = (props) => {
     return () => {
       newPad.off()
       setPad(null)
+    }
+  }, [canvasRef, onPad])
+
+  const initPad = useCallback(() => {
+    if (!pad) return () => {}
+
+    let resumeTouchScrolling = null
+
+    pad.onBegin = () => {
+      handlePadBegin(pad)
+      resumeTouchScrolling && resumeTouchScrolling()
+      resumeTouchScrolling = stopTouchScrolling()
+    }
+    pad.onEnd = () => {
+      handleEnd(pad)
       resumeTouchScrolling && resumeTouchScrolling()
     }
-  }, [canvasRef, handleEnd, handlePadBegin, onPad])
+
+    return () => {
+      resumeTouchScrolling && resumeTouchScrolling()
+    }
+  }, [pad, handlePadBegin, handleEnd])
 
   const applyValue = useCallback(
     (value) => {
@@ -131,6 +139,7 @@ const TheSignature = (props) => {
     canvas.dataset.scaleRatio = ratio
     ctx.scale(ratio, ratio)
   }, [canvasRef])
+  useEffect(() => initPad(), [initPad])
   useEffect(() => {
     syncPad()
   }, [color])
@@ -140,9 +149,6 @@ const TheSignature = (props) => {
   useEffect(() => {
     resize()
   }, [width, height])
-  useEffect(() => {
-    resize()
-  }, [pad])
 
   return (
     <div
