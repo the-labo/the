@@ -2,23 +2,13 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback } from 'react'
 import TheSignature from './TheSignature'
 
 const noop = () => null
 
 const TheSignatureInput = (props) => {
   const { className, error, name, onEnd, onUpdate, value } = props
-
-  useEffect(() => {
-    console.log('name')
-  }, [name])
-  useEffect(() => {
-    console.log('onEnd')
-  }, [onEnd])
-  useEffect(() => {
-    console.log('onUpdate')
-  }, [onUpdate])
 
   const handleEnd = useCallback(
     ({ pad }) => {
