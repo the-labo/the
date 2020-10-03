@@ -195,8 +195,6 @@ const {c, d} = x
     )
   })
 
-  it('Combine object pattern')
-
   it('Combine sub destructing', async () => {
     equal(
       await processJSDeclaration(`
@@ -252,6 +250,13 @@ const { a: { b: { d, e } } } = x
         'const { a: {b}, e, a: {c = 2, d: {f}}, d } = x',
       ),
       'const { a: { b, c = 2, d: {f} }, e, d } = x',
+    )
+  })
+
+  it('change kind', async () => {
+    equal(
+      await processJSDeclaration('let w;let x=0;let y=1;let z=2;[y]=[3]'),
+      'let w;const x=0;let y=1;const z=2;[y]=[3]',
     )
   })
 })

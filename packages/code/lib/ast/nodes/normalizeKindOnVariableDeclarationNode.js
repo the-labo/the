@@ -46,7 +46,7 @@ function normalizeKindOnVariableDeclarationNode(
   }
 
   const [declaration] = declarations
-  const { id } = declaration
+  const { id, init } = declaration
   const isLet = kind === 'let'
   const isVar = kind === 'var'
   if (isLet || isVar) {
@@ -54,7 +54,7 @@ function normalizeKindOnVariableDeclarationNode(
       case NodeTypes.Identifier: {
         const hasAssigned =
           assignedNames.has(id.name) || updatedNames.has(id.name)
-        if (!hasAssigned) {
+        if (!hasAssigned && !!init) {
           return replace(
             [VariableDeclaration.start, declaration.id.start],
             'const ',

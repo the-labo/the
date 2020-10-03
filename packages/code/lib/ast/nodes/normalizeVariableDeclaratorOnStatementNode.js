@@ -28,9 +28,21 @@ function normalizeVariableDeclaratorOnStatementNode(
     NodeTypes.UpdateExpression,
   ])
   const assignedNames = new Set(
-    AssignmentExpressions.filter((ex) => ex.left.type === 'Identifier').map(
-      (ex) => ex.left.name,
-    ),
+    AssignmentExpressions.map((ex) => {
+      switch (ex.left.type) {
+        case 'ArrayPattern': {
+          return ex.left.elements.map((e) => e.name)
+        }
+        case 'Identifier': {
+          return ex.left.name
+        }
+        default: {
+          return null
+        }
+      }
+    })
+      .reduce((r, v) => [].concat(r, v), [])
+      .filter(Boolean),
   )
   const updatedNames = new Set(
     UpdateExpressions.filter((ex) => ex.argument.type === 'Identifier').map(
