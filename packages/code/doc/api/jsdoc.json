@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.17.4"
+    "version": "15.17.5"
   },
   {
     "id": "module:@the-/code.TheCode()",
