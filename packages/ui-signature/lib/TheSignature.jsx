@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import SignaturePad from 'signature_pad/dist/signature_pad'
 import {
   eventHandlersFor,
@@ -30,6 +30,11 @@ const TheSignature = (props) => {
   const canvasRef = useRef(null)
   const [pad, setPad] = useState(null)
 
+  const ratio = useMemo(() => {
+    const devicePixelRatio = get('window.devicePixelRatio') || 1
+    return Math.max(devicePixelRatio, 1)
+  }, [])
+
   const handlePadBegin = useCallback(
     (pad) => {
       onBegin && onBegin({ pad })
@@ -43,6 +48,36 @@ const TheSignature = (props) => {
     },
     [onEnd],
   )
+
+  const updateCanvasSize = useCallback(() => {
+    const { current: canvas } = canvasRef
+    if (!canvas) return
+
+    const dataCache = pad?.toData()
+    canvas.width = canvas.offsetWidth * ratio
+    canvas.height = canvas.offsetHeight * ratio
+    canvas.getContext('2d').scale(ratio, ratio)
+    const timer = setTimeout(() => {
+      dataCache && pad?.fromData(dataCache)
+    }, 300)
+
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [pad, ratio])
+
+  useEffect(() => {
+    const { current: canvas } = canvasRef
+    if (!canvas) return
+
+    const ResizeObserver = get('ResizeObserver')
+    const resizeObserver = new ResizeObserver(() => {
+      updateCanvasSize()
+    })
+    resizeObserver.observe(canvasRef.current)
+
+    return () => resizeObserver.disconnect()
+  }, [canvasRef, updateCanvasSize])
 
   const reloadPad = useCallback(() => {
     const { current: canvas } = canvasRef
@@ -62,7 +97,6 @@ const TheSignature = (props) => {
     if (!pad) return () => {}
 
     let resumeTouchScrolling = null
-
     pad.onBegin = () => {
       handlePadBegin(pad)
       resumeTouchScrolling && resumeTouchScrolling()
@@ -72,47 +106,10 @@ const TheSignature = (props) => {
       handleEnd(pad)
       resumeTouchScrolling && resumeTouchScrolling()
     }
-
     return () => {
       resumeTouchScrolling && resumeTouchScrolling()
     }
   }, [pad, handlePadBegin, handleEnd])
-
-  const applyValue = useCallback(
-    (value) => {
-      if (!pad) {
-        return null
-      }
-
-      pad.fromDataURL(value)
-    },
-    [pad],
-  )
-
-  const resize = useCallback(() => {
-    const { current: canvas } = canvasRef
-    const skip = !canvas || !pad
-    if (skip) {
-      return
-    }
-
-    const newValue = pad.toDataURL()
-    applyValue(newValue)
-    const timer = setTimeout(() => {
-      reloadPad()
-    }, 300)
-    return () => {
-      clearTimeout(timer)
-    }
-  }, [canvasRef, pad, applyValue, reloadPad])
-
-  const syncPad = useCallback(() => {
-    if (!pad) {
-      return
-    }
-
-    pad.penColor = color
-  }, [pad, color])
 
   useEffect(() => {
     const clear = reloadPad()
@@ -122,33 +119,17 @@ const TheSignature = (props) => {
   }, [reloadPad])
 
   useEffect(() => {
-    const window = get('window')
-    window.addEventListener('resize', resize)
-    return () => {
-      window.removeEventListener('resize', resize)
-      setPad(null)
-    }
-  }, [resize])
-  useEffect(() => {
-    const { current: canvas } = canvasRef
-    const devicePixelRatio = get('window.devicePixelRatio') || 1
-    const ratio = Math.max(devicePixelRatio, 1)
-    const ctx = canvas.getContext('2d')
-    canvas.width = canvas.offsetWidth * ratio
-    canvas.height = canvas.offsetHeight * ratio
-    canvas.dataset.scaleRatio = ratio
-    ctx.scale(ratio, ratio)
-  }, [canvasRef])
+    updateCanvasSize()
+  }, [updateCanvasSize])
   useEffect(() => initPad(), [initPad])
   useEffect(() => {
-    syncPad()
-  }, [color])
+    if (pad) {
+      pad.penColor = color
+    }
+  }, [pad, color])
   useEffect(() => {
-    applyValue(value)
-  }, [value])
-  useEffect(() => {
-    resize()
-  }, [width, height])
+    pad?.fromDataURL(value)
+  }, [pad, value])
 
   return (
     <div
