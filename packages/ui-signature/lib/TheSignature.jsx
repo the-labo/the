@@ -75,6 +75,8 @@ const TheSignature = (props) => {
       updateCanvasSize()
     })
     resizeObserver.observe(canvasRef.current)
+
+    return () => resizeObserver.disconnect()
   }, [canvasRef, updateCanvasSize])
 
   const reloadPad = useCallback(() => {
