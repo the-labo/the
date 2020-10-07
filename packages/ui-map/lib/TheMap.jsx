@@ -5,7 +5,12 @@ import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import L from '@okunishinishi/leaflet-shim'
 import { TheSpin } from '@the-/ui-spin'
-import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
+import {
+  eventHandlersFor,
+  htmlAttributesFor,
+  newId,
+  observeResize,
+} from '@the-/util-ui'
 import { get } from '@the-/window'
 import TileLayer from './classes/TileLayer'
 import MapAccess from './helpers/MapAccess'
@@ -214,14 +219,10 @@ const TheMap = React.memo((props) => {
     }
 
     const { current: mapElm } = mapElmRef
-    const resizeObserver = new ResizeObserver(() => {
+    const unobserve = observeResize(mapElm, () => {
       mapAccess.invalidate()
     })
-    resizeObserver.observe(mapElm)
-    return () => {
-      resizeObserver.unobserve(mapElm)
-      resizeObserver.disconnect()
-    }
+    return unobserve
   }, [mapAccess])
 
   const style = { ...props.style, height, width }
