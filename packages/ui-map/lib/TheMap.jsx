@@ -213,11 +213,6 @@ const TheMap = React.memo((props) => {
       return
     }
 
-    const ResizeObserver = get('ResizeObserver')
-    if (!ResizeObserver) {
-      return
-    }
-
     const { current: mapElm } = mapElmRef
     const unobserve = observeResize(mapElm, () => {
       mapAccess.invalidate()
