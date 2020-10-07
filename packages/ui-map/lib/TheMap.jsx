@@ -11,7 +11,6 @@ import {
   newId,
   observeResize,
 } from '@the-/util-ui'
-import { get } from '@the-/window'
 import TileLayer from './classes/TileLayer'
 import MapAccess from './helpers/MapAccess'
 
