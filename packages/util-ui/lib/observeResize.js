@@ -19,8 +19,11 @@ function observeResize(elm, handler) {
     return () => {}
   }
 
+  const window = get('window')
   const resizeObserver = new ResizeObserver((entries) => {
-    handler([...entries])
+    window.requestAnimationFrame(() => {
+      handler([...entries])
+    })
   })
   resizeObserver.observe(elm)
   return () => {
