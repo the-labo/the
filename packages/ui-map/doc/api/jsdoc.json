@@ -12,7 +12,7 @@
     "name": "@the-/ui-map",
     "order": 0,
     "typicalname": "uiMap",
-    "version": "16.4.3"
+    "version": "16.4.5"
   },
   {
     "augments": [
@@ -69,7 +69,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 257,
+      "lineno": 252,
       "path": "lib"
     },
     "name": "TileLayerClass",
@@ -84,7 +84,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 259,
+      "lineno": 254,
       "path": "lib"
     },
     "name": "draggingEnabled",
@@ -99,7 +99,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 261,
+      "lineno": 256,
       "path": "lib"
     },
     "name": "freezed",
@@ -114,7 +114,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 263,
+      "lineno": 258,
       "path": "lib"
     },
     "name": "height",
@@ -129,7 +129,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 265,
+      "lineno": 260,
       "path": "lib"
     },
     "name": "lat",
@@ -144,7 +144,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 267,
+      "lineno": 262,
       "path": "lib"
     },
     "name": "lng",
@@ -159,7 +159,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 269,
+      "lineno": 264,
       "path": "lib"
     },
     "name": "onLeafletMap",
@@ -174,7 +174,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 271,
+      "lineno": 266,
       "path": "lib"
     },
     "name": "polylines",
@@ -189,7 +189,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 273,
+      "lineno": 268,
       "path": "lib"
     },
     "name": "spinning",
@@ -204,7 +204,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 275,
+      "lineno": 270,
       "path": "lib"
     },
     "name": "width",
