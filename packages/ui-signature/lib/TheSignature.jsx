@@ -7,6 +7,7 @@ import SignaturePad from 'signature_pad/dist/signature_pad'
 import {
   eventHandlersFor,
   htmlAttributesFor,
+  observeResize,
   stopTouchScrolling,
 } from '@the-/util-ui'
 import { get } from '@the-/window'
@@ -70,13 +71,10 @@ const TheSignature = (props) => {
     const { current: canvas } = canvasRef
     if (!canvas) return
 
-    const ResizeObserver = get('ResizeObserver')
-    const resizeObserver = new ResizeObserver(() => {
+    const unobserve = observeResize(canvas, () => {
       updateCanvasSize()
     })
-    resizeObserver.observe(canvasRef.current)
-
-    return () => resizeObserver.disconnect()
+    return unobserve
   }, [canvasRef, updateCanvasSize])
 
   const reloadPad = useCallback(() => {
