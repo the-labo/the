@@ -63,7 +63,8 @@ const TheCamInput = (props) => {
     try {
       const File = get('File', { strict: true })
       const blob = await media.takePhoto({})
-      const filename = newId({ prefix: 'the-cam-input-value' })
+      const ext = `.${blob.type.split('/').pop()}` // image/* の後半を拡張子にする
+      const filename = newId({ prefix: 'the-cam-input-value' }) + ext
       const file = await convertFile(
         new File([blob], filename, {
           type: blob.type,
