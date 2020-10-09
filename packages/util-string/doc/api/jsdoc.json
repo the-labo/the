@@ -13,7 +13,7 @@
     "name": "@the-/util-string",
     "order": 0,
     "typicalname": "utilString",
-    "version": "15.4.14"
+    "version": "15.4.15"
   },
   {
     "description": "Check if is email",

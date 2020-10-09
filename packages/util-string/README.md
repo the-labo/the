@@ -78,12 +78,12 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- module:@the-/util-site
+- module:@the-/util-string
 Convert into japanese strings.
 英数字記号は半角、カナは全角へ
-  - [.formatString(src)](./doc/api/api.md#module_@the-/util-site
+  - [.normalizeString(src)](./doc/api/api.md#module_@the-/util-string
 Convert into japanese strings.
-英数字記号は半角、カナは全角へ.formatString)
+英数字記号は半角、カナは全角へ.normalizeString)
 - module:@the-/util-string
   - [.isEmail(value)](./doc/api/api.md#module_@the-/util-string.isEmail)
   - [.isImageURL(value)](./doc/api/api.md#module_@the-/util-string.isImageURL)
