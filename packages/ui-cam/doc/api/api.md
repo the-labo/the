@@ -27,7 +27,7 @@
 ## @the-/ui-cam
 Embed camera component
 
-**Version**: 16.0.10  
+**Version**: 16.0.11  
 <a name="TheCam"></a>
 
 ## TheCam()
