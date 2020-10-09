@@ -195,16 +195,16 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.formatString",
+    "id": "module:@the-/util-string\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.normalizeString",
     "kind": "function",
-    "longname": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.formatString",
-    "memberof": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ",
+    "longname": "module:@the-/util-string\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.normalizeString",
+    "memberof": "module:@the-/util-string\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ",
     "meta": {
       "filename": "normalizeString.js",
       "lineno": 184,
       "path": "lib"
     },
-    "name": "formatString",
+    "name": "normalizeString",
     "order": 6,
     "params": [
       {
