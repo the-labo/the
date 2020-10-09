@@ -41,7 +41,7 @@ class TheCode {
       jsChaining = true,
       jsPrettier = true,
       jsRequire = true,
-      jsStrict = true,
+      jsStrict = false,
       jsIf = true,
       jsString = true,
       jsSwitch = true,

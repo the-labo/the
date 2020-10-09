@@ -11,11 +11,12 @@ const applyConverter = require('../helpers/applyConverter')
 /**
  * Process js "use strict" statement
  * @memberof module:@the-/code.processors
- * @function processJSRequire
+ * @function processJSStrict
  * @param {string} content
+ * @param {Object} options
  * @returns {string} processed
  */
-function processJSRequire(content, options = {}) {
+function processJSStrict(content, options = {}) {
   return applyConverter(
     content,
     (content) => {
@@ -39,8 +40,8 @@ function processJSRequire(content, options = {}) {
         return ["'use strict'", contentString].join(EOL)
       }
     },
-    { name: 'processJSRequire' },
+    { name: 'processJSStrict' },
   )
 }
 
-module.exports = processJSRequire
+module.exports = processJSStrict

@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.17.5"
+    "version": "15.18.0"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -2238,16 +2238,16 @@
   },
   {
     "description": "Process js \"use strict\" statement",
-    "id": "module:@the-/code.processors.processJSRequire",
+    "id": "module:@the-/code.processors.processJSStrict",
     "kind": "function",
-    "longname": "module:@the-/code.processors.processJSRequire",
+    "longname": "module:@the-/code.processors.processJSStrict",
     "memberof": "module:@the-/code.processors",
     "meta": {
       "filename": "processJSStrict.js",
       "lineno": 11,
       "path": "lib/processors"
     },
-    "name": "processJSRequire",
+    "name": "processJSStrict",
     "order": 88,
     "params": [
       {
@@ -2257,6 +2257,14 @@
           ]
         },
         "name": "content"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "options"
       }
     ],
     "returns": [

@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.17.5  
+**Version**: 15.18.0  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -40,7 +40,7 @@ Code formatter of the-frameworks
         * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processJSRedundant(content)](#module_@the-/code.processors.processJSRedundant) ⇒ <code>string</code>
         * [.processJSRequire(content, [options])](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
-        * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
+        * [.processJSStrict(content, options)](#module_@the-/code.processors.processJSStrict) ⇒ <code>string</code>
         * [.processJSString(content)](#module_@the-/code.processors.processJSString) ⇒ <code>string</code>
         * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
         * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
@@ -151,7 +151,7 @@ Processor functions
     * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processJSRedundant(content)](#module_@the-/code.processors.processJSRedundant) ⇒ <code>string</code>
     * [.processJSRequire(content, [options])](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
-    * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
+    * [.processJSStrict(content, options)](#module_@the-/code.processors.processJSStrict) ⇒ <code>string</code>
     * [.processJSString(content)](#module_@the-/code.processors.processJSString) ⇒ <code>string</code>
     * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
     * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
@@ -380,9 +380,9 @@ Process require statement
 | content | <code>string</code> |  | 
 | [options] | <code>Object</code> | <code>{}</code> | 
 
-<a name="module_@the-/code.processors.processJSRequire"></a>
+<a name="module_@the-/code.processors.processJSStrict"></a>
 
-#### processors.processJSRequire(content) ⇒ <code>string</code>
+#### processors.processJSStrict(content, options) ⇒ <code>string</code>
 Process js "use strict" statement
 
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
@@ -391,6 +391,7 @@ Process js "use strict" statement
 | Param | Type |
 | --- | --- |
 | content | <code>string</code> | 
+| options | <code>Object</code> | 
 
 <a name="module_@the-/code.processors.processJSString"></a>
 
