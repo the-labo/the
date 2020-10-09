@@ -18,6 +18,10 @@ describe('is-url', () => {
     ok(isUrl)
     ok(isUrl('http://example.com'))
     ok(isUrl('https://example.com/foo/bar'))
+    ok(isUrl('data:,Hello%2C%20World!'))
+    ok(!isUrl('http://example.com http://example.jp'))
+    ok(!isUrl('data:,Hello%2C%20World!  '))
+    ok(!isUrl('dat:,Hello%2C%20World!'))
   })
 })
 

@@ -81,7 +81,7 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/util-site
 Convert into japanese strings.
 英数字記号は半角、カナは全角へ
-  - [.formatString()](./doc/api/api.md#module_@the-/util-site
+  - [.formatString(src)](./doc/api/api.md#module_@the-/util-site
 Convert into japanese strings.
 英数字記号は半角、カナは全角へ.formatString)
 - module:@the-/util-string

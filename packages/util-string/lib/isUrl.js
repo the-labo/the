@@ -1,6 +1,6 @@
 'use strict'
 
-const PATTERNS = [/^https?:/, /^data?:/]
+const PATTERNS = [/^https?:\S+$/, /^data:\S+$/]
 
 /**
  * Check if is url
