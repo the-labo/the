@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/ui-style": "^16.0.2",
-    "@the-/util-ui": "^16.4.1",
+    "@the-/util-ui": "^16.4.3",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },

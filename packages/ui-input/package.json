@@ -19,7 +19,7 @@
     "@the-/ui-style": "^16.0.2",
     "@the-/util-array": "^15.4.12",
     "@the-/util-color": "^16.1.0",
-    "@the-/util-ui": "^16.4.1",
+    "@the-/util-ui": "^16.4.3",
     "@the-/window": "^15.8.3",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",

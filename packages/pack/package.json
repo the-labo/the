@@ -12,9 +12,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@msgpack/msgpack": "^2.1.0",
+    "@msgpack/msgpack": "^2.2.0",
     "asleep": "^1.0.3",
-    "uuid": "^8.3.0"
+    "uuid": "^8.3.1"
   },
   "devDependencies": {},
   "engines": {

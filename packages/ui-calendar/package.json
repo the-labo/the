@@ -16,12 +16,12 @@
     "@the-/ui-button": "^16.0.6",
     "@the-/ui-condition": "^16.0.0",
     "@the-/ui-style": "^16.0.2",
-    "@the-/util-ui": "^16.4.1",
+    "@the-/util-ui": "^16.4.3",
     "classnames": "^2.2.6",
-    "moment": "^2.29.0",
+    "moment": "^2.29.1",
     "objnest": "^5.0.10",
     "prop-types": "^15.7.2",
-    "react-big-calendar": "^0.28.0"
+    "react-big-calendar": "^0.28.1"
   },
   "devDependencies": {
     "@the-/ui-demo": "^16.0.3",
