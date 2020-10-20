@@ -14,6 +14,7 @@ const convertOutbound = require('./converters/convertOutbound')
 const createSequelize = require('./helpers/createSequelize')
 const defineModel = require('./modeling/defineModel')
 const prepareModel = require('./modeling/prepareModel')
+const prepareModelAssociations = require('./modeling/prepareModelAssociations')
 const { parseAttributes, parseFilter, parseSort } = require('./parsing')
 
 /**
@@ -24,10 +25,11 @@ class TheDriverSequelize extends Driver {
   constructor(config = {}) {
     super()
     const {
-      charset = 'utf8',
-      collate = 'utf8_general_ci',
+      charset = 'utf8mb4',
+      collate = 'utf8mb4_unicode_ci',
       database,
       dialect = 'sqlite',
+      enableLegacyEncoding = false,
       logging = false,
       password,
       storage = `var/db/${database}.db`,
@@ -40,6 +42,7 @@ class TheDriverSequelize extends Driver {
     this.prepareLocks = {}
     this.charset = charset
     this.collate = collate
+    this.enableLegacyEncoding = enableLegacyEncoding
     this._sequelizeArgs = [
       database,
       username,
@@ -53,6 +56,37 @@ class TheDriverSequelize extends Driver {
         ...otherOptions,
       },
     ]
+    this.includesFor = (name, options = {}) => {
+      const { wheres } = options
+      const schema = this.schemas[name]
+      return Object.values(schema)
+        .map((def) => def.associate)
+        .filter(Boolean)
+        .map(([name, opt = {}]) => {
+          const include = opt.as || name
+          const where = wheres && wheres[include]
+          if (where) {
+            return {
+              as: include,
+              model: this.models[name],
+              where,
+            }
+          }
+
+          return include
+        })
+    }
+    this.associatedModelFor = (name, alias) => {
+      const schema = this.schemas[name]
+      const [associateName] =
+        Object.values(schema)
+          .map((def) => def.associate)
+          .find((associate) => {
+            const [, associateOpt] = associate || []
+            return associateOpt?.as === alias
+          }) || []
+      return this.models[associateName]
+    }
   }
 
   get sequelize() {
@@ -93,7 +127,12 @@ class TheDriverSequelize extends Driver {
     const Model = this.modelFor(resourceName)
     const Schema = this.schemaFor(resourceName)
     const { name: ModelName, rawAttributes: ModelAttributes } = Model
-    return convertInbound(values, { ModelAttributes, ModelName, Schema })
+    return convertInbound(values, {
+      ModelAttributes,
+      ModelName,
+      Schema,
+      enableLegacyEncoding: this.enableLegacyEncoding,
+    })
   }
 
   modelFor(resourceName) {
@@ -110,11 +149,20 @@ class TheDriverSequelize extends Driver {
   outbound(resourceName, values) {
     const Model = this.modelFor(resourceName)
     const Schema = this.schemaFor(resourceName)
+    const include = this.includesFor(Model.name)
     const { name: ModelName, rawAttributes: ModelAttributes } = Model
+    const associated = include
     return convertOutbound(values, {
       ModelAttributes,
       ModelName,
       Schema,
+      associated,
+      enableLegacyEncoding: this.enableLegacyEncoding,
+      outbound: (v) => {
+        if(v) {
+          return this.outbound(v.constructor.name, v.dataValues)
+        }
+      },
       resourceName,
     })
   }
@@ -142,9 +190,11 @@ class TheDriverSequelize extends Driver {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
-    const model = await Model.create(this.inbound(resourceName, values), {
+    const include = this.includesFor(Model.name)
+    const { id } = await Model.create(this.inbound(resourceName, values), {
       transaction,
     })
+    const model = await Model.findByPk(id, { include, transaction })
     return this.outbound(resourceName, model.dataValues)
   }
 
@@ -194,10 +244,46 @@ class TheDriverSequelize extends Driver {
 
     const { filter = {}, page = {}, sort = [] } = condition
     const { limit, offset } = pageToOffsetLimit(page)
-    const order = parseSort(sort, { ModelAttributes, ModelName, Schema })
-    const where = parseFilter(filter, { ModelAttributes, ModelName, Schema })
+    const order = parseSort(sort, {
+      ModelAttributes,
+      ModelName,
+      Schema,
+      resolveAssociation: (alias) => {
+        const associatedModel = this.associatedModelFor(ModelName, alias)
+        return { as: alias, model: associatedModel }
+      },
+    })
+    const [rootFilter, nestedFilters] = parseFilter.splitNested(filter)
+    const where = parseFilter(rootFilter, {
+      ModelAttributes,
+      ModelName,
+      Schema,
+      enableLegacyEncoding: this.enableLegacyEncoding,
+    })
+    const include = this.includesFor(Model.name, {
+      wheres: Object.entries(nestedFilters).reduce((wheres, [k, v]) => {
+        const [alias, key] = k.split('.')
+        const associatedModel = this.associatedModelFor(ModelName, alias)
+        return {
+          ...wheres,
+          [alias]: {
+            ...(wheres[alias] || {}),
+            ...parseFilter(
+              { [key]: v },
+              {
+                ModelAttributes: associatedModel.rawAttributes,
+                ModelName: associatedModel.name,
+                Schema: this.schemaFor(associatedModel.name),
+                enableLegacyEncoding: this.enableLegacyEncoding,
+              },
+            ),
+          },
+        }
+      }, {}),
+    })
     const { count, rows } = await Model.findAndCountAll({
       attributes: parseAttributes(attributes),
+      include,
       limit,
       offset,
       order,
@@ -235,6 +321,7 @@ class TheDriverSequelize extends Driver {
     })
     const model = await Model.findByPk(id, {
       attributes: parseAttributes(attributes),
+      include: this.includesFor(Model.name),
       transaction,
     })
     if (!model) {
@@ -286,6 +373,10 @@ class TheDriverSequelize extends Driver {
       this.prepareLocks[resourceName] = promise
       await promise
     }
+    if (!this._modelAssociationsPrepared) {
+      this._modelAssociationsPrepared = true
+      await prepareModelAssociations(this.models, this.schemas)
+    }
   }
 
   async prepareIfNeeded() {
@@ -336,15 +427,18 @@ class TheDriverSequelize extends Driver {
     }
 
     const version = model.getDataValue(MetaColumnNames.$$num)
+    const include = this.includesFor(Model.name)
     await model.update(
       this.inbound(resourceName, {
         ...values,
         [MetaColumnNames.$$num]: version + 1,
       }),
-      { transaction },
+      { include, transaction },
     )
-    return this.outbound(resourceName, model.dataValues)
+    const { dataValues } = await Model.findByPk(id, { include, transaction })
+    return this.outbound(resourceName, dataValues)
   }
 }
 
 module.exports = TheDriverSequelize
+
