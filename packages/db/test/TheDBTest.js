@@ -230,14 +230,43 @@ describe('the-db', function () {
         },
       })
 
-    const BResource = ({ define }) => define({})
+    const BResource = ({ define }) => define({}, {})
+
+    const CResource = ({ define }) =>
+      define({
+        bId: {
+          associate: ['B', { as: 'b' }],
+          type: STRING,
+        },
+        dId: {
+          associate: ['D', { as: 'd' }],
+          type: STRING,
+        },
+      }, {
+        cascaded: {
+          B: (b) => ({ bId: b.id }),
+          D: (d) => ({ dId: d.id }),
+        },
+        interceptors: {
+          inbound: (attributes) => attributes,
+          outbound: (attributes) => attributes,
+        },
+      })
+
+    const DResource = ({ define }) =>
+      define({}, {
+        interceptors: {
+          inbound: (attributes) => attributes,
+          outbound: (attributes) => attributes,
+        },
+      })
 
     const db = new TheDB({
       env,
-      resources: { A: AResource, B: BResource },
+      resources: { A: AResource, B: BResource, C: CResource, D: DResource },
     })
     const {
-      resources: { A, B },
+      resources: { A, B, C, D },
     } = db
     const b01 = await B.create({ name: 'b01' })
     const b02 = await B.create({ name: 'b02' })
@@ -248,6 +277,13 @@ describe('the-db', function () {
     await b01.destroy()
     await asleep(100)
     equal(await A.count(), 1)
+
+    const d01 = await D.create({ name: 'd01' })
+    const b03 = await B.create({ name: 'b03' })
+    const c = await C.create({ dId: d01.id, bId: b03.id })
+    await d01.destroy()
+    equal(await C.one(c.id), null)
+
     await db.close()
   })
 })
