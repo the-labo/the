@@ -162,6 +162,8 @@ class TheDriverSequelize extends Driver {
         if (!v) {
           return v
         }
+
+        return this.outbound(v.constructor.name, v.dataValues)
       },
       resourceName,
     })
