@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "21.0.1"
+    "version": "21.0.2"
   },
   {
     "id": "module:@the-/db.TheDB()",
