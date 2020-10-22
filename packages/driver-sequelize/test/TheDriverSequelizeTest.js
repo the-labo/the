@@ -798,6 +798,28 @@ describe('the-driver-sequelize', function () {
     ok(migrated.entities.find(({ text }) => text === en.text))
     ok(migrated.entities.find(({ text }) => text === emoji.text))
   })
+  it('Destroy an entity which has an associate', async () => {
+    const storage = `${__dirname}/../tmp/associate.db`
+    await unlinkAsync(storage).catch(() => null)
+    const driver = new TheDriverSequelize({
+      dialect: 'sqlite',
+      storage,
+    })
+    driver.define('A', {})
+    driver.define('B', {
+      aId: {
+        associate: ['A', { as: 'a' }],
+        type: STRING,
+      },
+    })
+
+    const associated = await driver.create('A', {})
+    await driver.create('B', { aId: associated.id })
+    await driver.destroy('A', associated.id)
+    equal((await driver.list('B')).entities.length, 1)
+
+    await driver.close()
+  })
 })
 
 /* global describe, before, after, it */

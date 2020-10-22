@@ -158,7 +158,8 @@ class TheDriverSequelize extends Driver {
       Schema,
       associated,
       enableLegacyEncoding: this.enableLegacyEncoding,
-      outbound: (v) => this.outbound(v.constructor.name, v.dataValues),
+      outbound: (v) =>
+        v ? this.outbound(v.constructor.name, v.dataValues) : v,
       resourceName,
     })
   }
