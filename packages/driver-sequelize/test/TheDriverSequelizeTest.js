@@ -798,7 +798,7 @@ describe('the-driver-sequelize', function () {
     ok(migrated.entities.find(({ text }) => text === en.text))
     ok(migrated.entities.find(({ text }) => text === emoji.text))
   })
-  it('Destroy a entity which has an associate', async () => {
+  it('Destroy an entity which has an associate', async () => {
     const storage = `${__dirname}/../tmp/associate.db`
     await unlinkAsync(storage).catch(() => null)
     const driver = new TheDriverSequelize({
