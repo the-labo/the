@@ -8,6 +8,14 @@
 </dd>
 </dl>
 
+## Constants
+
+<dl>
+<dt><a href="#ClientStatuses">ClientStatuses</a></dt>
+<dd><p>Client connection statuses</p>
+</dd>
+</dl>
+
 ## Functions
 
 <dl>
@@ -399,6 +407,12 @@ Create a TheServer instance
 Alias of [create](#module_@the-/server.create)
 
 **Kind**: static method of [<code>@the-/server</code>](#module_@the-/server)  
+<a name="ClientStatuses"></a>
+
+## ClientStatuses
+Client connection statuses
+
+**Kind**: global constant  
 <a name="IOEvents"></a>
 
 ## IOEvents()
