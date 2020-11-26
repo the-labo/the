@@ -1,5 +1,6 @@
 'use strict'
 
+const asleep = require('asleep')
 const { ClientStatuses } = require('../constants')
 
 function ClientStatusPool() {
@@ -41,6 +42,20 @@ function ClientStatusPool() {
       }
 
       statusHash[key] = ClientStatuses.READY
+    },
+    async waitUntilReady(cid, socketId, options) {
+      const { maxTime } = options
+      const key = keyFor(cid, socketId)
+      const interval = 100
+      let count = 1
+      while (statusHash[key] !== ClientStatuses.READY) {
+        if (count * interval > maxTime) {
+          return
+        }
+
+        await asleep(interval)
+        count++
+      }
     },
   }
   return clientStatusPool
