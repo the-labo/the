@@ -29,7 +29,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 17.7.7  
+**Version**: 17.7.8  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
