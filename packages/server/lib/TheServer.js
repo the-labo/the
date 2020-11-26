@@ -11,6 +11,7 @@ const theTmp = require('@the-/tmp')
 const { redisAdapter } = require('./adapters')
 const buildInEndpoints = require('./buildInEndpoints')
 const { IOConnector } = require('./connectors')
+const { ClientStatuses } = require('./constants')
 const DefaultValues = require('./constants/DefaultValues')
 const IOEvents = require('./constants/IOEvents')
 const {
@@ -21,6 +22,7 @@ const {
   toControllerDriverFactory,
 } = require('./helpers')
 const ClientAccess = require('./helpers/ClientAccess')
+const ClientStatusPool = require('./helpers/ClientStatusPool')
 const ControllerDriverPool = require('./helpers/ControllerDriverPool')
 const InfoFlusher = require('./helpers/InfoFlusher')
 const MetricsCounter = require('./helpers/MetricsCounter')
@@ -263,6 +265,7 @@ class TheServer extends RFunc {
     this.infoFlusher = infoFlusher
     this.closeRedisAdapter = redisAdapter(io, this.redisConfig)
     const metricsCounter = MetricsCounter()
+    const clientStatusPool = ClientStatusPool()
     const controllerDriverPool = ControllerDriverPool()
     this.controllerDriverPool = controllerDriverPool
     this.metricsCounter = metricsCounter
@@ -272,6 +275,7 @@ class TheServer extends RFunc {
       connectionStore,
       encoder: this.encoder,
       onIOClientCame: async (cid, socketId, client) => {
+        clientStatusPool.init(cid, socketId)
         await clientAccess.saveClientSocket(cid, socketId, client)
         const controllerNames = Object.keys(this.ControllerDriverFactories)
         for (const controllerName of controllerNames) {
@@ -283,9 +287,18 @@ class TheServer extends RFunc {
           await driver.saveSession()
           controllerDriverPool.add(cid, socketId, controllerName, driver)
         }
+        clientStatusPool.ready(cid, socketId)
       },
       onIOClientGone: async (cid, socketId, reason) => {
+        const status = clientStatusPool.get(cid, socketId)
+        if (status !== ClientStatuses.READY) {
+          console.warn(
+            `[TheServer] The status of connection ${cid}@${socketId} is not ready: ${status}`,
+          )
+        }
+
         // TODO Wait until onIOClientCame done
+        clientStatusPool.finalize(cid, socketId)
         const { rpcKeeper } = this
         const hasConnection = await clientAccess.hasClientConnection(cid)
         if (!hasConnection) {
@@ -313,6 +326,7 @@ class TheServer extends RFunc {
         rpcKeeper.stopKeepTimersFor(cid)
 
         await clientAccess.removeClientSocket(cid, socketId, reason)
+        clientStatusPool.del(cid, socketId)
       },
       onRPCAbort: async () => {
         // TODO Support aborting RPC Call
@@ -322,8 +336,9 @@ class TheServer extends RFunc {
         const { iid, methodName, moduleName, params } = config
         const driver = controllerDriverPool.get(cid, socketId, moduleName)
         if (!driver) {
+          const status = clientStatusPool.get(cid, socketId)
           const error = new Error(
-            `[@the-/server] Controller not found: ${moduleName}`,
+            `[@the-/server] Controller not found. moduleName: ${moduleName}, status: ${status}`,
           )
           console.error(error)
           await this.ioConnector.sendRPCError(cid, iid, [error])
