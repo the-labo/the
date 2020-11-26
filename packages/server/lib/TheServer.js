@@ -285,7 +285,6 @@ class TheServer extends RFunc {
           interceptors.controllerDidAttach()
           metricsCounter.addControllerAttachCount(controllerName, 1)
           await driver.saveSession()
-          // MEMO: ここに来なければ driver は存在しない
           controllerDriverPool.add(cid, socketId, controllerName, driver)
         }
         clientStatusPool.ready(cid, socketId)
