@@ -338,10 +338,12 @@ class TheServer extends RFunc {
         if (!driver) {
           const status = clientStatusPool.get(cid, socketId)
           const error = new Error(
-            `[@the-/server] Controller not found. moduleName: ${moduleName}, status: ${status}`,
+            `[TheServer] Controller not found. moduleName: "${moduleName}", connection status: "${status}"`,
           )
           console.error(error)
-          await this.ioConnector.sendRPCError(cid, iid, [error])
+          await this.ioConnector.sendRPCError(cid, iid, [
+            { message: error.message },
+          ])
           return
         }
 
