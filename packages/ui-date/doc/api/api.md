@@ -32,4 +32,4 @@ Date ui
 ## TheDateStyle()
 Style for TheInput
 
-**Kind**: global function  
+**Kind**: global function

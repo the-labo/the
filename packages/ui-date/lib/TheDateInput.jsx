@@ -40,15 +40,12 @@ const TheDateInput = React.memo((props) => {
       cleanup(
         {
           dateFormat,
-          defaultDate: value,
           enableTime: timeEnabled,
           maxDate,
           minDate,
           noCalendar,
           onChange: (selectedDates, dateStr) => {
-            if (value !== dateStr) {
-              onUpdate && onUpdate({ [name]: dateStr })
-            }
+            onUpdate && onUpdate({ [name]: dateStr })
           },
         },
         { delNull: true },
@@ -59,29 +56,20 @@ const TheDateInput = React.memo((props) => {
       newPicker.destroy()
       setPicker(null)
     }
-  }, [])
+  }, [timeEnabled, onUpdate, dateFormat, maxDate, minDate, noCalendar, name])
 
   useEffect(() => {
-    if (!picker) {
-      return
-    }
-
-    picker.set(cleanup({ maxDate, minDate }))
-    picker.redraw()
-  }, [picker, maxDate, minDate])
-  useEffect(() => {
-    if (!picker) {
+    if (!picker || !picker.config) {
+      // uncreated or destroyed
       return
     }
 
     if (value) {
-      picker.jumpToDate(value)
+      picker.setDate(value, false)
     } else {
-      picker.clear()
+      picker.clear(false)
     }
-
-    picker.redraw()
-  }, [value])
+  }, [picker, value])
 
   const handleBlur = useCallback(
     (e) => {
