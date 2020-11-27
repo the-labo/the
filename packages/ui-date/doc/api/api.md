@@ -26,10 +26,10 @@
 ## @the-/ui-date
 Date ui
 
-**Version**: 17.0.1  
+**Version**: 17.0.2  
 <a name="TheDateStyle"></a>
 
 ## TheDateStyle()
 Style for TheInput
 
-**Kind**: global function
+**Kind**: global function  
