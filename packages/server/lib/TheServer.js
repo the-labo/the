@@ -290,6 +290,7 @@ class TheServer extends RFunc {
         clientStatusPool.ready(cid, socketId)
       },
       onIOClientGone: async (cid, socketId, reason) => {
+        await clientStatusPool.waitUntilReady(cid, socketId, { maxTime: 3000 })
         const status = clientStatusPool.get(cid, socketId)
         if (status !== ClientStatuses.READY) {
           console.warn(
@@ -297,7 +298,6 @@ class TheServer extends RFunc {
           )
         }
 
-        // TODO Wait until onIOClientCame done
         clientStatusPool.finalize(cid, socketId)
         const { rpcKeeper } = this
         const hasConnection = await clientAccess.hasClientConnection(cid)
@@ -332,16 +332,19 @@ class TheServer extends RFunc {
         // TODO Support aborting RPC Call
       },
       onRPCCall: async (cid, socketId, config) => {
+        await clientStatusPool.waitUntilReady(cid, socketId, { maxTime: 3000 })
         const { rpcKeeper } = this
         const { iid, methodName, moduleName, params } = config
         const driver = controllerDriverPool.get(cid, socketId, moduleName)
         if (!driver) {
           const status = clientStatusPool.get(cid, socketId)
           const error = new Error(
-            `[@the-/server] Controller not found. moduleName: ${moduleName}, status: ${status}`,
+            `[TheServer] Controller not found. moduleName: "${moduleName}", connection status: "${status}"`,
           )
           console.error(error)
-          await this.ioConnector.sendRPCError(cid, iid, [error])
+          await this.ioConnector.sendRPCError(cid, iid, [
+            { message: error.message },
+          ])
           return
         }
 
