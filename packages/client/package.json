@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.6.0",
+    "@the-/lock": "^15.4.16",
     "@the-/pack": "^16.2.15",
     "@the-/queue": "^15.4.14",
     "@the-/stream": "^15.4.15",
