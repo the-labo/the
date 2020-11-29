@@ -1,9 +1,9 @@
 'use strict'
 
-const theClient = require('@the-/client')
+const { TheClient } = require('@the-/client')
 
 async function tryExample() {
-  const client = theClient.for('app')
+  const client = TheClient.for('app')
 
   const fruitShop = await client.use('fruitShop')
 

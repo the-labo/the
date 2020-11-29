@@ -66,9 +66,9 @@ class TheClient extends RFuncClient {
       cid = TheClient.newCID(),
       encoder = new ThePack({}),
       forceNewSocket = false,
+      impatient = false,
       onGone,
       version = 'unknown',
-      impatient = false,
       ...restOptions
     } = config
     if (!url) {
