@@ -183,7 +183,7 @@
     "longname": "TheClientScope",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 423,
+      "lineno": 432,
       "path": "lib"
     },
     "name": "TheClientScope",
@@ -223,7 +223,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 194,
+      "lineno": 196,
       "path": "lib"
     },
     "name": "invoke",
@@ -268,7 +268,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 318,
+      "lineno": 327,
       "path": "lib"
     },
     "name": "stream",
@@ -333,7 +333,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 337,
+      "lineno": 346,
       "path": "lib"
     },
     "name": "use",
@@ -390,7 +390,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 388,
+      "lineno": 397,
       "path": "lib"
     },
     "name": "useAll",

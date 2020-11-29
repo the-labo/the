@@ -66,6 +66,7 @@ class TheClient extends RFuncClient {
       cid = TheClient.newCID(),
       encoder = new ThePack({}),
       forceNewSocket = false,
+      impatient = false,
       onGone,
       version = 'unknown',
       ...restOptions
@@ -81,6 +82,7 @@ class TheClient extends RFuncClient {
     super(url, restOptions)
     this.onGone(onGone)
     const fetch = this.fetch.bind(this)
+    this.impatient = impatient
     this.infoAccess = InfoAccess({ fetch })
     this.pingSender = PingSender({ fetch })
     this.encoder = encoder
@@ -296,6 +298,13 @@ class TheClient extends RFuncClient {
         debug('error', e)
         reject(e)
       })
+      if (this.impatient) {
+        socket.on('connect_error', (e) => {
+          debug('connect_error', e)
+          socket.close()
+          reject(e)
+        })
+      }
     })
     return socket
   }
