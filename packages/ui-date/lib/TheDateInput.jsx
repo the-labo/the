@@ -74,11 +74,8 @@ const TheDateInput = React.memo((props) => {
   const handleBlur = useCallback(
     (e) => {
       onBlur && onBlur(e)
-      if (value !== e.target.value) {
-        onUpdate && onUpdate({ [name]: e.target.value })
-      }
     },
-    [name, onBlur, onUpdate, value],
+    [onBlur],
   )
 
   return (
