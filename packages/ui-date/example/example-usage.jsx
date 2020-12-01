@@ -8,13 +8,10 @@ const ExampleComponent = () => {
   const [values, setValues] = useState({
     'value-date-01': '2018-08-01',
   })
-  const onUpdate = useCallback(
-    (newValues) => {
-      console.log('values', newValues)
-      setValues(Object.assign({}, values, newValues))
-    },
-    [values],
-  )
+  const onUpdate = useCallback((newValues) => {
+    console.log('values', newValues)
+    setValues((prev) => Object.assign({}, prev, newValues))
+  }, [])
 
   return (
     <div>

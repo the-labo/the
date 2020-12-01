@@ -51,6 +51,7 @@ const TheDateInput = React.memo((props) => {
         { delNull: true },
       ),
     )
+    console.log('created: ', name)
     setPicker(newPicker)
     return () => {
       newPicker.destroy()
@@ -74,11 +75,8 @@ const TheDateInput = React.memo((props) => {
   const handleBlur = useCallback(
     (e) => {
       onBlur && onBlur(e)
-      if (value !== e.target.value) {
-        onUpdate && onUpdate({ [name]: e.target.value })
-      }
     },
-    [name, onBlur, onUpdate, value],
+    [onBlur],
   )
 
   return (
