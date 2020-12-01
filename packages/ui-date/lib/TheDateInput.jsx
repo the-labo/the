@@ -51,7 +51,6 @@ const TheDateInput = React.memo((props) => {
         { delNull: true },
       ),
     )
-    console.log('created: ', name)
     setPicker(newPicker)
     return () => {
       newPicker.destroy()
