@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/date
  * @typicalname date
- * @version 15.5.2
+ * @version 15.5.3
  */
 'use strict'
 

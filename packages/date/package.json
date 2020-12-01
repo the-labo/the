@@ -1,7 +1,7 @@
 {
   "name": "@the-/date",
   "description": "Date utility for the-framework",
-  "version": "15.5.2",
+  "version": "15.5.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
