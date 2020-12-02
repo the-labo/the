@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "17.1.5"
+    "version": "17.1.6"
   },
   {
     "description": "Text Input",
@@ -1246,7 +1246,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 220,
+      "lineno": 224,
       "path": "lib"
     },
     "name": "width",
