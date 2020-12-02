@@ -71,6 +71,10 @@ export function renderWarningMessage(warning) {
 }
 
 export function isImageUrl(src) {
+  if (typeof src !== 'string') {
+    return false
+  }
+
   if (/^data:image/.test(src)) {
     return true
   }
@@ -84,6 +88,10 @@ export function isImageUrl(src) {
 }
 
 export function isVideoUrl(src) {
+  if (typeof src !== 'string') {
+    return false
+  }
+
   if (/^data:video/.test(src)) {
     return true
   }
@@ -97,6 +105,10 @@ export function isVideoUrl(src) {
 }
 
 export function isUnknownTypeUrl(src) {
+  if (typeof src !== 'string') {
+    return false
+  }
+
   if (/^data:/.test(src)) {
     return false
   }

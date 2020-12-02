@@ -215,7 +215,11 @@ TheInputUpload.propTypes = {
   /** Guide text */
   text: PropTypes.string,
   /** Value of input */
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
   /** Image width */
   width: PropTypes.number,
 }
