@@ -55,9 +55,10 @@ class ObjectScope extends Scope {
        */
       reset(values = {}) {
         return (state) => {
-          const needsSet = Object.keys(values || {}).some(
-            (name) => values[name] !== state[name],
-          )
+          const needsSet = [
+            ...Object.keys(values || {}),
+            ...Object.keys(state || {}),
+          ].some((name) => values[name] !== state[name])
           if (!needsSet) {
             return state
           }

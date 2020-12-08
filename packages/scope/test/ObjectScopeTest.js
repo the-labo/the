@@ -47,6 +47,13 @@ describe('object-scope', () => {
 
     store.foo.reset({ x: 1, y: 2 })
     deepEqual(store.foo.state, { x: 1, y: 2 })
+
+    store.foo.reset({ x: 1, y: 2, z: 3 })
+    deepEqual(store.foo.state, { x: 1, y: 2, z: 3 })
+
+    store.foo.reset({ x: 1 })
+    deepEqual(store.foo.state, { x: 1 })
+
     store.foo.drop()
 
     deepEqual(store.foo.state, {})
