@@ -5,7 +5,7 @@
 ## @the-/scope
 State scope for the-store
 
-**Version**: 15.4.13  
+**Version**: 15.4.14  
 **License**: MIT  
 
 * [@the-/scope](#module_@the-/scope)

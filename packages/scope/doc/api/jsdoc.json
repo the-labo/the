@@ -13,7 +13,7 @@
     "name": "@the-/scope",
     "order": 2,
     "typicalname": "scope",
-    "version": "15.4.13"
+    "version": "15.4.14"
   },
   {
     "description": "Abstract state class",
@@ -657,7 +657,7 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 68,
+      "lineno": 69,
       "path": "lib/scopes"
     },
     "name": "set",
@@ -692,7 +692,7 @@
     "memberof": "ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 97,
+      "lineno": 98,
       "path": "lib/scopes"
     },
     "name": "get",
@@ -708,7 +708,7 @@
     "memberof": "ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 102,
+      "lineno": 103,
       "path": "lib/scopes"
     },
     "name": "has",
