@@ -41,6 +41,16 @@ function entryAccessFor(scope) {
       const errors = entryAccess.getEntryErrors()
       return name in errors
     },
+    initEntryErrors() {
+      return scope.of('entryErrors').init()
+    },
+    reset(entry) {
+      entryAccess.initEntryErrors()
+      return entryAccess.resetEntry(entry)
+    },
+    resetEntry(entry) {
+      return scope.of('entry').reset(entry)
+    },
     set(entry) {
       return entryAccess.setEntry(entry)
     },
