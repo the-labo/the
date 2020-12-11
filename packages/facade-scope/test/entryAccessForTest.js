@@ -40,6 +40,14 @@ describe('entry-access-for', () => {
       .catch((e) => e)
     ok(!!caught)
     ok(entryAccess.getEntryErrors())
+
+    entryAccess.set({ username: 'user1' })
+    entryAccess.set({ password: 'pass1' })
+    deepEqual(entryAccess.getEntry(), { username: 'user1', password: 'pass1' })
+
+    entryAccess.reset({ username: 'user' })
+    deepEqual(entryAccess.getEntryErrors(), {})
+    deepEqual(entryAccess.getEntry(), { username: 'user' })
   })
 
   it('Handle nested', () => {
