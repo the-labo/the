@@ -43,7 +43,7 @@ describe('entry-access-for', () => {
 
     entryAccess.set({ username: 'user1' })
     entryAccess.set({ password: 'pass1' })
-    deepEqual(entryAccess.getEntry(), { username: 'user1', password: 'pass1' })
+    deepEqual(entryAccess.getEntry(), { password: 'pass1', username: 'user1' })
 
     entryAccess.reset({ username: 'user' })
     deepEqual(entryAccess.getEntryErrors(), {})
