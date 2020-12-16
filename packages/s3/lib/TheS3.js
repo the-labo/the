@@ -52,6 +52,69 @@ class TheS3 {
   }
 
   /**
+   * Copy file in s3
+   * @param {Object} sourceParams - params for source file
+   * @param {Object} targetParams - params for target file
+   * @returns {Promise<Object>}
+   */
+  async copy(sourceParams, targetParams) {
+    const sourceKey = path.join(
+      ...[sourceParams.namespace, sourceParams.name].filter(Boolean),
+    )
+    const targetKey = path.join(
+      ...[targetParams.namespace, targetParams.name].filter(Boolean),
+    )
+    const { bucketName, s3 } = this
+    const CopySource = path.join(bucketName, sourceKey)
+    return new Promise((resolve, reject) => {
+      s3.copyObject(
+        {
+          Bucket: bucketName,
+          CopySource,
+          Key: targetKey,
+        },
+        (err, data) => {
+          if (err) {
+            reject(err)
+            return
+          }
+
+          const {
+            CopyObjectResult: { ETag: etag },
+          } = data
+          resolve({ bucket: bucketName, etag, key: targetKey })
+        },
+      )
+    })
+  }
+
+  /**
+   * Delete file in s3
+   * @param {Object} params - S3 object params
+   * @returns {Promise<undefined>}
+   */
+  async delete(params) {
+    const { name, namespace } = params
+    const { s3 } = this
+    const Key = path.join(...[namespace, name].filter(Boolean))
+    return new Promise((resolve, reject) => {
+      s3.deleteObject(
+        {
+          Key,
+        },
+        (err) => {
+          if (err) {
+            reject(err)
+            return
+          }
+
+          resolve()
+        },
+      )
+    })
+  }
+
+  /**
    * Download file from s3
    * @param {Object} params - S3 object params
    * @returns {Promise<Object>}
@@ -114,6 +177,49 @@ class TheS3 {
         },
       )
     })
+  }
+
+  /**
+   * get metadata of file in s3
+   * @param {Object} params - S3 object params
+   * @returns {Promise<Object>}
+   */
+  async head(params) {
+    const { name, namespace } = params
+    const { s3 } = this
+    const Key = path.join(...[namespace, name].filter(Boolean))
+    return new Promise((resolve, reject) => {
+      s3.headObject(
+        {
+          Key,
+        },
+        (err, data) => {
+          if (err) {
+            if (err.statusCode === 404) {
+              return resolve(null)
+            }
+
+            reject(err)
+            return
+          }
+
+          const { ContentLength: size, ContentType: type, ETag: etag } = data
+          resolve({ etag, size, type })
+        },
+      )
+    })
+  }
+
+  /**
+   * Move file in s3
+   * @param {Object} sourceParams - params for source file
+   * @param {Object} targetParams - params for target file
+   * @returns {Promise<Object>}
+   */
+  async move(sourceParams, targetParams) {
+    const result = await this.copy(sourceParams, targetParams)
+    await this.delete(sourceParams)
+    return result
   }
 
   /**

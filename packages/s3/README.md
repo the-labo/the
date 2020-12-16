@@ -95,9 +95,13 @@ tryExample().catch((err) => console.error(err))
   - [.default()](./doc/api/api.md#module_@the-/s3.default)
   - [.TheS3](./doc/api/api.md#module_@the-/s3.TheS3)
 - TheS3
+  - [#copy(sourceParams,targetParams)](./doc/api/api.md#TheS3#copy)
+  - [#delete(params)](./doc/api/api.md#TheS3#delete)
   - [#download(params)](./doc/api/api.md#TheS3#download)
   - [#exists(params)](./doc/api/api.md#TheS3#exists)
   - [#generateUploadUrl(pathname,options)](./doc/api/api.md#TheS3#generateUploadUrl)
+  - [#head(params)](./doc/api/api.md#TheS3#head)
+  - [#move(sourceParams,targetParams)](./doc/api/api.md#TheS3#move)
   - [#upload(src,options)](./doc/api/api.md#TheS3#upload)
 
 See [API Guide](./doc/api/api.md) for more detail

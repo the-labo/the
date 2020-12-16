@@ -80,6 +80,87 @@
   },
   {
     "async": true,
+    "description": "Copy file in s3",
+    "id": "TheS3#copy",
+    "kind": "function",
+    "longname": "TheS3#copy",
+    "memberof": "TheS3",
+    "meta": {
+      "filename": "TheS3.js",
+      "lineno": 60,
+      "path": "lib"
+    },
+    "name": "copy",
+    "order": 5,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "params for source file",
+        "name": "sourceParams"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "params for target file",
+        "name": "targetParams"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
+    "description": "Delete file in s3",
+    "id": "TheS3#delete",
+    "kind": "function",
+    "longname": "TheS3#delete",
+    "memberof": "TheS3",
+    "meta": {
+      "filename": "TheS3.js",
+      "lineno": 96,
+      "path": "lib"
+    },
+    "name": "delete",
+    "order": 6,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "S3 object params",
+        "name": "params"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
     "description": "Download file from s3",
     "id": "TheS3#download",
     "kind": "function",
@@ -87,11 +168,11 @@
     "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 59,
+      "lineno": 122,
       "path": "lib"
     },
     "name": "download",
-    "order": 5,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -123,11 +204,11 @@
     "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 78,
+      "lineno": 141,
       "path": "lib"
     },
     "name": "exists",
-    "order": 6,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -159,11 +240,11 @@
     "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 100,
+      "lineno": 163,
       "path": "lib"
     },
     "name": "generateUploadUrl",
-    "order": 7,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -199,6 +280,87 @@
   },
   {
     "async": true,
+    "description": "get metadata of file in s3",
+    "id": "TheS3#head",
+    "kind": "function",
+    "longname": "TheS3#head",
+    "memberof": "TheS3",
+    "meta": {
+      "filename": "TheS3.js",
+      "lineno": 187,
+      "path": "lib"
+    },
+    "name": "head",
+    "order": 10,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "S3 object params",
+        "name": "params"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
+    "description": "Move file in s3",
+    "id": "TheS3#move",
+    "kind": "function",
+    "longname": "TheS3#move",
+    "memberof": "TheS3",
+    "meta": {
+      "filename": "TheS3.js",
+      "lineno": 219,
+      "path": "lib"
+    },
+    "name": "move",
+    "order": 11,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "params for source file",
+        "name": "sourceParams"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "params for target file",
+        "name": "targetParams"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
     "description": "Upload file into s3",
     "id": "TheS3#upload",
     "kind": "function",
@@ -206,11 +368,11 @@
     "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 125,
+      "lineno": 231,
       "path": "lib"
     },
     "name": "upload",
-    "order": 8,
+    "order": 12,
     "params": [
       {
         "type": {
