@@ -70,7 +70,7 @@ class TheS3 {
       s3.copyObject(
         {
           Bucket: bucketName,
-          CopySource,
+          CopySource: encodeURI(CopySource),
           Key: targetKey,
         },
         (err, data) => {
