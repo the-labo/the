@@ -30,7 +30,7 @@
 ## @the-/ui-map
 Geo map for the-components
 
-**Version**: 16.4.6  
+**Version**: 16.4.7  
 <a name="DivIcon"></a>
 
 ## DivIcon ⇐ <code>L.DivIcon</code>
@@ -46,4 +46,4 @@ Geo map for the-components
 ## TheMapStyle()
 Style for TheMap
 
-**Kind**: global function
+**Kind**: global function  
