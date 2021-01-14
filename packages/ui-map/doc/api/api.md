@@ -46,4 +46,4 @@ Geo map for the-components
 ## TheMapStyle()
 Style for TheMap
 
-**Kind**: global function  
+**Kind**: global function
