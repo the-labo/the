@@ -9,6 +9,7 @@ const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
 
 function MapAccess(map, { TileLayerClass }) {
   const state = {
+    gone: false,
     layerControl: null,
     layers: {},
     markers: {},
@@ -140,6 +141,7 @@ function MapAccess(map, { TileLayerClass }) {
     cleanup() {
       state.layers = {}
       state.markers = {}
+      state.gone = true
       map.remove()
     },
     createLayer({ title, ...options } = {}) {

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-map",
   "description": "Geo map for the-components",
-  "version": "16.4.5",
+  "version": "16.4.6",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -31,8 +31,8 @@
     "coz": "^7.2.1",
     "leaflet": "^1.7.1",
     "objnest": "^5.0.10",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0"
   },
   "engines": {
