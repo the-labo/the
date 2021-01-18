@@ -18,7 +18,16 @@ const parseValue = (value) => {
 }
 
 const TheMapPositionInput = (props) => {
-  const { height, id, layers, name, onUpdate, value, width, TileLayerClass } = props
+  const {
+    TileLayerClass,
+    height,
+    id,
+    layers,
+    name,
+    onUpdate,
+    value,
+    width,
+  } = props
   const handleChange = useCallback(
     ({ lat, lng, zoom }) => {
       const isStringBase = typeof value === 'string'
@@ -44,9 +53,9 @@ const TheMapPositionInput = (props) => {
         layers={layers}
         lng={Number(lng)}
         onChange={handleChange}
+        TileLayerClass={TileLayerClass}
         width={width}
         zoom={zoom}
-        TileLayerClass={TileLayerClass}
       />
       <input
         className='the-map-position-input-input'
