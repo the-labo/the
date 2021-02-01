@@ -29,7 +29,7 @@
 ## @the-/ui-step
 Steps for the-components
 
-**Version**: 16.0.3  
+**Version**: 16.0.4  
 <a name="TheStep"></a>
 
 ## TheStep
@@ -41,4 +41,4 @@ Steps for the-component
 ## TheStepStyle()
 Style for TheStep
 
-**Kind**: global function
+**Kind**: global function  
