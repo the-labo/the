@@ -6,7 +6,7 @@ import React, { useCallback, useEffect, useRef } from 'react'
 import { TheIcon } from '@the-/ui-icon'
 
 const TheStepBar = (props) => {
-  const { nodes, onStep, step } = props
+  const { className, nodes, onStep, step } = props
   const elmRef = useRef(null)
   const scrollToStep = useCallback(
     (step) => {
@@ -25,7 +25,7 @@ const TheStepBar = (props) => {
     scrollToStep(step)
   }, [step])
   return (
-    <div className={c('the-step-bar')} ref={elmRef} role='tablist'>
+    <div className={c('the-step-bar', className)} ref={elmRef} role='tablist'>
       {nodes.map((node, index) => (
         <TheStepBar.Item
           index={index}
