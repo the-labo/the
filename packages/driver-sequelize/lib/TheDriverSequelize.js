@@ -83,7 +83,7 @@ class TheDriverSequelize extends Driver {
           .map((def) => def.associate)
           .find((associate) => {
             const [, associateOpt] = associate || []
-            return associateOpt.as === alias
+            return associateOpt && associateOpt.as === alias
           }) || []
       return this.models[associateName]
     }

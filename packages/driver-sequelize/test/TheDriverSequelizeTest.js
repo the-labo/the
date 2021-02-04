@@ -621,6 +621,9 @@ describe('the-driver-sequelize', function () {
       z: { maxLength: 32, type: STRING },
     })
     driver.define('B', {
+      aaa: {
+        type: STRING,
+      },
       aId: {
         associate: ['A', { as: 'a' }],
         type: STRING,
