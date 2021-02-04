@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-sequelize",
   "description": "Sequelize driver for the-framework",
-  "version": "18.0.1",
+  "version": "18.0.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,13 +21,13 @@
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
     "mkdirp": "^1.0.4",
-    "sequelize": "^6.3.5",
+    "sequelize": "^6.5.0",
     "utf8": "^3.0.0"
   },
   "devDependencies": {
     "clay-lump": "^4.4.31",
     "mysql2": "^2.2.5",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.1"
   },
   "engines": {
     "node": ">=10",
