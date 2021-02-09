@@ -136,34 +136,36 @@ const TheInputTextArea = React.memo((props) => {
     >
       {renderErrorMessage(error)}
 
-      {readOnly ? (
-        <pre className='the-input-textarea-readonly'>{value || ''}</pre>
-      ) : (
-        <textarea
-          aria-multiline='true'
-          autoFocus={autoFocus}
-          className='the-input-textarea-input'
-          id={id}
-          name={name}
-          onBlur={onBlur}
-          onChange={handleChange}
-          onFocus={onFocus}
-          onKeyDown={handleKeyDown}
-          onKeyPress={onKeyPress}
-          onKeyUp={onKeyUp}
-          placeholder={placeholder}
-          readOnly={readOnly}
-          ref={textareaRef}
-          required={required}
-          role={role}
-          rows={rows}
-          spellCheck={spellCheck}
-          style={style}
-          tabIndex={tabIndex}
-          value={value || ''}
-        />
-      )}
-      {children}
+      <div className='the-input-textarea-body'>
+        {readOnly ? (
+          <pre className='the-input-textarea-readonly'>{value || ''}</pre>
+        ) : (
+          <textarea
+            aria-multiline='true'
+            autoFocus={autoFocus}
+            className='the-input-textarea-input'
+            id={id}
+            name={name}
+            onBlur={onBlur}
+            onChange={handleChange}
+            onFocus={onFocus}
+            onKeyDown={handleKeyDown}
+            onKeyPress={onKeyPress}
+            onKeyUp={onKeyUp}
+            placeholder={placeholder}
+            readOnly={readOnly}
+            ref={textareaRef}
+            required={required}
+            role={role}
+            rows={rows}
+            spellCheck={spellCheck}
+            style={style}
+            tabIndex={tabIndex}
+            value={value || ''}
+          />
+        )}
+        {children}
+      </div>
     </div>
   )
 })

@@ -21,6 +21,7 @@ function TextareaStyleData({
     },
     '.the-input-textarea-body': {
       display: 'inline-flex',
+      width: '100%',
     },
     '.the-input-textarea-input': {
       border: `1px solid ${inputBorderColor}`,
