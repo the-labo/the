@@ -12,12 +12,15 @@ function TextareaStyleData({
     '.the-input-textarea': {
       alignItems: 'stretch',
       boxSizing: 'border-box',
-      display: 'inline-flex',
       justifyContent: 'stretch',
       margin: '0 4px',
       maxWidth: contentWidth,
       position: 'relative',
       verticalAlign: 'middle',
+      width: '100%',
+    },
+    '.the-input-textarea-body': {
+      display: 'inline-flex',
       width: '100%',
     },
     '.the-input-textarea-input': {

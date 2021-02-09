@@ -111,4 +111,4 @@ Toggle input of the-components
 ## TheInputStyle()
 Style for TheInput
 
-**Kind**: global function  
+**Kind**: global function
