@@ -59,7 +59,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 17.1.6  
+**Version**: 17.1.7  
 <a name="TheInputText"></a>
 
 ## TheInputText
@@ -111,4 +111,4 @@ Toggle input of the-components
 ## TheInputStyle()
 Style for TheInput
 
-**Kind**: global function
+**Kind**: global function  

@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "17.1.6"
+    "version": "17.1.7"
   },
   {
     "description": "Text Input",
@@ -901,7 +901,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 173,
+      "lineno": 175,
       "path": "lib"
     },
     "name": "autoExpand",
@@ -916,7 +916,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 175,
+      "lineno": 177,
       "path": "lib"
     },
     "name": "maxRows",
@@ -931,7 +931,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 177,
+      "lineno": 179,
       "path": "lib"
     },
     "name": "minRows",
@@ -946,7 +946,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 179,
+      "lineno": 181,
       "path": "lib"
     },
     "name": "name",
@@ -961,7 +961,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 181,
+      "lineno": 183,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -976,7 +976,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 183,
+      "lineno": 185,
       "path": "lib"
     },
     "name": "parser",
@@ -991,7 +991,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 185,
+      "lineno": 187,
       "path": "lib"
     },
     "name": "rows",
@@ -1006,7 +1006,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 187,
+      "lineno": 189,
       "path": "lib"
     },
     "name": "value",
