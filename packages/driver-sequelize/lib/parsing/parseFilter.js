@@ -40,9 +40,14 @@ function parseFilter(filter, options = {}) {
   }
 
   if (filter.$and) {
+    // Example:
+    // {$and: [{ foo: {$like: '%a%'} }, {foo: {$like: '%b%'}}]}
+    // -> { [Op.and]: [{ foo: {[Op.like]: '%a%'} }, {foo: {[Op.like]: '%b%'}}] }
     const { $and, ...rest } = filter
-    const andArray = $and.map((and) => ({ ...and, ...rest }))
-    return parseFilter(Object.assign({}, ...andArray), options)
+    const andArray = $and
+      .map((and) => ({ ...and, ...rest }))
+      .map((filter) => parseFilter(filter, options))
+    return { [Op.and]: andArray }
   }
 
   const parsed = {}
