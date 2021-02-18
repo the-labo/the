@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-sequelize",
   "description": "Sequelize driver for the-framework",
-  "version": "18.0.2",
+  "version": "18.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "clay-lump": "^4.4.31",
     "mysql2": "^2.2.5",
-    "sqlite3": "^5.0.1"
+    "sqlite3": "^5.0.2"
   },
   "engines": {
     "node": ">=10",
