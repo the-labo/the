@@ -593,6 +593,41 @@ describe('the-driver-sequelize', function () {
     await driver.close()
   })
 
+  it('$and operator', async () => {
+    const storage = `${__dirname}/../tmp/and-operator.db`
+    await unlinkAsync(storage).catch(() => null)
+    const driver = new TheDriverSequelize({
+      dialect: 'sqlite',
+      storage,
+    })
+    driver.define('A', {
+      x: { type: STRING },
+    })
+    await driver.create('A', { x: 'abcdefg' })
+    {
+      const list = await driver.list('A', {
+        // マッチする条件
+        filter: { $and: [{ x: { $like: 'abc%' } }, { x: { $like: '%efg' } }] },
+      })
+      equal(list.meta.length, 1)
+    }
+    {
+      const list = await driver.list('A', {
+        // マッチしない条件1
+        filter: { $and: [{ x: { $like: 'abc%' } }, { x: { $like: '%xyz' } }] },
+      })
+      equal(list.meta.length, 0)
+    }
+    {
+      const list = await driver.list('A', {
+        // マッチしない条件2
+        filter: { $and: [{ x: { $like: 'xyz%' } }, { x: { $like: '%efg' } }] },
+      })
+      equal(list.meta.length, 0)
+    }
+    await driver.close()
+  })
+
   it('mysql', async () => {
     const DB_ROOT_USER = 'root'
     const DB_ROOT_PASSWORD = 'root'
