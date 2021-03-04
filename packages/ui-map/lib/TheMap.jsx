@@ -111,6 +111,15 @@ const TheMap = React.memo((props) => {
       return
     }
 
+    mapAccess.applyLayers(layers)
+    needsChange()
+  }, [layers, mapAccess])
+
+  useEffect(() => {
+    if (!mapAccess) {
+      return
+    }
+
     if (!layerControlEnabled) {
       mapAccess.removeLayerControl()
       return
@@ -118,15 +127,6 @@ const TheMap = React.memo((props) => {
 
     mapAccess.addLayerControl(layerControlPosition)
   }, [layerControlEnabled, mapAccess, layerControlPosition])
-
-  useEffect(() => {
-    if (!mapAccess) {
-      return
-    }
-
-    mapAccess.applyLayers(layers)
-    needsChange()
-  }, [layers, mapAccess])
 
   useEffect(() => {
     if (!mapAccess) {
