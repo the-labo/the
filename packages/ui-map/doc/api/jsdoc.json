@@ -12,7 +12,7 @@
     "name": "@the-/ui-map",
     "order": 0,
     "typicalname": "uiMap",
-    "version": "16.4.8"
+    "version": "16.4.9"
   },
   {
     "augments": [
