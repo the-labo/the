@@ -111,6 +111,7 @@ const TheInputUpload = React.memo((props) => {
           onLoad && onLoad({ target, urls })
           onUpdate && onUpdate({ [name]: multiple ? urls : urls[0] })
           setUrls(urls)
+          setError(null)
         } catch (error) {
           setUrls([])
           handleError(error)
@@ -152,6 +153,8 @@ const TheInputUpload = React.memo((props) => {
         style={readOnly && !hasImage ? {} : { height, width }}
         tabIndex={-1}
         type='file'
+        // Set empty string to clear files in the input
+        value={urls.length === 0 ? '' : undefined}
       />
       <TheCondition unless={readOnly}>
         <TheInputUploadLabel
