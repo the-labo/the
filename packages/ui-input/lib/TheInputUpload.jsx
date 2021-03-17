@@ -111,6 +111,7 @@ const TheInputUpload = React.memo((props) => {
           onLoad && onLoad({ target, urls })
           onUpdate && onUpdate({ [name]: multiple ? urls : urls[0] })
           setUrls(urls)
+          setError(null)
         } catch (error) {
           setUrls([])
           handleError(error)
