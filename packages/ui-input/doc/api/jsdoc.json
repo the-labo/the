@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "17.1.7"
+    "version": "17.1.8"
   },
   {
     "description": "Text Input",
@@ -1081,7 +1081,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 197,
+      "lineno": 200,
       "path": "lib"
     },
     "name": "accept",
@@ -1096,7 +1096,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 199,
+      "lineno": 202,
       "path": "lib"
     },
     "name": "convertFile",
@@ -1111,7 +1111,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 201,
+      "lineno": 204,
       "path": "lib"
     },
     "name": "error",
@@ -1126,7 +1126,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 203,
+      "lineno": 206,
       "path": "lib"
     },
     "name": "height",
@@ -1141,7 +1141,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 205,
+      "lineno": 208,
       "path": "lib"
     },
     "name": "multiple",
@@ -1156,7 +1156,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 208,
+      "lineno": 211,
       "path": "lib"
     },
     "name": "onError",
@@ -1171,7 +1171,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 210,
+      "lineno": 213,
       "path": "lib"
     },
     "name": "onLoad",
@@ -1186,7 +1186,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 212,
+      "lineno": 215,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -1201,7 +1201,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 214,
+      "lineno": 217,
       "path": "lib"
     },
     "name": "spinner",
@@ -1216,7 +1216,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 216,
+      "lineno": 219,
       "path": "lib"
     },
     "name": "text",
@@ -1231,7 +1231,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 218,
+      "lineno": 221,
       "path": "lib"
     },
     "name": "value",
@@ -1246,7 +1246,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 224,
+      "lineno": 227,
       "path": "lib"
     },
     "name": "width",
