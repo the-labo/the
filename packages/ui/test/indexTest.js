@@ -7,7 +7,7 @@
 const {
   strict: { ok },
 } = require('assert')
-const lib = require('../shim')
+const lib = require('../cjs')
 
 describe('index', () => {
   before(() => {})

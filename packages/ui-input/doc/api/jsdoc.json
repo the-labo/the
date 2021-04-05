@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "17.1.8"
+    "version": "17.1.10"
   },
   {
     "description": "Text Input",
@@ -33,7 +33,7 @@
     "longname": "TheInputText",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 20,
+      "lineno": 19,
       "path": "lib"
     },
     "name": "TheInputText",

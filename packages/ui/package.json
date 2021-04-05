@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "17.1.14",
+  "version": "17.1.15",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -54,8 +54,8 @@
     "@the-/ui-demo": "^16.0.3",
     "fmtjson": "^5.0.2",
     "injectmock": "^2.0.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-router-dom": "^5.2.0"
   },
   "engines": {
@@ -70,8 +70,8 @@
   "license": "MIT",
   "main": "./cjs.js",
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router-dom": ">=4"
   },
   "publishConfig": {
@@ -80,8 +80,7 @@
   "repository": "the-labo/the",
   "scripts": {
     "build": "../../misc/scripts/pkgBuild.js",
-    "doc": "../../misc/scripts/pkgDoc.js",
-    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build",
     "test": "../../misc/scripts/pkgTest.js"
   }
 }

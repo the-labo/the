@@ -21,7 +21,7 @@
 ## @the-/util-color
 Color utility for the-framework
 
-**Version**: 16.1.0  
+**Version**: 16.1.1  
 **License**: MIT  
 
 * [@the-/util-color](#module_@the-/util-color)
@@ -69,6 +69,7 @@ Get rotated colors for color
 | [base] | <code>string</code> | <code>&quot;&#x27;#38E&#x27;&quot;</code> | Base color |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.count] | <code>number</code> | <code>12</code> | Count of colors |
+| [options.sort] | <code>boolean</code> | <code>false</code> | Should sort result by hue |
 
 <a name="module_@the-/util-color.textColorFor"></a>
 

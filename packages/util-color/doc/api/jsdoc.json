@@ -13,7 +13,7 @@
     "name": "@the-/util-color",
     "order": 3,
     "typicalname": "utilColor",
-    "version": "16.1.0"
+    "version": "16.1.1"
   },
   {
     "description": "Make sure a color is dark enough to work with while",
@@ -197,6 +197,17 @@
         "defaultvalue": 12,
         "description": "Count of colors",
         "name": "options.count"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Should sort result by hue",
+        "name": "options.sort"
       }
     ],
     "returns": [

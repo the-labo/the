@@ -17,9 +17,9 @@ function textColorFor(backgroundColor, options = {}) {
 
   const { forDark = '#FFFFFF', forLight = '#333333' } = options
 
-  try{
+  try {
     return isDark(backgroundColor) ? forDark : forLight
-  } catch(e){
+  } catch (e) {
     return forLight
   }
 }
