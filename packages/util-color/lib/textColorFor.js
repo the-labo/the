@@ -17,7 +17,11 @@ function textColorFor(backgroundColor, options = {}) {
 
   const { forDark = '#FFFFFF', forLight = '#333333' } = options
 
-  return isDark(backgroundColor) ? forDark : forLight
+  try{
+    return isDark(backgroundColor) ? forDark : forLight
+  } catch(e){
+    return forLight
+  }
 }
 
 module.exports = textColorFor
