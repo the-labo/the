@@ -7,13 +7,13 @@
     "longname": "module:@the-/templates",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "@the-/templates",
     "order": 8,
     "typicalname": "templates",
-    "version": "16.2.13"
+    "version": "16.2.15"
   },
   {
     "description": "Define bud for bin scripts",
