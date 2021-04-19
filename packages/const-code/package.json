@@ -11,7 +11,6 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {},
   "devDependencies": {},
   "engines": {
     "node": ">=10",

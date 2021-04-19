@@ -9,7 +9,6 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint-plugin-react": "^7.21.4",

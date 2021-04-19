@@ -11,7 +11,6 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "injectmock": "^2.0.0"
   },

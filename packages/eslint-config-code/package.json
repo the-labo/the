@@ -10,7 +10,6 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "eslint-plugin-json-light": "^1.0.3"
   },
