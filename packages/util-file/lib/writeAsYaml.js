@@ -14,7 +14,7 @@ const path = require('path')
  * @returns {Promise<Object>} yaml data
  */
 async function writeAsYaml(filename, data, options = {}) {
-  const content = yaml.safeDump(data)
+  const content = yaml.dump(data)
   await mkdirpAsync(path.dirname(filename))
   await writeFileAsync(filename, content)
 }

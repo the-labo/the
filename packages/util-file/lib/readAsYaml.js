@@ -12,7 +12,7 @@ const yaml = require('js-yaml')
  * @returns {Promise<Object>} yaml data
  */
 async function readAsYaml(filename, options = {}) {
-  return yaml.safeLoad(await readFileAsync(filename))
+  return yaml.load(await readFileAsync(filename))
 }
 
 module.exports = readAsYaml
