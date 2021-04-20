@@ -7,13 +7,13 @@
     "longname": "module:@the-/support",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "@the-/support",
     "order": 1,
     "typicalname": "support",
-    "version": "15.4.22"
+    "version": "15.4.23"
   },
   {
     "id": "module:@the-/support.TheSupport()",
@@ -57,7 +57,7 @@
     "memberof": "module:@the-/support",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib/helpers"
     },
     "name": "helpers",

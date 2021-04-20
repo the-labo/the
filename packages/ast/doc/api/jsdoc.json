@@ -7,13 +7,13 @@
     "longname": "module:@the-/ast",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "@the-/ast",
     "order": 3,
     "typicalname": "ast",
-    "version": "16.2.6"
+    "version": "16.2.7"
   },
   {
     "description": "Find nodes by types",
@@ -95,7 +95,7 @@
     "memberof": "module:@the-/ast",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib/constants"
     },
     "name": "constants",

@@ -68,6 +68,10 @@ class TheSupport {
     return this.validateESFor('2019')
   }
 
+  async es2020() {
+    return this.validateESFor('2020')
+  }
+
   async es5() {
     return this.validateESFor('5')
   }

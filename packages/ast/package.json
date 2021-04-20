@@ -1,7 +1,7 @@
 {
   "name": "@the-/ast",
   "description": "AST (abstract syntax tree) parser",
-  "version": "16.2.6",
+  "version": "16.2.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

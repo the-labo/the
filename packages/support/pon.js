@@ -13,7 +13,7 @@ const theSupport = require('./lib/create')
  */
 function theSupportTask(pattern, options = {}) {
   const support = theSupport(pattern)
-  const { version = '2017' } = options
+  const { version = '2020' } = options
 
   return async function task(ctx) {
     const { logger } = ctx
