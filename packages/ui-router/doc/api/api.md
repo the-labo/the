@@ -41,4 +41,4 @@ Router of the-components
 ## TheRouterStyle()
 Style for TheRouter
 
-**Kind**: global function
+**Kind**: global function  

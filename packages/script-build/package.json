@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-build",
   "description": "Build script for the-projects",
-  "version": "15.6.7",
+  "version": "16.0.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -37,7 +37,7 @@
     "coz": "^7.2.1",
     "filecopy": "^4.1.0",
     "lebab": "^3.1.0",
-    "webpack": "^4.44.2",
+    "webpack": "^5.36.0",
     "writeout": "^2.3.4"
   },
   "devDependencies": {

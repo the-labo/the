@@ -28,8 +28,8 @@
     "@the-/ui-demo": "^16.0.3",
     "coz": "^7.2.1",
     "objnest": "^5.0.10",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-router-dom": "^5.2.0"
   },
   "engines": {
@@ -44,8 +44,8 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "publishConfig": {
     "access": "public"

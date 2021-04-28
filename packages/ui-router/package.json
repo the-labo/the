@@ -20,8 +20,8 @@
     "@the-/ui-route": "^16.0.1",
     "@the-/ui-style": "^16.0.2",
     "coz": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-router-dom": "^5.2.0"
   },
   "engines": {
@@ -36,8 +36,8 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router-dom": ">=4"
   },
   "publishConfig": {
