@@ -25,9 +25,15 @@ function processJSXExpression(content, options = {}) {
       switch (expression && expression.type) {
         case NodeTypes.JSXElement:
           return replace(range, get(expression.range))
-        case NodeTypes.StringLiteral:
-          return replace(range, expression.value)
-        default:
+        case NodeTypes.StringLiteral: {
+          const skip = ['{', '}'].some((p) => expression.value.includes(p))
+          if (!skip) {
+            return replace(range, expression.value)
+          }
+        }
+        default: {
+          break
+        }
       }
     }
     const convertElement = (Elm) => {

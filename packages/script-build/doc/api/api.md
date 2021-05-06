@@ -5,7 +5,7 @@
 ## @the-/script-build
 Build script for the-projects
 
-**Version**: 15.6.7  
+**Version**: 16.0.0  
 <a name="module_@the-/script-build.build"></a>
 
 ### @the-/script-build.build([dirname], [options]) ⇒ <code>Promise</code>

@@ -25,6 +25,13 @@ describe('process-jsx-expression', () => {
     )
   })
 
+  it('With brace string', async () => {
+    equal(
+      await processJSXExpression('const X = <span>{"a{b:1}"}</span>'),
+      'const X = <span>{"a{b:1}"}</span>',
+    )
+  })
+
   it('Child jsx', async () => {
     equal(
       await processJSXExpression('<span>{<a>hoge</a>}</span>'),

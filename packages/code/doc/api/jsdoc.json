@@ -7,7 +7,7 @@
     "longname": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "@the-/code",
@@ -166,7 +166,7 @@
     "memberof": "module:@the-/code.ast",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib/ast/nodes"
     },
     "name": "nodes",
@@ -182,7 +182,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib/constants"
     },
     "name": "constants",
@@ -242,7 +242,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -258,7 +258,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib/parsers"
     },
     "name": "parsers",
@@ -274,7 +274,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib/processors"
     },
     "name": "processors",
