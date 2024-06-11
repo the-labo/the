@@ -32,7 +32,7 @@
     "@the-/eslint-config-standard": "^15.5.3",
     "@the-/eslint-config-standard-jsx": "^15.6.3",
     "@the-/refactor": "^15.6.0",
-    "@the-/script-build": "^15.6.5",
+    "@the-/script-build": "^16.0.0",
     "@the-/script-doc": "^15.4.14",
     "@the-/script-test": "^15.4.14",
     "@the-/templates": "^16.2.13",
