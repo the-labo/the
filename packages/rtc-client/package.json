@@ -33,7 +33,7 @@
     "@the-/rtc": "^15.7.3",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
-    "webpack": "^4.44.2",
+    "webpack": "^5.104.1",
     "webpack-cli": "^3.3.12",
     "webrtc-adapter": "^7.7.0"
   },
