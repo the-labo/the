@@ -27,7 +27,7 @@
     "debug": "^4.2.0",
     "fmtjson": "^5.0.2",
     "ignore": "^5.1.8",
-    "minimatch": "^3.0.4",
+    "minimatch": "^10.2.1",
     "postcss": "^8.1.1",
     "prettier": "^2.1.2",
     "writeout": "^2.3.4",
