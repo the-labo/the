@@ -37,7 +37,7 @@
     "mkdirp": "^1.0.4",
     "mysql2": "^2.2.5",
     "rotating-file-stream": "^2.1.4",
-    "uuid": "^8.3.2"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "colorprint": "^6.1.1",
