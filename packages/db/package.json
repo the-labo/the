@@ -35,7 +35,7 @@
     "execcli": "^5.0.6",
     "is-class": "0.0.9",
     "mkdirp": "^1.0.4",
-    "mysql2": "^2.2.5",
+    "mysql2": "^3.22.0",
     "rotating-file-stream": "^2.1.4",
     "uuid": "^8.3.2"
   },
